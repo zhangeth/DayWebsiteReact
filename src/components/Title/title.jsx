@@ -1,7 +1,4 @@
-//import headshot from "./headshot3.jpg";
-//import { motion } from "framer-motion";
-//import animationConstants from "../../constants";
-import daylogo from "./DayLogo.jpg";
+import daylogo from "../../assets/DAYLogo.jpg";
 
 function Title() {
 	//const ani = animationConstants;
@@ -12,7 +9,7 @@ function Title() {
             <figure class="image is-128x128">
                 <img src={daylogo} width="128" height="128"/>
             </figure>
-                <span class="fs-4">BUTTHOLE</span>
+                <span class="fs-4">DAY USC</span>
             </a>
             </div>
         </header>
