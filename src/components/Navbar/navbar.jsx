@@ -1,5 +1,5 @@
 import ArtPage from "../../pages/art";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function Navbar() {
 	//const ani = animationConstants;
