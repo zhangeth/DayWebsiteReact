@@ -6,14 +6,14 @@ function Navbar() {
 	return (
     <nav class="py-2 bg-light border-bottom">
         <div class="container d-flex flex-wrap">
-        <ul class="nav me-auto">
-            <li class="nav-item"><Link to="/art">Features</Link></li>
-        </ul>
+        <ul class="nav me-auto"> </ul>
         <ul class="nav">
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
+            <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>
+            <li class="nav-item"><a href="/art" class="nav-link link-dark px-2">About</a></li>
+            <li class="nav-item"><a href="/art" class="nav-link link-dark px-2">Art</a></li>
         </ul>
         </div>
-    </nav>);
+    </nav>
+    );
 }
 export default Navbar;

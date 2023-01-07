@@ -9,7 +9,7 @@ function Title() {
             <figure class="image is-128x128">
                 <img src={daylogo} width="128" height="128"/>
             </figure>
-                <span class="fs-4">DAY USC</span>
+                <h1 class="display-4 fw-bold lh-1">DAY USC</h1>
             </a>
             </div>
         </header>

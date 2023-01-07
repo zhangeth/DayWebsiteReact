@@ -6,6 +6,7 @@ function Art() {
     return (
       <div>
         {Title()}
+        {Navbar()}
       </div>
     );
 }
