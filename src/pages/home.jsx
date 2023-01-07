@@ -1,12 +1,12 @@
 import HomeHero from "../components/HomeHero/homeHero";
-import Navbar from "../components/Navbar/navbar";
+import Carousel from "../components/homecarousel";
 import Title from "../components/Title/title";
 
 function Home() {
   return (
     <div>
-      {Title()}
       {HomeHero()}
+      {Carousel()}
     </div>
   );
 }
