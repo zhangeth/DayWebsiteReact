@@ -9,11 +9,11 @@ function Title() {
             <figure class="image is-128x128">
                 <img src={daylogo} width="128" height="128"/>
             </figure>
-                <h1 class="display-4 fw-bold lh-1">DAY USC</h1>
+                <h1 class="display-1 fw-normal lh-1">DAY USC</h1>
             </a>
             </div>
         </header>
 	);
 }
 
-export default Title;
+export default Title; 
