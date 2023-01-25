@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Greycliff',
     monospace;
 }
+
+h6 {
+  color: #B83826;
+  font-family: Georgia, sans-serif;
+  font-size: 128px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}

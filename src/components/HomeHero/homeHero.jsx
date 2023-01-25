@@ -7,7 +7,7 @@ function HomeHero() {
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
                 <h1 class="display-4 fw-bold lh-1">The Mission</h1>
                 <p class="lead"> </p>
-                <p class="lead">We are a team dedicated to sharing the narratives and art of Asian American youth at USC. Enjoy exploring our artists and upcoming events! </p>
+                <p class="lead">We are a team dedicated to sharing the narratives and art of Asian American youth at USC. Explore our literature, art, and upcoming events! </p>
                 <p class="lead">Reach out if you want to share your unique experiences.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
                 </div>
