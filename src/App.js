@@ -10,6 +10,8 @@ import Art from "./pages/art"
  
 // article pages for now
 import Colonialism from "./pages/colonialism";
+import Monterey from "./pages/monterey";
+import Kpop from "./pages/kpop";
 
 const linkStyle = {
   margin: "1rem",
@@ -29,6 +31,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/art" element={<Art />} />
         <Route path="/colonialism" element={<Colonialism />} />
+        <Route path="/monterey" element={<Monterey />} />
+        <Route path="/kpop" element={<Kpop />} />
       </Routes>
     </Router>
 
