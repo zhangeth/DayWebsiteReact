@@ -5,13 +5,12 @@ function Navbar() {
 	//const ani = animationConstants;
 	return (
     <nav class="py-2 bg-light border-bottom">
-        <div class="container d-flex flex-wrap">
-        <ul class="nav me-auto"> </ul>
-        <ul class="nav">
-            <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>
-            <li class="nav-item"><a href="/about" class="nav-link link-dark px-2">About</a></li>
-            <li class="nav-item"><a href="/art" class="nav-link link-dark px-2">Art</a></li>
-        </ul>
+        <div class="container d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link link-dark px-2">About</a></li>
+                <li class="nav-item"><a href="/art" class="nav-link link-dark px-2">Art</a></li>
+            </ul>
         </div>
     </nav>
     );

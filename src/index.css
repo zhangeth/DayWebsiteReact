@@ -12,11 +12,11 @@ code {
     monospace;
 }
 
-h6 {
+h1 {
   color: #B83826;
   font-family: Georgia, sans-serif;
-  font-size: 128px;
-  font-weight: bold;
+  font-size: 100px;
+  font-weight: normal;
   margin-top: 0px;
   margin-bottom: 1px;
 }

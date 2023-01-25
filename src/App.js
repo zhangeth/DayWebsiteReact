@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 import Home from "./pages/home"
 import About from "./pages/about"
 import Art from "./pages/art"
+ 
+// article pages for now
+import Colonialism from "./pages/colonialism";
 
 const linkStyle = {
   margin: "1rem",
@@ -25,6 +28,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/art" element={<Art />} />
+        <Route path="/colonialism" element={<Colonialism />} />
       </Routes>
     </Router>
 
