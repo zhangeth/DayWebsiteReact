@@ -14,6 +14,7 @@ import Colonialism from "./pages/colonialism";
 import Monterey from "./pages/monterey";
 import Kpop from "./pages/kpop";
 import Fashion from "./pages/fashion";
+import Halmoni from "./pages/prose/halmoni";
 
 const linkStyle = {
   margin: "1rem",
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/monterey" element={<Monterey />} />
         <Route path="/kpop" element={<Kpop />} />
         <Route path="/fashion" element={<Fashion />} />
+        <Route path="/halmoni" element={<Halmoni />} />
       </Routes>
       {Footer()}
     </Router>
