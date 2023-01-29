@@ -1,5 +1,5 @@
 import HomeHero from "../components/HomeHero/homeHero";
-
+import AboutHero from "../components/aboutComponents/aboutHero";
 function About() {
 	//const ani = animationConstants;
 	return (

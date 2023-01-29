@@ -16,7 +16,7 @@ function Kpop()
                     </p>
 
                     <p class="py-2">
-                   Korean culture has become more ubiquitous in the past few years as an ever-increasing number of people watch K-dramas, listen to K-Pop, eat Korean food, and add K-beauty products to their routines. This growth has been further demonstrated with the rise of K-culture events such as the K-Pop Festa at USC’s McCarthy Quad on September 23, 2022, in which USC became the first campus in America to ever host a K-Pop concert. This event was a testament to the ongoing propulsion of Asian culture into the global limelight.
+                    Korean culture has become more ubiquitous in the past few years as an ever-increasing number of people watch K-dramas, listen to K-Pop, eat Korean food, and add K-beauty products to their routines. This growth has been further demonstrated with the rise of K-culture events such as the K-Pop Festa at USC’s McCarthy Quad on September 23, 2022, in which USC became the first campus in America to ever host a K-Pop concert. This event was a testament to the ongoing propulsion of Asian culture into the global limelight.
                     </p>
                     <p class="py-2">
                     The event started with an intense K-Pop dance cover competition in which 12 nationwide dance teams (2 of which were from USC) competed for a spot in the next round, which will take place in Korea. Both the dance groups and the audience were diverse in composition, illustrating K-Pop’s wide reach and demographic. The passion that exuded from the performances highlights the great impact K-Pop has had on youth and dance as well as the willingness of current generations to learn about Asian culture. Although there was a subtle sense of competition, the overall support the groups and audience exchanged with each other shows the unified camaraderie that permeates throughout the K-Pop community.
@@ -30,6 +30,24 @@ function Kpop()
                     <p class="py-2">
                     This event was significant as no other college campus in America has hosted a K-Pop concert. It was inspiring for Asian-American students to see people of varying backgrounds come together to celebrate their interest in Korean culture. Signifying our society’s continuing evolution into becoming more accepting and inclusive of diverse cultures, this event will hopefully pave the path for other Asian cultures and minorities to spread the richness of their culture on a global scale.
                     </p>
+
+                    <div class="py-5">
+                    </div>
+                    
+                    <h4>
+                        Sources
+                    </h4>
+
+                    <a href="https://kprofiles.com/kingdom-profile-facts/">
+                        <p>
+                        https://kprofiles.com/kingdom-profile-facts/
+                        </p>
+                    </a>
+                    <a href="https://kprofiles.com/kim-sejeong-profile-facts/">
+                        <p>
+                        https://kprofiles.com/kim-sejeong-profile-facts/
+                        </p>
+                    </a>
 
                 </div>
 

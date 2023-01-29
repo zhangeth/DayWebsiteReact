@@ -4,6 +4,7 @@ import newYear from "../assets/2023-lunar-new-year.jpg"
 import queen from "../assets/ArticlePics/queenElizabeth.jpg"
 import monterey from "../assets/ArticlePics/MontereyPic.jpg"
 import kimSejeong from "../assets/ArticlePics/kimSejeong.jpg"
+import fashionPic from "../assets/ArticlePics/fashionPic.webp"
 
 // art
 import ophelia from "../assets/Art/Ophelia_painting.jpg"
@@ -25,6 +26,9 @@ function Home() {
 
               <figure class="image is-256x128" width="100%" height="100%">
                 <img src={queen} width="100%" height="100%"/>
+                <p style={{fontSize:'x-small'}}>
+                  Bettmann Archive/Getty Images
+                </p>
               </figure>
               
               <div class="card-body">
@@ -66,6 +70,9 @@ function Home() {
 
               <figure class="image is-256x128 py-1" width="100%" height="100%">
                 <img src={monterey} width="100%" height="100%"/>
+                <p style={{fontSize:'small'}}>
+                  Photographer: Jae C. Hong/AP
+                </p>
               </figure>
               
               <div class="card-body">
@@ -79,8 +86,27 @@ function Home() {
                   By: Yi-Ann
                 </p>
               </div>
+              
+              <div class="py-2">
+              </div>
 
-              <h2 style={{textAlign:'center'}}> Asians are Cool? Find out next time on the next episode of Ethan's Life</h2>
+              <figure class="image is-256x128" width="100%" height="100%">
+                <img src={fashionPic} width="100%" height="100%"/>
+                <p style={{fontSize:'small'}}>
+                  ARIF ALI/AFP VIA GETTY IMAGES
+                </p>
+              </figure>
+
+
+              <a href="/fashion" style={{color: 'black'}}>
+                <h4 style={{textAlign:'center'}}> South Asian New York Fashion Week 2022 </h4>
+              </a>
+              <div style={{textAlign: 'right'}}>
+                <p class="text-muted py-2" style={{textAlign:'right'}}>
+                  By: Jeen Lee
+                </p>
+              </div>
+
               
 
             </div>

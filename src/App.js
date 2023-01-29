@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar/navbar";
 import Title from "./components/Title/title";
+import Footer from "./components/footer";
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
@@ -12,6 +13,7 @@ import Art from "./pages/art"
 import Colonialism from "./pages/colonialism";
 import Monterey from "./pages/monterey";
 import Kpop from "./pages/kpop";
+import Fashion from "./pages/fashion";
 
 const linkStyle = {
   margin: "1rem",
@@ -33,7 +35,9 @@ const App = () => {
         <Route path="/colonialism" element={<Colonialism />} />
         <Route path="/monterey" element={<Monterey />} />
         <Route path="/kpop" element={<Kpop />} />
+        <Route path="/fashion" element={<Fashion />} />
       </Routes>
+      {Footer()}
     </Router>
 
   );

@@ -1,4 +1,6 @@
 
+//let links
+
 function Colonialism()
 {
     return(
@@ -32,6 +34,54 @@ function Colonialism()
                     <p class="py-2">
                     The Koh-i-Noor went through a tumultuous history – first known to have adorned Mughal Emperor Shah Jahan’s jeweled Peacock Throne. It was looted by Persian ruler Nader Shah when he invaded in 1739 and would remain outside of India for 70 years, changing owners repeatedly in the territory that would later become modern-day Afghanistan. Eventually, Sikh ruler Ranjit Singh obtained it, and the diamond became a desirable symbol of power. After the British annexed Punjab in 1849, they forced his descendant, 11-year-old Duleep Singh, to sign a treaty that gave away both the gemstone and all claim to rulership.  
                     </p>
+
+                    <div class="py-5">
+                    </div>
+
+                    <h4>
+                        Sources
+                    </h4>
+
+                    <a href="https://www.hrp.org.uk/tower-of-london/history-and-stories/the-crown-jewels/#gs.ewqeft">
+                        <p>
+                        https://www.hrp.org.uk/tower-of-london/history-and-stories/the-crown-jewels/#gs.ewqeft
+                        </p>
+                    </a>
+                    <a href="https://www.vice.com/en/article/bvm7ad/elizabeth-ii-colonisation-kohinoor-india-pakistan">
+                        <p>
+                        https://www.vice.com/en/article/bvm7ad/elizabeth-ii-colonisation-kohinoor-india-pakistan
+                        </p>
+                    </a>
+                    <a href="https://www.smithsonianmag.com/history/true-story-koh-i-noor-diamondand-why-british-wont-give-it-back-180964660/">
+                        <p>
+                        https://www.smithsonianmag.com/history/true-story-koh-i-noor-diamondand-why-british-wont-give-it-back-180964660/
+                        </p>
+                    </a>
+                    <a href="https://www.bbc.com/news/uk-england-62906194">
+                        <p>
+                        https://www.bbc.com/news/uk-england-62906194
+                        </p>
+                    </a>
+                    <a href="https://www.cnn.com/style/article/great-star-of-africa-diamond-intl-lgs/index.html">
+                        <p>
+                        https://www.cnn.com/style/article/great-star-of-africa-diamond-intl-lgs/index.html
+                        </p>
+                    </a>
+                    <a href="https://internetstones.com/news/black-prince-ruby/">
+                        <p>
+                        https://internetstones.com/news/black-prince-ruby/
+                        </p>
+                    </a>
+                    <a href="https://internetstones.com/news/st-edwards-sapphire/">
+                        <p>
+                        https://internetstones.com/news/st-edwards-sapphire/
+                        </p>
+                    </a>
+                    <a href="https://internetstones.com/news/stuart-sapphire/">
+                        <p>
+                        https://internetstones.com/news/stuart-sapphire/
+                        </p>
+                    </a>
 
                 </div>
 

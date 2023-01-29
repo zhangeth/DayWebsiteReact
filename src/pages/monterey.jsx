@@ -34,7 +34,33 @@ function Monterey()
                     <p class="py-2">
                         With more details of the shooting to come, we urge you to check in on your Asian American friends, and continue to uplift APIDA voices and stories. We hope the media will report on this with accuracy, compassion, and conviction–it would be a disservice to do so otherwise. And finally, we encourage everyone to reflect on where this mass shooting fits into the bigger picture of public safety, gun violence, and the wellbeing of all marginalized communities who have been constantly and consistently fighting against such hate and violence.
                     </p>
+                    <div class="py-5">
+                    </div>
 
+                    <h4>
+                        Sources
+                    </h4>
+
+                    <a href="https://www.nytimes.com/live/2023/01/22/us/shooting-monterey-park-california#shocked-saddened-angered-reactions-to-the-mass-shooting-in-monterey-park">
+                        <p>
+                        https://www.nytimes.com/live/2023/01/22/us/shooting-monterey-park-california#shocked-saddened-angered-reactions-to-the-mass-shooting-in-monterey-park
+                        </p>
+                    </a>
+                    <a href="https://www.nbcnews.com/news/us-news/mass-shooting-monterey-park-california-rcna66877">
+                        <p>
+                        https://www.nbcnews.com/news/us-news/mass-shooting-monterey-park-california-rcna66877
+                        </p>
+                    </a>
+                    <a href="https://www.montereypark.ca.gov/669/Lunar-New-Year-Festival">
+                        <p>
+                        https://www.montereypark.ca.gov/669/Lunar-New-Year-Festival
+                        </p>
+                    </a>
+                    <a href="https://www.cbsnews.com/losangeles/live-updates/the-latest-details-on-the-monterey-park-mass-shooting/">
+                        <p>
+                        https://www.cbsnews.com/losangeles/live-updates/the-latest-details-on-the-monterey-park-mass-shooting/
+                        </p>
+                    </a>
                 </div>
 
                 <div class="col">
