@@ -1,6 +1,26 @@
+@font-face {
+  font-family:'Greycliff';
+  src:local('Greycliff'), url(./assets/Fonts/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'NewEditorial';
+  src:local('NewEditorial'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'NewEditorialLight';
+  src:local('NewEditorialLight'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Ultralight.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'NewEditorialBold';
+  src:local('NewEditorialBold'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Ultrabold.otf) format('opentype');
+}
+
 body {
   margin: 0;
-  font-family: Georgia, BlinkMacSystemFont, 'sans-serif', 'Roboto', 'Oxygen',
+  font-family: 'sans-serif', 'NewEditorialLight', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +34,7 @@ code {
 
 h1 {
   color: #B83826;
-  font-family: Georgia, sans-serif;
+  font-family: 'NewEditorial', sans-serif;
   font-size: 100px;
   font-weight: normal;
   margin-top: 0px;
@@ -23,8 +43,16 @@ h1 {
 
 h5 {
   color:#B83826;
-  font-family: sans-serif;
+  font-family: 'NewEditorialLight';
   font-size:20px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+p {
+  font-family: sans-serif;
+  font-size:14px;
   font-weight:normal;
   margin-top:0px;
   margin-bottom:0px;

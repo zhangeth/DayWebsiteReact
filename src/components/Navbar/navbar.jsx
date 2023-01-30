@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function Navbar() {
 	//const ani = animationConstants;
 	return (
-    <nav class="py-2 bg-light border-bottom">
+    <nav class="py-0 bg-light border-bottom">
         <div class="container d-flex justify-content-center">
             <ul class="nav">
                 <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>

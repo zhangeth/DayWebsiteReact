@@ -5,9 +5,9 @@ function HomeHero() {
         <div class="container my-5">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1">The Mission</h1>
+                <h1 class="display-4 fw-bold lh-1 py-5">The Mission</h1>
                 <p class="lead"> </p>
-                <p class="lead">We are a team dedicated to sharing the narratives and art of Asian American youth at USC. Explore our literature, art, and upcoming events! </p>
+                <p class="lead">We are a group of Asian youths striving to uplift marginalized communities through education, activism, and celebration. </p>
                 <p class="lead">Reach out if you want to share your unique experiences.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
                 </div>
