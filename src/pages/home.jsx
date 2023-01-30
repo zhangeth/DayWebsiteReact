@@ -75,6 +75,12 @@ function Home() {
                 </a>
               </div>
 
+              <div style={{textAlign: 'right'}}>
+                <p class="text-muted py-2" style={{textAlign:'right'}}>
+                  By: Jessica Tadokoro
+                </p>
+              </div>
+
 
 
             </div>
