@@ -66,7 +66,9 @@ function About() {
                         <h5 style={{'color':'black'}}> Chris Kwon </h5>
                     </div>
                 </div>
+
                 <div class="py-2"></div>
+
                 <div class="row">
                     <div class="col">
                         <figure class="image is-256x256" width="100%" height="100%">
@@ -105,8 +107,10 @@ function About() {
                         <h5 style={{'color':'black'}}> Mindy Dang </h5>
                     </div>
                </div>
+               
+               <div class="py-2"></div>
 
-               <div class="row py-3">
+               <div class="row">
                     <div class="col">
                         <figure class="image is-256x256" width="100%" height="100%">
                             <img src={Riya} width="100%" height="100%"/>
