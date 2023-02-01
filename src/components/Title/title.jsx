@@ -8,6 +8,7 @@ function Title() {
                 <h1>
                     DAY USC
                 </h1>
+                
             </a>
         </div>
 	);
