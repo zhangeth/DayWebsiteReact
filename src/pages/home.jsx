@@ -5,6 +5,7 @@ import monterey from "../assets/ArticlePics/MontereyPic.jpg"
 import kimSejeong from "../assets/ArticlePics/kimSejeong.jpg"
 import fashionPic from "../assets/ArticlePics/fashionPic.webp"
 import koreanGrandma from "../assets/ProsePics/koreanGrandma.png"
+import DAYhistory from "../assets/DAYhistory.jpg"
 
 // art
 import ophelia from "../assets/Art/EthanZhang/Ophelia_painting.jpg"
@@ -17,6 +18,32 @@ import tiger from "../assets/Art/HelenaYu/helenaArt.jpeg"
 function Home() {
   return (
     <div>
+      <div>
+      <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-0 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-15 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 py-5">The History of DAY</h1>
+          <p class="lead"> </p>
+          <p class="lead"> <i>We are a group of Asian youths striving to uplift marginalized communities
+           through education, activism, and celebration.</i></p>
+           <br></br>
+          <p class="lead"> Dear Asian Youth was founded in May of 2020 by Stephanie Hu,
+           a 16-year-old who wished to create a platform to publish her poetry.
+            It evolved into a blog dedicated to the Asian narrative, then a literary magazine,
+             then a full-fledged organization with over 100 members on the national team.</p>
+          <p class="lead">Functioning remotely, the organization today is the result of passionate volunteers with a shared purpose.</p>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          </div>
+        </div>
+        <div class="row p-0 pb-0 pe-lg-0 pt-lg-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src={DAYhistory}  alt="old DAY banner" width="280"/>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
     <div class="py-3">
       <div class="container">
         <div class="row">
