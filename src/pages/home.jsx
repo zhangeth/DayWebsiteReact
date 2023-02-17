@@ -118,7 +118,7 @@ function Home() {
               </div>
 
               <figure class="image is-256x128" width="100%" height="100%">
-                <img src={fashionPic} width="100%" height="100%"/>
+                <img src={fashionPic} alt="Woman Model" width="100%" height="100%"/>
                 <p style={{fontSize:'small'}}>
                   ARIF ALI/AFP VIA GETTY IMAGES
                 </p>
