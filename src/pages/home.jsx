@@ -14,6 +14,8 @@ import tiger from "../assets/Art/HelenaYu/helenaArt.jpeg"
 
 //col-#, # is number of units out of 12 it will take up, if not specified, the other cols just split
 //rest of space
+
+// TODO: make clicking on art link to art page
 function Home() {
   return (
     <div>
@@ -141,16 +143,14 @@ function Home() {
             <h2 style={{textAlign:'right'}}> Art</h2>
               <figure class="image is-256x128" width="100%" height="100%">
                 <img src={ophelia} width="100%" height="100%"/>
-                <a href="/art" style={{textDecoration: 'none'}}>
                   <em class="card-text" style={{textDecoration: 'none', color: 'black'}}>Ophelia</em>
-                </a>
               </figure>
 
               <figure class="image is-256x128" width="100%" height="100%">
                 <img src={girlSketch} width="100%" height="100%"/>
-                <a href="/art" style={{textDecoration: 'none'}}>
+                
                   <em class="card-text" style={{textDecoration: 'none', color: 'black'}}>Sketch</em>
-                </a>
+                
               </figure>
               
               <div style={{textAlight: 'right'}}>
@@ -161,9 +161,9 @@ function Home() {
 
               <figure class="image is-256x128" width="100%" height="100%">
                 <img src={tiger} width="100%" height="100%"/>
-                <a href="/art" style={{textDecoration: 'none'}}>
+                
                   <em class="card-text" style={{textDecoration: 'none', color: 'black'}}>Nian</em>
-                </a>
+                
               </figure>
               
               <div style={{textAlight: 'right'}}>
