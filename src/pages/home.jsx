@@ -11,14 +11,18 @@ import ophelia from "../assets/Art/EthanZhang/Ophelia_painting.jpg"
 import girlSketch from "../assets/Art/EthanZhang/girl_long_hair_sketch.jpg"
 import tiger from "../assets/Art/HelenaYu/helenaArt.jpeg"
 // text files
-
+import { Helmet } from 'react-helmet';
 //col-#, # is number of units out of 12 it will take up, if not specified, the other cols just split
 //rest of space
-
+const TITLE = 'DAY USC';
 // TODO: make clicking on art link to art page
 function Home() {
   return (
     <div>
+    <Helmet>
+          <title>{ TITLE }</title>
+      </Helmet>
+
     <div class="py-3">
       <div class="container">
         <div class="row">

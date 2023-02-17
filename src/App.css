@@ -57,22 +57,22 @@
 
 @font-face {
   font-family:'Greycliff';
-  src:local('Greycliff'), url(./assets/Fonts/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf) format('opentype');
+  src:local('Greycliff'), url('./assets/Fonts/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf') format('opentype');
 }
 
 @font-face {
   font-family:'NewEditorial';
-  src:local('NewEditorial'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Regular.otf) format('opentype');
+  src:local('NewEditorial'), url('./assets/Fonts/PPEditorialNew/PPEditorialNew-Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family:'NewEditorialLight';
-  src:local('NewEditorialLight'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Ultralight.otf) format('opentype');
+  src:local('NewEditorialLight'), url('./assets/Fonts/PPEditorialNew/PPEditorialNew-Ultralight.otf') format('opentype');
 }
 
 @font-face {
   font-family:'NewEditorialBold';
-  src:local('NewEditorialBold'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Ultrabold.otf) format('opentype');
+  src:local('NewEditorialBold'), url('./assets/Fonts/PPEditorialNew/PPEditorialNew-Ultrabold.otf') format('opentype');
 }
 
 body {
