@@ -25,7 +25,6 @@ const linkStyle = {
 // TODO: include <Route path="/art" element={<Art />} />
 const App = () => {
   return (
-
     <Router>
     {Title()}
     {Navbar()}
