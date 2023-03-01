@@ -27,11 +27,6 @@
   }
   
   @font-face {
-    font-family:'NewEditorialLight';
-    src:local('NewEditorialLight'), url(fonts/PPEditorialNew/PPEditorialNew-Ultralight.otf) format('opentype');
-  }
-  
-  @font-face {
     font-family:'NewEditorialBold';
     src:local('NewEditorialBold'), url(fonts/PPEditorialNew/PPEditorialNew-Ultrabold.otf) format('opentype');
   }
