@@ -14,6 +14,19 @@
   }
   
   @font-face {
+    font-family: 'NewEditorialLight';
+    src: url('fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot');
+    src: url('fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff2') format('woff2'),
+        url('fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff') format('woff'),
+        url('fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.ttf') format('truetype'),
+        url('fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.svg#PPEditorialNew-Ultralight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
     font-family:'NewEditorialLight';
     src:local('NewEditorialLight'), url(fonts/PPEditorialNew/PPEditorialNew-Ultralight.otf) format('opentype');
   }
