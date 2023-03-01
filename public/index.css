@@ -5,7 +5,12 @@
   
   @font-face {
     font-family:'NewEditorial';
-    src:local('NewEditorial'), url(fonts/PPEditorialNew/PPEditorialNew-Regular.otf) format('opentype');
+    src: local('NewEditorial'), url('fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.otf') format('opentype');
+    src: local('NewEditorial.eot'), url('fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot');
+    src: local('NewEditorial.eot?#iefix'), url('fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot?#iefix') format('embedded-opentype'),
+         local('NewEditorial.woff2'), url('fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff2') format('woff2'),
+         local('NewEditorial.woff'), url('fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff') format('woff'),
+         local('NewEditorial.ttf'), url('fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.ttf') format('ttf');
   }
   
   @font-face {
