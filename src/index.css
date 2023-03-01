@@ -5,12 +5,25 @@
 
 @font-face {
   font-family:'NewEditorial';
-  src:local('NewEditorial'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Regular.otf) format('opentype');
+  src: local('NewEditorial'), url('../public/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.otf') format('opentype');
+  src: local('NewEditorial.eot'), url('../public/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot');
+  src: local('NewEditorial.eot?#iefix'), url('../public/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot?#iefix') format('embedded-opentype'),
+       local('NewEditorial.woff2'), url('../public/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff2') format('woff2'),
+       local('NewEditorial.woff'), url('../public/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff') format('woff'),
+       local('NewEditorial.ttf'), url('../public/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.ttf') format('ttf');
 }
 
 @font-face {
-  font-family:'NewEditorialLight';
-  src:local('NewEditorialLight'), url(./assets/Fonts/PPEditorialNew/PPEditorialNew-Ultralight.otf) format('opentype');
+  font-family: 'NewEditorialLight';
+  src: url('../public/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot');
+  src: url('../public/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff2') format('woff2'),
+      url('../public/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff') format('woff'),
+      url('../public/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.ttf') format('truetype'),
+      url('../public/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.svg#PPEditorialNew-Ultralight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
