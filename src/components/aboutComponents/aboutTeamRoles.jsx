@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function AboutTeamRoles() 
 {
     return (
@@ -9,19 +10,19 @@ function AboutTeamRoles()
                 </div>
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <h5 class="py-2"><i>Illustrators</i></h5>
                     </div>
 
-                    <div class="col">
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <h5 class="py-2"><i>Writers</i></h5>
                     </div>
 
-                    <div class="col">
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <h5 class="py-2"><i>Editors</i></h5>
                     </div>
 
-                    <div class="col">
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <h5 class="py-2"><i>Projects</i></h5>
                     </div>
 
@@ -31,25 +32,25 @@ function AboutTeamRoles()
                 </div>
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <p class="py-2">
                                 Curates infographics and graphics to share on DAY’s social media platforms. Also, illustrates images used for promotion and events.
                             </p>
                     </div>
-
-                    <div class="col">
+                    
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <p class="py-2">
                                 Research current events regarding APIDA issues to include in DAY USC’s social media posts. Writes short stories, prose, poems, and general creative writing related to the APIDA experience.
                             </p>
                     </div>
 
-                    <div class="col">
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <p class="py-2">
                                 Works alongside writers, assisting them with grammar and fact-checking, the credibility of sources, and producing literature pieces as well as IG captions.
                             </p>
                     </div>
 
-                    <div class="col">
+                    <div class="col" style={{borderRight: '1px solid black'}}>
                             <p class="py-2">
                                 Brainstorms and develops activities and events promoting DAY’s mission. Collaborates with other (campus) organizations to host events.
                             </p>
