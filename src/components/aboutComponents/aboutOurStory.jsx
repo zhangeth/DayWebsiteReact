@@ -43,12 +43,14 @@ function AboutOurStory()
                 </p>
             </div>
 
+            <h5 class="px-4 py-4" style={{textAlign:'right'}}> 
+                    Yi-Ann (Chapter President) 
+            </h5>
+
             <hr></hr>
 
             <div>
-                <h5 class="px-4 py-4" style={{textAlign:'right'}}> 
-                    Yi-Ann (Chapter President) 
-                </h5>
+                
             </div>
 
         </div>
