@@ -10,6 +10,7 @@ function Navbar() {
                 <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>
                 <li class="nav-item"><a href="/about" class="nav-link link-dark px-2">About</a></li>
                 <li class="nav-item"><a href="/art" class="nav-link link-dark px-2">Art</a></li>
+                <li class="nav-item"><a href="/literature" class="nav-link link-dark px-2">Literature</a></li>
             </ul>
         </div>
     </nav>

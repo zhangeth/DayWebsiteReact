@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 import Home from "./pages/home"
 import About from "./pages/about"
 import Art from "./pages/art"
+import Literature from "./pages/literature"
  
 // article pages for now
 import Colonialism from "./pages/colonialism";
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/art" element={<Art />} />
+        <Route path="/literature" element={<Literature />} />
         <Route path="/colonialism" element={<Colonialism />} />
         <Route path="/monterey" element={<Monterey />} />
         <Route path="/kpop" element={<Kpop />} />
