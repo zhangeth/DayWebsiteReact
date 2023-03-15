@@ -1,5 +1,6 @@
 import HomeHero from "../components/HomeHero/homeHero";
 import AboutHero from "../components/aboutComponents/aboutHero";
+import DAYHistoryHero from "../components/DAYHistoryHero";
 
 // Eboard images
 import YiAnn from "../assets/Eboard/Yi-Ann.jpg"
@@ -149,7 +150,7 @@ function About() {
                     </div>
                 </div>
             </div>
-
+            {DAYHistoryHero()}
             </div>
 	);
 }
