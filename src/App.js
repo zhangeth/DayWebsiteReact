@@ -22,9 +22,9 @@ const linkStyle = {
   color: 'blue'
 };
 
+// TODO: include <Route path="/art" element={<Art />} />
 const App = () => {
   return (
-
     <Router>
     {Title()}
     {Navbar()}
@@ -32,7 +32,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/art" element={<Art />} />
+        
         <Route path="/colonialism" element={<Colonialism />} />
         <Route path="/monterey" element={<Monterey />} />
         <Route path="/kpop" element={<Kpop />} />

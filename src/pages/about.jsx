@@ -1,6 +1,8 @@
 import HomeHero from "../components/HomeHero/homeHero";
 import AboutHero from "../components/aboutComponents/aboutHero";
 import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
+import AboutOurStory from "../components/aboutComponents/aboutOurStory";
+import AboutTeamRoles from "../components/aboutComponents/aboutTeamRoles";
 
 // Eboard images
 import YiAnn from "../assets/Eboard/Yi-Ann.jpg"
@@ -152,7 +154,12 @@ function About() {
                     </div>
                 </div>
             </div>
-                
+
+            <div class="py-4"></div>
+
+            {AboutOurStory()}
+
+            {AboutTeamRoles()}
         </div>
 	);
 }
