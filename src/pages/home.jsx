@@ -5,6 +5,7 @@ import monterey from "../assets/ArticlePics/MontereyPic.jpg"
 import kimSejeong from "../assets/ArticlePics/kimSejeong.jpg"
 import fashionPic from "../assets/ArticlePics/fashionPic.jpg"
 import koreanGrandma from "../assets/ProsePics/koreanGrandma.png"
+import DAYhistory from "../assets/DAYhistory.jpg"
 
 // art
 import ophelia from "../assets/Art/EthanZhang/Ophelia_painting.jpg"
