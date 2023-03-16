@@ -1,4 +1,4 @@
-import HomeHero from "../components/HomeHero/homeHero";
+import HomeHero from "../components/homeComponents/homeHero";
 import AboutHero from "../components/aboutComponents/aboutHero";
 import DAYHistoryHero from "../components/DAYHistoryHero";
 import AboutOurStory from "../components/aboutComponents/aboutOurStory";
