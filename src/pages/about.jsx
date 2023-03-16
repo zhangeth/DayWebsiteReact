@@ -1,6 +1,6 @@
 import HomeHero from "../components/HomeHero/homeHero";
 import AboutHero from "../components/aboutComponents/aboutHero";
-import DAYHistoryHero from "../components/DAYHistoryHero";
+import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
 
 // Eboard images
 import YiAnn from "../assets/Eboard/Yi-Ann.jpg"
@@ -18,10 +18,12 @@ function About() {
 	return (
 		<div class="py-3 mb-4 border-bottom">
             {HomeHero()}
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            {DAYHistoryHero()}
 
-
+            <a 
+                href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
             </a>
+            
             <div class="container">
                 <div class="row">
                     <div>
@@ -150,8 +152,8 @@ function About() {
                     </div>
                 </div>
             </div>
-            {DAYHistoryHero()}
-            </div>
+                
+        </div>
 	);
 }
 export default About;
