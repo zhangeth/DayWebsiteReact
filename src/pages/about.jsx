@@ -1,5 +1,6 @@
 import HomeHero from "../components/HomeHero/homeHero";
 import AboutHero from "../components/aboutComponents/aboutHero";
+import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
 import AboutOurStory from "../components/aboutComponents/aboutOurStory";
 import AboutTeamRoles from "../components/aboutComponents/aboutTeamRoles";
 
@@ -19,10 +20,12 @@ function About() {
 	return (
 		<div class="py-3 mb-4 border-bottom">
             {HomeHero()}
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+            {DAYHistoryHero()}
 
-
+            <a 
+                href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
             </a>
+            
             <div class="container">
                 <div class="row">
                     <div>
@@ -157,7 +160,6 @@ function About() {
             {AboutOurStory()}
 
             {AboutTeamRoles()}
-
         </div>
 	);
 }
