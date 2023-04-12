@@ -33,12 +33,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-<<<<<<< HEAD
-        <Route path="/art" element={<Art />} />
         <Route path="/literature" element={<Literature />} />
-=======
-        
->>>>>>> aad66e758afd7e871f7e35b9ccccfb9eae927653
         <Route path="/colonialism" element={<Colonialism />} />
         <Route path="/monterey" element={<Monterey />} />
         <Route path="/kpop" element={<Kpop />} />
