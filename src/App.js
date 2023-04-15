@@ -2,8 +2,15 @@ import Navbar from "./components/Navbar/navbar";
 import Title from "./components/Title/title";
 import Footer from "./components/footer";
 
-import React from "react";
+import { Amplify, API, graphqlOperation } from 'aws-amplify';
+import awsconfig from './aws-exports';
+
+import {listArticleModels,syncArticleModels, syncAuthorModels} from './graphql/queries';
+
+import React, { useEffect, useState} from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
+
+import renderArticle from "./components/renderArticle";
 
 import Home from "./pages/home"
 import About from "./pages/about"
@@ -23,13 +30,89 @@ const linkStyle = {
   color: 'blue'
 };
 
+async function fetchArticles() {
+  try {
+    const response = await API.graphql(graphqlOperation(listArticleModels));
+    const articles = response.data.listArticleModels.items;
+    console.log(articles[0]);
+    return articles;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function syncArticles(lastSync) {
+  const response = await API.graphql(
+    graphqlOperation(syncArticleModels, {
+      filter: {},
+      limit: 1000,
+      lastSync: lastSync,
+    })
+    
+  );
+  console.log("synced response ", response.data.syncArticleModels.items);
+  const syncedItems = response.data.syncArticleModels.items;
+  // Process synced items...
+  return syncedItems;
+}
+
+
+function ArticleList() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    async function fetchArticles() {
+      const response = await API.graphql(graphqlOperation(listArticleModels));
+      console.log("Reponse: " , response);
+      setArticles(response.data.listArticleModels.items);
+    }
+    fetchArticles();
+  }, []);
+
+  return (
+    <div>
+      <ul>
+      <div class="py-3">
+        <div class="container">
+        <div class="row">
+        <h2 class="text-decoration-underline">Articles</h2>
+        </div>
+          <div class="row">
+              
+              {articles.map((article) => (
+                
+              <li key={article.id}>
+                <h3>{article.name}</h3>
+              </li>
+            ))}
+          </div>
+        </div>
+      </div> 
+      </ul>
+    </div>
+  );
+}
+
+
+Amplify.configure(awsconfig);
+
 // TODO: include <Route path="/art" element={<Art />} />
 const App = () => {
+  useEffect(() => {
+    async function getData() {
+      const syncedItems = await syncArticles(null);
+      const articles = await fetchArticles();
+      console.log(syncedItems);
+      console.log(articles);
+    }
+    getData();
+  }, []);
+
   return (
     <Router>
     {Title()}
     {Navbar()}
-     
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -40,6 +123,7 @@ const App = () => {
         <Route path="/fashion" element={<Fashion />} />
         <Route path="/halmoni" element={<Halmoni />} />
       </Routes>
+      {ArticleList()}
       {Footer()}
     </Router>
 
