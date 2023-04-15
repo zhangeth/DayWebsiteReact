@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'pp_right_sansmedium';
+    src: url('pprightsans-medium.woff2') format('woff2'),
+         url('pprightsans-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

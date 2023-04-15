@@ -1,7 +1,7 @@
 import queen from "../assets/ArticlePics/queenElizabeth.jpg"
 import monterey from "../assets/ArticlePics/MontereyPic.jpg"
 import kimSejeong from "../assets/ArticlePics/kimSejeong.jpg"
-import fashionPic from "../assets/ArticlePics/fashionPic.webp"
+import fashionPic from "../assets/ArticlePics/fashionPic.jpg"
 import koreanGrandma from "../assets/ProsePics/koreanGrandma.png"
 
 import LiteratureContainer from "../components/litComponents/litContainer.jsx"
