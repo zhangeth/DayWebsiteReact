@@ -1,4 +1,4 @@
-import HomeHero from "../components/HomeHero/homeHero";
+import HomeHero from "../components/homeComponents/homeHero";
 import AboutHero from "../components/aboutComponents/aboutHero";
 import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
 import AboutOurStory from "../components/aboutComponents/aboutOurStory";
@@ -154,6 +154,8 @@ function About() {
                     </div>
                 </div>
             </div>
+            
+            {DAYHistoryHero()}
 
             <div class="py-4"></div>
 
