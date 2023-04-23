@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'pp_radio_groteskblack';
+    src: url('ppradiogrotesk-black.woff2') format('woff2'),
+         url('ppradiogrotesk-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

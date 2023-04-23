@@ -9,13 +9,26 @@ function Halmoni()
                 </div>
 
                 <div class="col-8">
-                    <h2 class="py-4" style={{textAlign:'center'}}> “Halmoni and Me”</h2>
+                    <h6 class="h6v2 pt-4 pb-2" style={{textAlign:'center'}}> FAMILY & HERITAGE </h6>
 
-                    <p class="text-muted" style={{textAlign:'center'}}>
-                        By: Jessica Tadokoro
-                    </p>
+                    <h2 class="h2v2 py-4" style={{textAlign:'center'}}> “Halmoni and Me”</h2>
 
-                    <p>
+                    <h6 class="h6v4 pb-2" style={{textAlign:'center'}}>
+                        BY: JESSICA TADOKORO
+                    </h6>
+
+                    <h6 class="h6v3 pb-4" style={{textAlign:'center'}}>
+                        November 2020
+                    </h6>
+
+                    <div style={{display:'flex', alignItems:'center'}}>
+                        <div style={{width:'100%', backgroundColor:'black', height:'5px'}}></div>
+                    </div>
+
+                    <div class="py-2">
+                    </div>
+
+                    <p class="pv2 py-2">
                         Our relationship is complex. <br></br>
                         a towering wall stands between us <br></br>
                         and no matter how many times we cry out to each other, <br></br>
@@ -27,7 +40,7 @@ function Halmoni()
                         incoherent phrases and intonations ring in my ears, <br></br>
                         taunting me as i drown in guilt, isolation, shame, and anxiety.<br></br>                     
                     </p>
-                    <p class="py-2">
+                    <p class="pv2 py-2">
                         Our relationship is complex.<br></br> 
                         but maybe not as complex as i thought!<br></br> 
                         ten-year-old me was <br></br> 
@@ -39,7 +52,7 @@ function Halmoni()
                         reaching me in whispers, wrapping me in Love<br></br> 
                         even though i’m standing on the other side of the wall.
                     </p>
-                    <p class="py-2">
+                    <p class="pv2 py-2">
                         i don’t have to speak korean to know her Love.<br></br> 
                         i feel it in every embrace: <br></br> 
                         her strong hands firmly patting my back, her small frame enveloping<br></br> 
@@ -56,7 +69,7 @@ function Halmoni()
                         all along, this is how she was saying<br></br> 
                         “jessica, I Love You.”
                     </p>
-                    <p class="py-2">
+                    <p class="pv2 py-2">
                         Our relationship is complex.<br></br> 
                         yes, that battered wall still stands today <br></br> 
                         but it’s crumbling, crumbling, crumbling:<br></br> 

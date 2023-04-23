@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'pp_pangram_sansbold';
+    src: url('pppangramsans-bold.woff2') format('woff2'),
+         url('pppangramsans-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
