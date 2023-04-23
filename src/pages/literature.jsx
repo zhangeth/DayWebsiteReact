@@ -21,7 +21,7 @@ const fashionPage = "/fashion";
 
 const shootingTitle = "Mass Shooting in Monterey Park on Lunar New Year's Eve";
 const shootingAuthor = "By: Yi-Ann";
-const shootingExcerpt = "On a night meant to be full of joy and ushering in luck and fortune, Lunar New Year festivities in Monterey Park faced a devastating tragedy. According to the Los Angeles Police Department, a gunman opened fire on Saturday night and killed ten people, wounding ten more.";
+const shootingExcerpt = "On a night meant to be full of joy and ushering in luck and fortune, Lunar New Year festivities in Monterey Park faced a devastating tragedy. According to the Los Angeles Police Department, a gunman opened fire on Saturday night and killed ten people, wounding ten more. As of now, details about the shooter are limited and not public. The gunman is still at large, and the second day of the Lunar New Year festival in Monterey Park has been canceled.";
 const shootingImageCredit = "Photographer: Jae C. Hong/AP";
 const shootingPage = "/monterey";
 

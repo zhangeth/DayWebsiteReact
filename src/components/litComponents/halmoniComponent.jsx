@@ -25,9 +25,9 @@ function HalmoniContainer(title, author, image, imageCredit, page)
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <figure class="image is-256x128" width="100%" height="100%">
-                        <img src={image} width="100%" height="100%"/>
+                <div class="col-6" style={{textAlign:'center'}}>
+                    <figure class="image is-256x128" width="60%" height="60%">
+                        <img src={image} width="60%" height="60%"/>
                         <p style={{fontSize:'x-small'}}>
                             {imageCredit}
                         </p>

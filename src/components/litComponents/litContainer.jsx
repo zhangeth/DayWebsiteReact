@@ -4,7 +4,7 @@ function LiteratureContainer(title, author, excerpt, image, imageCredit, page)
         <>
 
             <div class="row literature-container">
-                <div class="col-6 p-0">
+                <div class="col-6 px-4">
                     <div>
                         <h4 class="py-1" style={{textAlign:'center', color: 'black'}}>{title}</h4>
                         <h4 class="pb-2" style={{textAlign:'center', color: 'black'}}>{author}</h4>
@@ -18,9 +18,9 @@ function LiteratureContainer(title, author, excerpt, image, imageCredit, page)
                         <a class="btn btn-outline-danger" href={page} role="button">Continue Reading</a>
                     </div>
                 </div>
-                <div class="col-6">
-                    <figure class="image is-256x100" width="100%" height="100%">
-                        <img src={image} width="100%" height="100%"/>
+                <div class="col-6" style={{textAlign:'center'}}>
+                    <figure class="image is-256x100" width="70%" height="70%">
+                        <img src={image} width="70%" height="70%"/>
                         <p style={{fontSize:'x-small'}}>
                             {imageCredit}
                         </p>
