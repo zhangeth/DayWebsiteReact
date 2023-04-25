@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 
 import renderArticle from "./components/renderArticle";
 
-import Home from "./pages/Home"
+import Home from "./pages/home"
 import About from "./pages/about"
 import Art from "./pages/art"
  
