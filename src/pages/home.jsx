@@ -23,9 +23,7 @@ const TITLE = 'DAY USC';
 function Home() {
   return (
     <div>
-
           <title>{ TITLE }</title>
-
     <div class="py-3">
       <div class="container">
         <div class="row">

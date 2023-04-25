@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 
 import renderArticle from "./components/renderArticle";
 
-import Home from "./pages/home"
+import Home from "./pages/Home"
 import About from "./pages/about"
 import Art from "./pages/art"
  
@@ -121,7 +121,6 @@ const App = () => {
         <Route path="/fashion" element={<Fashion />} />
         <Route path="/halmoni" element={<Halmoni />} />
       </Routes>
-      {ArticleList()}
       {Footer()}
     </Router>
 
