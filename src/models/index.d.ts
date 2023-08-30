@@ -6,66 +6,98 @@ import { LazyLoading, LazyLoadingDisabled, AsyncCollection } from "@aws-amplify/
 
 
 
-type EagerAuthorModel = {
+type EagerSource = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<AuthorModel, 'id'>;
+    identifier: ManagedIdentifier<Source, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly name?: string | null;
-  readonly ArticleModels?: (ArticleModel | null)[] | null;
+  readonly link?: string | null;
+  readonly articleId: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
-type LazyAuthorModel = {
+type LazySource = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<AuthorModel, 'id'>;
+    identifier: ManagedIdentifier<Source, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
-  readonly name?: string | null;
-  readonly ArticleModels: AsyncCollection<ArticleModel>;
+  readonly link?: string | null;
+  readonly articleId: string;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
-export declare type AuthorModel = LazyLoading extends LazyLoadingDisabled ? EagerAuthorModel : LazyAuthorModel
+export declare type Source = LazyLoading extends LazyLoadingDisabled ? EagerSource : LazySource
 
-export declare const AuthorModel: (new (init: ModelInit<AuthorModel>) => AuthorModel) & {
-  copyOf(source: AuthorModel, mutator: (draft: MutableModel<AuthorModel>) => MutableModel<AuthorModel> | void): AuthorModel;
+export declare const Source: (new (init: ModelInit<Source>) => Source) & {
+  copyOf(source: Source, mutator: (draft: MutableModel<Source>) => MutableModel<Source> | void): Source;
 }
 
-type EagerArticleModel = {
+type EagerAuthor = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<ArticleModel, 'id'>;
+    identifier: ManagedIdentifier<Author, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly name?: string | null;
+  readonly Articles?: (Article | null)[] | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyAuthor = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Author, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly name?: string | null;
+  readonly Articles: AsyncCollection<Article>;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type Author = LazyLoading extends LazyLoadingDisabled ? EagerAuthor : LazyAuthor
+
+export declare const Author: (new (init: ModelInit<Author>) => Author) & {
+  copyOf(source: Author, mutator: (draft: MutableModel<Author>) => MutableModel<Author> | void): Author;
+}
+
+type EagerArticle = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Article, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
   readonly content?: string | null;
   readonly name?: string | null;
   readonly date?: string | null;
-  readonly authormodelID: string;
+  readonly authorId: string;
+  readonly Sources?: (Source | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
-type LazyArticleModel = {
+type LazyArticle = {
   readonly [__modelMeta__]: {
-    identifier: ManagedIdentifier<ArticleModel, 'id'>;
+    identifier: ManagedIdentifier<Article, 'id'>;
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
   readonly content?: string | null;
   readonly name?: string | null;
   readonly date?: string | null;
-  readonly authormodelID: string;
+  readonly authorId: string;
+  readonly Sources: AsyncCollection<Source>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
 
-export declare type ArticleModel = LazyLoading extends LazyLoadingDisabled ? EagerArticleModel : LazyArticleModel
+export declare type Article = LazyLoading extends LazyLoadingDisabled ? EagerArticle : LazyArticle
 
-export declare const ArticleModel: (new (init: ModelInit<ArticleModel>) => ArticleModel) & {
-  copyOf(source: ArticleModel, mutator: (draft: MutableModel<ArticleModel>) => MutableModel<ArticleModel> | void): ArticleModel;
+export declare const Article: (new (init: ModelInit<Article>) => Article) & {
+  copyOf(source: Article, mutator: (draft: MutableModel<Article>) => MutableModel<Article> | void): Article;
 }

@@ -1,7 +1,82 @@
 export const schema = {
     "models": {
-        "AuthorModel": {
-            "name": "AuthorModel",
+        "Source": {
+            "name": "Source",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "link": {
+                    "name": "link",
+                    "isArray": false,
+                    "type": "AWSURL",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "articleId": {
+                    "name": "articleId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "Sources",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byArticle",
+                        "fields": [
+                            "articleId"
+                        ]
+                    }
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "Author": {
+            "name": "Author",
             "fields": {
                 "id": {
                     "name": "id",
@@ -17,11 +92,11 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "ArticleModels": {
-                    "name": "ArticleModels",
+                "Articles": {
+                    "name": "Articles",
                     "isArray": true,
                     "type": {
-                        "model": "ArticleModel"
+                        "model": "Article"
                     },
                     "isRequired": false,
                     "attributes": [],
@@ -29,7 +104,7 @@ export const schema = {
                     "association": {
                         "connectionType": "HAS_MANY",
                         "associatedWith": [
-                            "authormodelID"
+                            "authorId"
                         ]
                     }
                 },
@@ -51,7 +126,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "AuthorModels",
+            "pluralName": "Authors",
             "attributes": [
                 {
                     "type": "model",
@@ -75,8 +150,8 @@ export const schema = {
                 }
             ]
         },
-        "ArticleModel": {
-            "name": "ArticleModel",
+        "Article": {
+            "name": "Article",
             "fields": {
                 "id": {
                     "name": "id",
@@ -106,12 +181,28 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "authormodelID": {
-                    "name": "authormodelID",
+                "authorId": {
+                    "name": "authorId",
                     "isArray": false,
                     "type": "ID",
                     "isRequired": true,
                     "attributes": []
+                },
+                "Sources": {
+                    "name": "Sources",
+                    "isArray": true,
+                    "type": {
+                        "model": "Source"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "articleId"
+                        ]
+                    }
                 },
                 "createdAt": {
                     "name": "createdAt",
@@ -131,7 +222,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "ArticleModels",
+            "pluralName": "Articles",
             "attributes": [
                 {
                     "type": "model",
@@ -140,9 +231,9 @@ export const schema = {
                 {
                     "type": "key",
                     "properties": {
-                        "name": "byAuthorModel",
+                        "name": "byAuthor",
                         "fields": [
-                            "authormodelID"
+                            "authorId"
                         ]
                     }
                 },
@@ -167,6 +258,6 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "codegenVersion": "3.4.0",
-    "version": "17b6969d4d81f2766cb661f88c0fdb05"
+    "codegenVersion": "3.4.4",
+    "version": "cde59caa03b9afe4ebb621014b8eefc8"
 };

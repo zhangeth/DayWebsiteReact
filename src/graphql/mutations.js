@@ -1,120 +1,198 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createAuthorModel = /* GraphQL */ `
-  mutation CreateAuthorModel(
-    $input: CreateAuthorModelInput!
-    $condition: ModelAuthorModelConditionInput
+export const createSource = /* GraphQL */ `
+  mutation CreateSource(
+    $input: CreateSourceInput!
+    $condition: ModelSourceConditionInput
   ) {
-    createAuthorModel(input: $input, condition: $condition) {
+    createSource(input: $input, condition: $condition) {
+      id
+      link
+      articleId
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const updateSource = /* GraphQL */ `
+  mutation UpdateSource(
+    $input: UpdateSourceInput!
+    $condition: ModelSourceConditionInput
+  ) {
+    updateSource(input: $input, condition: $condition) {
+      id
+      link
+      articleId
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const deleteSource = /* GraphQL */ `
+  mutation DeleteSource(
+    $input: DeleteSourceInput!
+    $condition: ModelSourceConditionInput
+  ) {
+    deleteSource(input: $input, condition: $condition) {
+      id
+      link
+      articleId
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const createAuthor = /* GraphQL */ `
+  mutation CreateAuthor(
+    $input: CreateAuthorInput!
+    $condition: ModelAuthorConditionInput
+  ) {
+    createAuthor(input: $input, condition: $condition) {
       id
       name
-      ArticleModels {
+      Articles {
         nextToken
         startedAt
+        __typename
       }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;
-export const updateAuthorModel = /* GraphQL */ `
-  mutation UpdateAuthorModel(
-    $input: UpdateAuthorModelInput!
-    $condition: ModelAuthorModelConditionInput
+export const updateAuthor = /* GraphQL */ `
+  mutation UpdateAuthor(
+    $input: UpdateAuthorInput!
+    $condition: ModelAuthorConditionInput
   ) {
-    updateAuthorModel(input: $input, condition: $condition) {
+    updateAuthor(input: $input, condition: $condition) {
       id
       name
-      ArticleModels {
+      Articles {
         nextToken
         startedAt
+        __typename
       }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;
-export const deleteAuthorModel = /* GraphQL */ `
-  mutation DeleteAuthorModel(
-    $input: DeleteAuthorModelInput!
-    $condition: ModelAuthorModelConditionInput
+export const deleteAuthor = /* GraphQL */ `
+  mutation DeleteAuthor(
+    $input: DeleteAuthorInput!
+    $condition: ModelAuthorConditionInput
   ) {
-    deleteAuthorModel(input: $input, condition: $condition) {
+    deleteAuthor(input: $input, condition: $condition) {
       id
       name
-      ArticleModels {
+      Articles {
         nextToken
         startedAt
+        __typename
       }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;
-export const createArticleModel = /* GraphQL */ `
-  mutation CreateArticleModel(
-    $input: CreateArticleModelInput!
-    $condition: ModelArticleModelConditionInput
+export const createArticle = /* GraphQL */ `
+  mutation CreateArticle(
+    $input: CreateArticleInput!
+    $condition: ModelArticleConditionInput
   ) {
-    createArticleModel(input: $input, condition: $condition) {
+    createArticle(input: $input, condition: $condition) {
       id
       content
       name
       date
-      authormodelID
+      authorId
+      Sources {
+        nextToken
+        startedAt
+        __typename
+      }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;
-export const updateArticleModel = /* GraphQL */ `
-  mutation UpdateArticleModel(
-    $input: UpdateArticleModelInput!
-    $condition: ModelArticleModelConditionInput
+export const updateArticle = /* GraphQL */ `
+  mutation UpdateArticle(
+    $input: UpdateArticleInput!
+    $condition: ModelArticleConditionInput
   ) {
-    updateArticleModel(input: $input, condition: $condition) {
+    updateArticle(input: $input, condition: $condition) {
       id
       content
       name
       date
-      authormodelID
+      authorId
+      Sources {
+        nextToken
+        startedAt
+        __typename
+      }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;
-export const deleteArticleModel = /* GraphQL */ `
-  mutation DeleteArticleModel(
-    $input: DeleteArticleModelInput!
-    $condition: ModelArticleModelConditionInput
+export const deleteArticle = /* GraphQL */ `
+  mutation DeleteArticle(
+    $input: DeleteArticleInput!
+    $condition: ModelArticleConditionInput
   ) {
-    deleteArticleModel(input: $input, condition: $condition) {
+    deleteArticle(input: $input, condition: $condition) {
       id
       content
       name
       date
-      authormodelID
+      authorId
+      Sources {
+        nextToken
+        startedAt
+        __typename
+      }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;

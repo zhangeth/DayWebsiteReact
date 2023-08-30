@@ -1,13 +1,21 @@
-type AuthorModel @model @auth(rules: [{allow: public}]) {
+type Source @model @auth(rules: [{allow: public}]) {
   id: ID!
-  name: String
-  ArticleModels: [ArticleModel] @hasMany(indexName: "byAuthorModel", fields: ["id"])
+  link: AWSURL
+  articleId: ID! @index(name: "byArticle")
 }
 
-type ArticleModel @model @auth(rules: [{allow: public}]) {
+type Author @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  Articles: [Article] @hasMany(indexName: "byAuthor", fields: ["id"])
+}
+
+type Article @model @auth(rules: [{allow: public}]) {
   id: ID!
   content: String
   name: String
   date: AWSDate
-  authormodelID: ID! @index(name: "byAuthorModel")
-} 
+  authorId: ID! @index(name: "byAuthor")
+  Sources: [Source] @hasMany(indexName: "byArticle", fields: ["id"])
+}
+ 

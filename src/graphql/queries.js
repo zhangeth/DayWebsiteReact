@@ -1,30 +1,133 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getAuthorModel = /* GraphQL */ `
-  query GetAuthorModel($id: ID!) {
-    getAuthorModel(id: $id) {
+export const getSource = /* GraphQL */ `
+  query GetSource($id: ID!) {
+    getSource(id: $id) {
+      id
+      link
+      articleId
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      __typename
+    }
+  }
+`;
+export const listSources = /* GraphQL */ `
+  query ListSources(
+    $filter: ModelSourceFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listSources(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        link
+        articleId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const syncSources = /* GraphQL */ `
+  query SyncSources(
+    $filter: ModelSourceFilterInput
+    $limit: Int
+    $nextToken: String
+    $lastSync: AWSTimestamp
+  ) {
+    syncSources(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+      lastSync: $lastSync
+    ) {
+      items {
+        id
+        link
+        articleId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const sourcesByArticleId = /* GraphQL */ `
+  query SourcesByArticleId(
+    $articleId: ID!
+    $sortDirection: ModelSortDirection
+    $filter: ModelSourceFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    sourcesByArticleId(
+      articleId: $articleId
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        link
+        articleId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        __typename
+      }
+      nextToken
+      startedAt
+      __typename
+    }
+  }
+`;
+export const getAuthor = /* GraphQL */ `
+  query GetAuthor($id: ID!) {
+    getAuthor(id: $id) {
       id
       name
-      ArticleModels {
+      Articles {
         nextToken
         startedAt
+        __typename
       }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;
-export const listAuthorModels = /* GraphQL */ `
-  query ListAuthorModels(
-    $filter: ModelAuthorModelFilterInput
+export const listAuthors = /* GraphQL */ `
+  query ListAuthors(
+    $filter: ModelAuthorFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listAuthorModels(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listAuthors(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
@@ -33,20 +136,22 @@ export const listAuthorModels = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
+        __typename
       }
       nextToken
       startedAt
+      __typename
     }
   }
 `;
-export const syncAuthorModels = /* GraphQL */ `
-  query SyncAuthorModels(
-    $filter: ModelAuthorModelFilterInput
+export const syncAuthors = /* GraphQL */ `
+  query SyncAuthors(
+    $filter: ModelAuthorFilterInput
     $limit: Int
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncAuthorModels(
+    syncAuthors(
       filter: $filter
       limit: $limit
       nextToken: $nextToken
@@ -60,60 +165,70 @@ export const syncAuthorModels = /* GraphQL */ `
         _version
         _deleted
         _lastChangedAt
+        __typename
       }
       nextToken
       startedAt
+      __typename
     }
   }
 `;
-export const getArticleModel = /* GraphQL */ `
-  query GetArticleModel($id: ID!) {
-    getArticleModel(id: $id) {
+export const getArticle = /* GraphQL */ `
+  query GetArticle($id: ID!) {
+    getArticle(id: $id) {
       id
       content
       name
       date
-      authormodelID
+      authorId
+      Sources {
+        nextToken
+        startedAt
+        __typename
+      }
       createdAt
       updatedAt
       _version
       _deleted
       _lastChangedAt
+      __typename
     }
   }
 `;
-export const listArticleModels = /* GraphQL */ `
-  query ListArticleModels(
-    $filter: ModelArticleModelFilterInput
+export const listArticles = /* GraphQL */ `
+  query ListArticles(
+    $filter: ModelArticleFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listArticleModels(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listArticles(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         content
         name
         date
-        authormodelID
+        authorId
         createdAt
         updatedAt
         _version
         _deleted
         _lastChangedAt
+        __typename
       }
       nextToken
       startedAt
+      __typename
     }
   }
 `;
-export const syncArticleModels = /* GraphQL */ `
-  query SyncArticleModels(
-    $filter: ModelArticleModelFilterInput
+export const syncArticles = /* GraphQL */ `
+  query SyncArticles(
+    $filter: ModelArticleFilterInput
     $limit: Int
     $nextToken: String
     $lastSync: AWSTimestamp
   ) {
-    syncArticleModels(
+    syncArticles(
       filter: $filter
       limit: $limit
       nextToken: $nextToken
@@ -124,28 +239,30 @@ export const syncArticleModels = /* GraphQL */ `
         content
         name
         date
-        authormodelID
+        authorId
         createdAt
         updatedAt
         _version
         _deleted
         _lastChangedAt
+        __typename
       }
       nextToken
       startedAt
+      __typename
     }
   }
 `;
-export const articleModelsByAuthormodelID = /* GraphQL */ `
-  query ArticleModelsByAuthormodelID(
-    $authormodelID: ID!
+export const articlesByAuthorId = /* GraphQL */ `
+  query ArticlesByAuthorId(
+    $authorId: ID!
     $sortDirection: ModelSortDirection
-    $filter: ModelArticleModelFilterInput
+    $filter: ModelArticleFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    articleModelsByAuthormodelID(
-      authormodelID: $authormodelID
+    articlesByAuthorId(
+      authorId: $authorId
       sortDirection: $sortDirection
       filter: $filter
       limit: $limit
@@ -156,15 +273,17 @@ export const articleModelsByAuthormodelID = /* GraphQL */ `
         content
         name
         date
-        authormodelID
+        authorId
         createdAt
         updatedAt
         _version
         _deleted
         _lastChangedAt
+        __typename
       }
       nextToken
       startedAt
+      __typename
     }
   }
 `;
