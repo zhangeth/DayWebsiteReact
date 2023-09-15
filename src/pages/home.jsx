@@ -1,6 +1,5 @@
 
 import homeTemplate from "../components/homeComponents/homeTemplate.jsx"
-import {fetchArticles} from "../App.js"
 
 // text files
 //col-#, # is number of units out of 12 it will take up, if not specified, the other cols just split
@@ -10,7 +9,7 @@ const TITLE = 'DAY USC';
 function Home() {
   return (
     <div>
-      {fetchArticles()}
+      Test
     </div>
   );
 }

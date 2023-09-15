@@ -1,4 +1,4 @@
-import daylogo from "../../assets/DAYLogo.jpg";
+import daylogo from '../../assets/DAYLogo.jpg';
 
 function Title() {
 	//const ani = animationConstants;

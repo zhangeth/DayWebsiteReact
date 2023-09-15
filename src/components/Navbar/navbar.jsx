@@ -1,6 +1,3 @@
-import ArtPage from "../../pages/art";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
 function Navbar() {
 	//const ani = animationConstants;
     // TODO: add back art link
