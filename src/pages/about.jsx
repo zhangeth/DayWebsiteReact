@@ -1,7 +1,7 @@
-import HomeHero from "../components/homePageComponents/homeHero";
-import DAYHistoryHero from "../components/aboutPageComponents/DAYHistoryHero";
-import AboutOurStory from "../components/aboutPageComponents/aboutOurStory";
-import AboutTeamRoles from "../components/aboutPageComponents/aboutTeamRoles";
+import HomeHero from "../components/homeComponents/homeHero";
+import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
+import AboutOurStory from "../components/aboutComponents/aboutOurStory";
+import AboutTeamRoles from "../components/aboutComponents/aboutTeamRoles";
 
 // Eboard images
 import YiAnn from "../assets/Eboard/Yi-Ann.jpg"

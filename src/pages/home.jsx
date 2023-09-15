@@ -1,5 +1,5 @@
 
-import homeTemplate from "../components/homePageComponents/homeTemplate.jsx"
+import homeTemplate from "../components/homeComponents/homeTemplate.jsx"
 
 // text files
 //col-#, # is number of units out of 12 it will take up, if not specified, the other cols just split
