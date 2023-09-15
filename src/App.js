@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar/navbar";
-import Title from "./components/Title/title";
-import Footer from "./components/footer";
+import Navbar from "./components/globalComponents/navbar";
+import Title from "./components/globalComponents/title";
+import Footer from "./components/globalComponents/footer";
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
 import awsconfig from './aws-exports';
