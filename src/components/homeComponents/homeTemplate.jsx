@@ -1,4 +1,5 @@
 import '../../css/images.css'
+import '../../css/homeCard.css'
 
 function homeTemplate(imgurl, imgcred, contenturl, title, author){
     let state = imgcred === ""? false: true;
@@ -6,35 +7,31 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
 
     return(
     <div>
-      <figure class="imgBox">
+      <div class="imgBox">
         <a href={linkstate && contenturl}>
           <img src={imgurl}
             alt="Failed to Load"
           />
         </a>
-        <p style={{fontSize:'x-small'}}>
-          {state && imgcred}
+      </div>
+      <p style={{fontSize:'x-small', paddingBottom: '10px'}}>
+        {state && imgcred}
+      </p>
+      
+      
+      <div class="homeCard">
+        <a href={linkstate && contenturl}>
+          <h5 className="card-text">{title}</h5>
+        </a>
+      </div>
+
+      <div style={{textAlign: 'right'}}>
+        <p class="text-muted py-2" style={{textAlign:'right'}}>
+          By: {author}
         </p>
-      </figure>
-
-              <div class="card-body">
-                <a href={linkstate && contenturl} style={{textDecoration: 'none'}}>
-                    <h5 class="card-text" style={{textDecoration: 'none', color: 'black', transition:'textDecoration 0.5s', transitionTimingFunction: 'ease-out'}}
-                      onMouseOver={(link) => link.currentTarget.style.textDecoration = 'underline'}
-                      onMouseOut={(link) => link.currentTarget.style.textDecoration = 'none'}
-                    >
-                        {title} 
-                    </h5>
-                </a>
-              </div>
-
-              <div style={{textAlign: 'right'}}>
-                <p class="text-muted py-2" style={{textAlign:'right'}}>
-                  By: {author}
-                </p>
-              </div>
+      </div>
     </div>
-    );
+  );
 
 }
 
