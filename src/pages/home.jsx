@@ -11,7 +11,7 @@ import girlSketch from "../assets/Art/EthanZhang/girl_long_hair_sketch.jpg"
 import tiger from "../assets/Art/HelenaYu/helenaArt.jpg"
 
 // components
-import homeTemplate from "../components/homeComponents/homeTemplate.jsx"
+import homeTemplate from "../components/homeComponents/homeCard.jsx"
 
 const TITLE = 'DAY USC';
 
