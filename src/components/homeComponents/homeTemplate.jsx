@@ -6,7 +6,7 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
     let linkstate = contenturl === ""? false: true;
 
     return(
-    <div>
+    <div class='homeCard'>
       <div class="imgBox">
         <a href={linkstate && contenturl}>
           <img src={imgurl}
@@ -18,18 +18,13 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
         {state && imgcred}
       </p>
       
-      
-      <div class="homeCard">
-        <a href={linkstate && contenturl}>
-          <h5 className="card-text">{title}</h5>
-        </a>
-      </div>
+      <a href={linkstate && contenturl}>
+        <h5 class="card-title">{title}</h5>
+      </a>
 
-      <div style={{textAlign: 'right'}}>
-        <p class="text-muted py-2" style={{textAlign:'right'}}>
+      <p class='card-author'>
           By: {author}
-        </p>
-      </div>
+      </p>
     </div>
   );
 
