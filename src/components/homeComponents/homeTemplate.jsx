@@ -14,7 +14,7 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
           />
         </a>
       </div>
-      <p style={{fontSize:'x-small', paddingBottom: '10px'}}>
+      <p class='imgCred'>
         {state && imgcred}
       </p>
       
