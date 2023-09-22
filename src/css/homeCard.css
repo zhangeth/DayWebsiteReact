@@ -17,6 +17,9 @@
     transition: text-decoration 0.5s;
     transition-timing-function: ease-out;
   }
+  .homeCard .card-title:hover {
+    font-weight: 700;
+  }
 
   .homeCard .main-card-title {
     text-decoration: none;
