@@ -1,0 +1,17 @@
+/* Apply default styles to the image */
+.imgBox { /* now a container for the image */
+    display: inline-block; /* shrink wrap to image */
+    overflow: hidden; /* hide the excess */
+}
+.imgBox img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.3s ease;
+}
+
+/* Add a hover effect to magnify the image */
+.imgBox:hover img{
+    transform: scale(1.1); /* Increase the size by 10% on hover */
+    opacity: 0.65;
+}

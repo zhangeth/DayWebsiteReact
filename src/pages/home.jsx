@@ -15,6 +15,9 @@ import tiger from "../assets/Art/HelenaYu/helenaArt.jpg"
 //other components
 import homeTemplate from "../components/homeComponents/homeTemplate.jsx"
 
+// styles
+import '../css/images.css'
+
 // text files
 //col-#, # is number of units out of 12 it will take up, if not specified, the other cols just split
 //rest of space

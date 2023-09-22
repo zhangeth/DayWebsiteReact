@@ -1,14 +1,15 @@
+import '../../css/images.css'
+
 function homeTemplate(imgurl, imgcred, contenturl, title, author){
     let state = imgcred === ""? false: true;
     let linkstate = contenturl === ""? false: true;
 
     return(
     <div>
-      <figure class="image is-256x128" width="100%" height="100%">
+      <figure class="imgBox">
         <a href={linkstate && contenturl}>
-          <img src={imgurl} alt="Failed to Load" width="100%" height="100%" style={{opacity:'1', transition:'opacity 0.5s'}}
-            onMouseOver={(pic) => pic.currentTarget.style.opacity = '0.65'}
-            onMouseOut={(pic) => pic.currentTarget.style.opacity = '1'}
+          <img src={imgurl}
+            alt="Failed to Load"
           />
         </a>
         <p style={{fontSize:'x-small'}}>
