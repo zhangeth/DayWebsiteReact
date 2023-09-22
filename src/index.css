@@ -1,72 +1,175 @@
 @font-face {
-    font-family:'Greycliff';
-    src:local('Greycliff'), url(./assets/fonts/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf) format('opentype');
-  }
-  
-  @font-face {
-    font-family:'NewEditorial';
-    src: local('NewEditorial'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.otf') format('opentype');
-    src: local('NewEditorial.eot'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot');
-    src: local('NewEditorial.eot?#iefix'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot?#iefix') format('embedded-opentype'),
-         local('NewEditorial.woff2'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff2') format('woff2'),
-         local('NewEditorial.woff'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff') format('woff'),
-         local('NewEditorial.ttf'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.ttf') format('ttf');
-  }
-  
-  @font-face {
-    font-family: 'NewEditorialLight';
-    src: url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot');
-    src: url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff2') format('woff2'),
-        url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff') format('woff'),
-        url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.ttf') format('truetype'),
-        url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.svg#PPEditorialNew-Ultralight') format('svg');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family:'NewEditorialBold';
-    src:local('NewEditorialBold'), url(assets/fonts/PPEditorialNew/PPEditorialNew-Ultrabold.otf) format('opentype');
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'NewEditorialLight', 'sans-serif',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Greycliff',
-      monospace;
-  }
-  
-  h1 {
-    color: #B83826;
-    font-family: 'NewEditorial', sans-serif;
-    font-size: 100px;
-    font-weight: normal;
-    margin-top: 0px;
-    margin-bottom: 1px;
-  }
-  
-  h5 {
-    color:#B83826;
-    font-family: 'NewEditorialLight';
-    font-size:20px;
-    font-weight:normal;
-    margin-top:0px;
-    margin-bottom:0px;
-  }
-  
-  p {
-    font-family: 'sans-serif';
-    font-size:18px;
-    font-weight:normal;
-    margin-top:0px;
-    margin-bottom:0px;
-  }
+  font-family:'Greycliff';
+  src:local('Greycliff'), url(./assets/fonts/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'NewEditorial';
+  src: local('NewEditorial'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.otf') format('opentype');
+  src: local('NewEditorial.eot'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot');
+  src: local('NewEditorial.eot?#iefix'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot?#iefix') format('embedded-opentype'),
+       local('NewEditorial.woff2'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff2') format('woff2'),
+       local('NewEditorial.woff'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.woff') format('woff'),
+       local('NewEditorial.ttf'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'NewEditorialLight';
+  src: url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot');
+  src: url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.eot?#iefix') format('embedded-opentype'),
+      url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff2') format('woff2'),
+      url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.woff') format('woff'),
+      url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.ttf') format('truetype'),
+      url('assets/fonts/PPEditorialNew/PPEditorialNew-Light/PPEditorialNew-Ultralight.svg#PPEditorialNew-Ultralight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family:'NewEditorialBold';
+  src:local('NewEditorialBold'), url(assets/fonts/PPEditorialNew/PPEditorialNew-Ultrabold.otf) format('opentype');
+}
+
+@font-face {
+  font-family:'Pangram Sans Compact';
+  src: url('assets/fonts/PPPangramSans/PPPangramSans-CompactRegular.otf') format('opentype');
+  src: url('assets/fonts/PPPangramSans/pppangramsans-compactregular.woff2') format('woff2'),
+       url('assets/fonts/PPPangramSans/pppangramsans-compactregular.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Right Sans Medium';
+  src: url('assets/fonts/PPRightSans/PPRightSans-Medium.otf') format('opentype');
+  src: url('assets/fonts/PPRightSans/pprightsans-medium.woff2') format('woff2'),
+       url('assets/fonts/PPRightSans/pprightsans-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Fragment Text Regular';
+  src: url('assets/fonts/PPFragmentSans/PPFragment-TextRegular.otf') format('opentype');
+  src: url('assets/fonts/PPFragmentSans/ppfragment-textregular.woff2') format('woff2'),
+       url('assets/fonts/PPFragmentSans/ppfragment-textregular.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Radio Grotesk Black';
+  src: url('assets/fonts/PPRadioGrotesk/PPRadioGrotesk-Black.otf') format('opentype');
+  src: url('assets/fonts/PPRadioGrotesk/ppradiogrotesk-black.woff2') format('woff2'),
+       url('assets/fonts/PPRadioGrotesk/ppradiogrotesk-black.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Pangram Bold';
+  src: url('assets/fonts/PPPangramBold/PPPangramSans-Bold.otf') format('opentype');
+  src: url('assets/fonts/PPPangramBold/pppangramsans-bold.woff2') format('woff2'),
+       url('assets/fonts/PPPangramBold/pppangramsans-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Radio Grotesk Reg';
+  src: url('assets/fonts/PPRadioReg/PPRadioGrotesk-Regular.otf') format('opentype');
+  src: url('assets/fonts/PPRadioReg/ppradiogrotesk-regular.woff2') format('woff2'),
+       url('assets/fonts/PPRadioReg/ppradiogrotesk-regular.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: 'NewEditorialLight', 'sans-serif',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7e5de;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Greycliff',
+    monospace;
+}
+
+h1 {
+  color: #B83826;
+  font-family: 'NewEditorial', sans-serif;
+  font-size: 100px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+h5 {
+  color:#B83826;
+  font-family: 'NewEditorialLight';
+  font-size:20px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+p {
+  font-family: 'sans-serif';
+  font-size:18px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.pv2 {
+  font-family: 'Fragment Text Regular';
+  font-size:18px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.pv3 {
+  font-family: 'Radio Grotesk Reg';
+  font-size:18px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.h2v2 {
+  font-family: 'Right Sans Medium';
+  font-size:60px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.h4v2 {
+  color:#B83826;
+  font-family: 'Pangram Sans Compact';
+  font-size:35px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.h6v2 {
+  color:#B83826;
+  font-family: 'Pangram Sans Compact';
+  font-size:20px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.h6v3 {
+  color:#ffc72c;
+  font-family: 'Radio Grotesk Black';
+  font-size:20px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.h6v4 {
+  color:#B83826;
+  font-family: 'Pangram Bold';
+  font-size:20px;
+  font-weight:normal;
+  margin-top:0px;
+  margin-bottom:0px;
+}

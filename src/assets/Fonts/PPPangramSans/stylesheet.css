@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'pp_pangram_sanscompactRg';
+    src: url('pppangramsans-compactregular.woff2') format('woff2'),
+         url('pppangramsans-compactregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
