@@ -154,8 +154,6 @@ function About() {
                     </div>
                 </div>
             </div>
-            
-            {DAYHistoryHero()}
 
             <div class="py-4"></div>
 
