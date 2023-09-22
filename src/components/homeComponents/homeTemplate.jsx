@@ -9,11 +9,10 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
     <div class='homeCard'>
       <div class="imgBox">
         <a href={linkstate && contenturl}>
-          <img src={imgurl}
-            alt="Failed to Load"
-          />
+          <img src={imgurl} alt="Failed to Load"/>
         </a>
       </div>
+      
       <p class='imgCred'>
         {state && imgcred}
       </p>
