@@ -18,12 +18,12 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
       </p>
       
       <a href={linkstate && contenturl}>
-        <h5 class="card-title">{title}</h5>
+        <div class="card-title">{title}</div>
       </a>
 
-      <p class='card-author'>
+      <div class='card-author'>
           By: {author}
-      </p>
+      </div>
     </div>
   );
 
