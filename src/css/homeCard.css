@@ -1,0 +1,36 @@
+/* Style for the entire card */
+.homeCard {
+    display: inline-block; /* shrink wrap to image */
+    overflow: hidden; /* hide the excess */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .homeCard .card-title {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: text-decoration 0.5s;
+    transition-timing-function: ease-out;
+  }
+
+  .homeCard .card-author {
+    text-align: right;
+    font-weight: lighter;
+    padding-top: 2px;
+  }
+  
+  /* Style for the card link */
+  .homeCard a {
+    text-decoration: none;
+    color: black;
+    transition: text-decoration 0.5s;
+    transition-timing-function: ease-out;
+  }
+  
+  /* Hover effect for the card link */
+  .homeCard a:hover {
+    text-decoration: underline;
+  }
+  

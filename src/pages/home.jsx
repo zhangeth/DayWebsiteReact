@@ -1,25 +1,20 @@
-// components
 // article images
 import queen from "../assets/ArticlePics/queenElizabeth.jpg"
 import monterey from "../assets/ArticlePics/MontereyPic.jpg"
 import kimSejeong from "../assets/ArticlePics/kimSejeong.jpg"
 import fashionPic from "../assets/ArticlePics/fashionPic.jpg"
 import koreanGrandma from "../assets/ProsePics/koreanGrandma.png"
-import DAYhistory from "../assets/DAYhistory.jpg"
 
 // art
 import ophelia from "../assets/Art/EthanZhang/Ophelia_painting.jpg"
 import girlSketch from "../assets/Art/EthanZhang/girl_long_hair_sketch.jpg"
 import tiger from "../assets/Art/HelenaYu/helenaArt.jpg"
 
-//other components
+// components
 import homeTemplate from "../components/homeComponents/homeTemplate.jsx"
 
-// text files
-//col-#, # is number of units out of 12 it will take up, if not specified, the other cols just split
-//rest of space
 const TITLE = 'DAY USC';
-// TODO: make clicking on art link to art page
+
 function Home() {
   return (
     <div>
