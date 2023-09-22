@@ -23,9 +23,9 @@ const TITLE = 'DAY USC';
 function Home() {
   return (
     <div>
-          <title>{ TITLE }</title>
+    <title>{ TITLE }</title>
     <div class="py-3">
-      <div class="container">
+      <div class="container-fluid" style={{'max-width':'90%'}}>
         <div class="row">
 
           <div class="col" style={{borderRight: '1px solid black'}}>
@@ -69,7 +69,7 @@ function Home() {
         </div>
       </div>
       </div>
-      </div>
+    </div>
   );
 }
 
