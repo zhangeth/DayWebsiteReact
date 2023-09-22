@@ -11,7 +11,18 @@
     text-decoration: none;
     font: pv3;
     font-size: xx-large;
-    font-weight:600;
+    font-weight:550;
+    color: black;
+    padding-bottom: 5px;
+    transition: text-decoration 0.5s;
+    transition-timing-function: ease-out;
+  }
+
+  .homeCard .main-card-title {
+    text-decoration: none;
+    font: pv3;
+    font-size: xx-large;
+    font-weight:650;
     color: black;
     padding-bottom: 5px;
     transition: text-decoration 0.5s;
