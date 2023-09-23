@@ -1,9 +1,4 @@
 @font-face {
-  font-family:'Greycliff';
-  src:local('Greycliff'), url(./assets/fonts/Demo_Fonts/Fontspring-DEMO-greycliffcf-regular.otf) format('opentype');
-}
-
-@font-face {
   font-family:'NewEditorial';
   src: local('NewEditorial'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.otf') format('opentype');
   src: local('NewEditorial.eot'), url('assets/fonts/PPEditorialNew/PPEditorialNew-Regular/PPEditorialNew-Regular.eot');
@@ -83,7 +78,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Greycliff',
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
     monospace;
 }
 
