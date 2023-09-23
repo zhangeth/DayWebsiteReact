@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'pp_fragmenttext_regular';
+    src: url('ppfragment-textregular.woff2') format('woff2'),
+         url('ppfragment-textregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

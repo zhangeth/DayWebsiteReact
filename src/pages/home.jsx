@@ -11,7 +11,7 @@ import girlSketch from "../assets/Art/EthanZhang/girl_long_hair_sketch.jpg"
 import tiger from "../assets/Art/HelenaYu/helenaArt.jpg"
 
 // components
-import homeTemplate from "../components/homeComponents/homeTemplate.jsx"
+import homeTemplate from "../components/homeComponents/homeCard.jsx"
 
 const TITLE = 'DAY USC';
 
@@ -25,7 +25,7 @@ function Home() {
 
           <div class="col" style={{borderRight: '1px solid black'}}>
             <div>
-              <h3>Featured</h3>
+              <h3 style={{fontStyle:'italic'}}>Featured</h3>
               {homeTemplate(queen, "Bettman Archive, Getty Images", "/colonialism", "The Crown Jewels and Colonialism", "Bridget Zhang")}
               {homeTemplate(kimSejeong, "", "/kpop", "A Re-Cap of USC's K-Pop Festa", "Joseph Caluya")}
 
@@ -56,7 +56,7 @@ function Home() {
           </div>
 
           <div class="col" width="25%">
-            <h2 style={{textAlign:'right'}}> Art</h2>
+            <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Art</h2>
               {homeTemplate(ophelia, "", "", "Ophelia", "Ethan Zhang")}
               {homeTemplate(girlSketch, "", "", "Sketch", "Ethan Zhang")}
               {homeTemplate(tiger, "", "", "Nian", "Helena Yu")}
