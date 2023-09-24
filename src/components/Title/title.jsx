@@ -1,15 +1,13 @@
-import daylogo from "../../assets/DAYLogo.jpg";
+import dayLogo from "../../assets/DayLogoV2.png";
+import kimSejeong from '../../assets/ArticlePics/kimSejeong.jpg';
+import '../../css/globalComponents.css'
+
 
 function Title() {
 	//const ani = animationConstants;
 	return (
-		<div class="py-3" style={{textAlign:'center', fontWeight:'bold'}}>
-            <a href="/" style={{textDecoration:'none'}}>
-                <h1>
-                    DAY USC
-                </h1>
-                
-            </a>
+        <div class='webTitle'>
+            <h1>DAY USC</h1>
         </div>
 	);
 }
