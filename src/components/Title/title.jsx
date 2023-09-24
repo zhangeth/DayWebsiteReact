@@ -1,7 +1,4 @@
-import dayLogo from "../../assets/DayLogoV2.png";
-import kimSejeong from '../../assets/ArticlePics/kimSejeong.jpg';
-import '../../css/globalComponents.css'
-
+import '../../css/globalComponents.css';
 
 function Title() {
 	//const ani = animationConstants;
