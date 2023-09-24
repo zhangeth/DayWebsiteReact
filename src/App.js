@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/navbar";
 import Title from "./components/Title/title";
 import Footer from "./components/footer";
+import './css/globalComponents.css';
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
 import awsconfig from './aws-exports';
@@ -54,44 +55,15 @@ async function syncArticles(lastSync) {
   // Process synced items...
   return syncedItems;
 }
+window.onscroll = function() {scrollFunction()};
 
-
-function ArticleList() {
-  const [articles, setArticles] = useState([]);
-
-  useEffect(() => {
-    async function fetchArticles() {
-      const response = await API.graphql(graphqlOperation(listArticleModels));
-      console.log("Reponse: " , response);
-      setArticles(response.data.listArticleModels.items);
-    }
-    fetchArticles();
-  }, []);
-
-  return (
-    <div>
-      <ul>
-      <div class="py-3">
-        <div class="container">
-        <div class="row">
-        <h2 class="text-decoration-underline">Articles</h2>
-        </div>
-          <div class="row">
-              
-              {articles.map((article) => (
-                
-              <li key={article.id}>
-                <h3>{article.name}</h3>
-              </li>
-            ))}
-          </div>
-        </div>
-      </div> 
-      </ul>
-    </div>
-  );
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
 }
-
 
 Amplify.configure(awsconfig);
 
@@ -109,7 +81,9 @@ const App = () => {
 
   return (
     <Router>
-    {Title()}
+    <div id="header">DAY USC</div>
+    <div style={{ padding: '80px' }}></div>
+
     {Navbar()}
     
       <Routes>

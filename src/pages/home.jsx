@@ -25,7 +25,6 @@ function Home() {
 
           <div class="col" style={{borderRight: '1px solid black'}}>
             <div>
-              <h3 style={{fontStyle:'italic'}}>Featured</h3>
               {homeTemplate(queen, "Bettman Archive, Getty Images", "/colonialism", "The Crown Jewels and Colonialism", "Bridget Zhang")}
               {homeTemplate(kimSejeong, "", "/kpop", "A Re-Cap of USC's K-Pop Festa", "Joseph Caluya")}
 
@@ -37,13 +36,6 @@ function Home() {
 
           <div class="col-6" style={{borderRight: '1px solid black'}}>
             <div>
-              <div style={{textAlign:'center'}}>
-                <em style={{textAlign:'center'}}> Our lives begin to end the day we become silent about things that matter. </em>
-              </div>
-              <div style={{textAlign:'center'}}>
-                <p> - Martin Luther King Jr. </p>
-              </div>
-
               {homeTemplate(monterey, "Photographer: Jae C. Hong/AP", "/monterey", 
               "Mass Shooting in Monterey Park on Lunar New Year's Eve", "Yi-Ann")}
 
@@ -56,7 +48,7 @@ function Home() {
           </div>
 
           <div class="col" width="25%">
-            <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Art</h2>
+            <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News</h2>
               {homeTemplate(ophelia, "", "", "Ophelia", "Ethan Zhang")}
               {homeTemplate(girlSketch, "", "", "Sketch", "Ethan Zhang")}
               {homeTemplate(tiger, "", "", "Nian", "Helena Yu")}
