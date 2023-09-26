@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/navbar";
 import Title from "./components/Title/title";
 import Footer from "./components/footer";
+
 import './css/globalComponents.css';
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
@@ -24,65 +25,37 @@ import Kpop from "./pages/kpop";
 import Fashion from "./pages/fashion";
 import Halmoni from "./pages/prose/halmoni";
 
-const linkStyle = {
-  margin: "1rem",
-  textDecoration: "none",
-  color: 'blue'
-};
+let previousScrollPosition = 0;
 
-async function fetchArticles() {
-  try {
-    const response = await API.graphql(graphqlOperation(listArticleModels));
-    const articles = response.data.listArticleModels.items;
-    console.log(articles[0]);
-    return articles;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-async function syncArticles(lastSync) {
-  const response = await API.graphql(
-    graphqlOperation(syncArticleModels, {
-      filter: {},
-      limit: 1000,
-      lastSync: lastSync,
-    })
-    
-  );
-  console.log("synced response ", response.data.syncArticleModels.items);
-  const syncedItems = response.data.syncArticleModels.items;
-  // Process synced items...
-  return syncedItems;
-}
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 50) {
+  let goingDown = false;
+  let scrollPosition = window.scrollY;
+
+  if (scrollPosition > previousScrollPosition) {
+    goingDown = true;
+  }
+
+  previousScrollPosition = scrollPosition;
+
+  if (goingDown) {
     document.getElementById("header").style.fontSize = "30px";
   } else {
     document.getElementById("header").style.fontSize = "90px";
   }
+
 }
 
 Amplify.configure(awsconfig);
 
 // TODO: include <Route path="/art" element={<Art />} />
 const App = () => {
-  useEffect(() => {
-    async function getData() {
-      const syncedItems = await syncArticles(null);
-      const articles = await fetchArticles();
-      console.log(syncedItems);
-      console.log(articles);
-    }
-    getData();
-  }, []);
-
   return (
     <Router>
     <div id="header">DAY USC</div>
-    <div style={{ padding: '80px' }}></div>
+    <div style={{ paddingTop: '150px' }}></div>
+
 
     {Navbar()}
     

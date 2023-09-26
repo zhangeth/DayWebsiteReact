@@ -1,6 +1,6 @@
 #header {
     background-color: white; /* Grey background */
-    padding: 5px 5px; /* Some padding */
+    padding: 5px 3px; /* Some padding */
     color: #D72323;
     text-align: center; /* Centered text */
     font-family: 'Right Sans Medium';
@@ -9,6 +9,42 @@
     position: fixed; /* Fixed position - sit on top of the page */
     top: 0;
     width: 100%; /* Full width */
-    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    transition-delay: 0.4s;
     z-index: 1000;
+}
+
+/* Navbar container */
+.navbar-div {
+    padding: 0;
+    background-color: cornsilk;
+    border-bottom: 1px solid #DDD;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
+  
+  /* Navbar links */
+  .navbar-links {
+    background-color: #FFEEEE;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar-links li {
+    margin: 0;
+  }
+  
+  /* Navbar link style */
+  .navbar-link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #343a40;
+  }
+  
+  /* Navbar link on hover */
+  .navbar-link:hover {
+    background-color: #e9ecef;
+  }
+  
