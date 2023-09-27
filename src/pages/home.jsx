@@ -12,6 +12,7 @@ import tiger from "../assets/Art/HelenaYu/helenaArt.jpg"
 
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
+import "../css/globalComponents.css"
 
 const TITLE = 'DAY USC';
 
