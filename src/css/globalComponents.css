@@ -34,14 +34,19 @@
 #navbar a {
   float: left;
   display: block;
-  color: black;
+  font-weight: bold;
+  font-family: 'NewEditorial';
+  font-size: 15px;
+  color: #222222;
   text-align: right;
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #navbar a:hover {
-  background-color: #ddd;
   color: black;
+  text-decoration: underline;
 }
   

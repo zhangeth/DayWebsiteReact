@@ -48,8 +48,10 @@ Amplify.configure(awsconfig);
 const App = () => {
   return (
     <Router>
-    <h1 id="header"> DAY USC </h1>
-
+    <a href="/">
+      <h1 id="header"> DAY USC </h1>
+    </a>
+    
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
