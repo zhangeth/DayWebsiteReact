@@ -12,11 +12,11 @@ import Home from "./pages/home"
 import About from "./pages/about"
  
 // article pages for now
-import Colonialism from "./pages/colonialism";
+import Colonialism from "./pages/news/colonialism";
 import Monterey from "./pages/monterey";
-import Kpop from "./pages/kpop";
-import Fashion from "./pages/fashion";
-import Halmoni from "./pages/prose/halmoni";
+import Kpop from "./pages/news/kpop";
+import Fashion from "./pages/news/fashion";
+import Halmoni from "./pages/creative/halmoni";
 
 let previousScrollPosition = 0;
 
