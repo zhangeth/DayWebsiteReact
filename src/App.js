@@ -13,7 +13,7 @@ import About from "./pages/about"
  
 // article pages for now
 import Colonialism from "./pages/news/colonialism";
-import Monterey from "./pages/monterey";
+import Monterey from "./pages/news/monterey";
 import Kpop from "./pages/news/kpop";
 import Fashion from "./pages/news/fashion";
 import Halmoni from "./pages/creative/halmoni";
@@ -32,7 +32,7 @@ function scrollFunction() {
 
   previousScrollPosition = scrollPosition;
 
-  if (goingDown) {
+  if (goingDown && window.scrollY > 120) {
     document.getElementById("header").style.fontSize = "30px";
     document.getElementById("navbar").style.top = "-50px";
 
