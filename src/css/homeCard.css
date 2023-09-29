@@ -10,8 +10,8 @@
   .homeCard .card-title {
     text-decoration: none;
     font: pv3;
-    font-size: xx-large;
-    font-weight:550;
+    font-size: x-large;
+    font-weight:bold;
     color: black;
     padding-bottom: 5px;
     transition: text-decoration 0.5s;

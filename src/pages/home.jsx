@@ -12,34 +12,9 @@ import tiger from "../assets/Art/HelenaYu/helenaArt.jpg"
 
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
+import newsColumn from "../components/homeComponents/newsColumn.jsx"
 
 const TITLE = 'DAY USC';
-
-function newsColumn() {
-  // array of creative articles 
-  const newsCards = [
-    {
-      id: 1,
-      category: "NEWS",
-      link: "/colonialism",
-      title: "The Crown Jewels and Colonialism",
-      author: "Bridget Zhang"
-    }
-    // Add more homeTemplate objects here as needed
-  ];
-
-  const newsCardList = newsCards.map((newsCard) => (
-    <div key={newsCard.id}>
-      <p>{newsCard.category}</p>
-      <p>{newsCard.title}</p>
-      <p>{newsCard.author}</p>
-    </div>
-  ));
-
-  return (
-    <div>{newsCardList}</div>
-  )
-}
 
 function Home() {
   return (
@@ -70,7 +45,6 @@ function Home() {
           </div>
 
           <div class="col">
-            <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News and Culture</h2>
               {newsColumn()}
           </div>
         </div>

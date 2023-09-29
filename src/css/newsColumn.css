@@ -1,0 +1,22 @@
+.newsColumn {
+    
+}
+
+.newsCard {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.newsCard .card-category {
+    font-style: oblique;
+}
+
+.newsCard .card-title {
+    font-weight: bold;
+    font-family: 'Right Medium Sans';
+}
+
+.newsCard .card-author {
+    font-weight: bold;
+}
