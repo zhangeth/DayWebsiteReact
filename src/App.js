@@ -17,6 +17,10 @@ import Monterey from "./pages/monterey";
 import Kpop from "./pages/kpop";
 import Fashion from "./pages/fashion";
 import Halmoni from "./pages/prose/halmoni";
+import Comfortfilms from "./pages/comfortfilms";
+import Apidawomen from "./pages/apidawomen";
+import Eeaao from "./pages/eeaao";
+import Aaab from "./pages/aaab";
 
 let previousScrollPosition = 0;
 
@@ -63,10 +67,14 @@ const App = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/colonialism" element={<Colonialism />} />
+      <Route path="/comfortfilms" element={<Comfortfilms />} />
       <Route path="/monterey" element={<Monterey />} />
       <Route path="/kpop" element={<Kpop />} />
       <Route path="/fashion" element={<Fashion />} />
       <Route path="/halmoni" element={<Halmoni />} />
+      <Route path="/apidawomen" element={<Apidawomen />} />
+      <Route path="/eeaao" element={<Eeaao />} />
+      <Route path="/aaab" element={<Aaab />} />
     </Routes>
 
     {Footer()}
