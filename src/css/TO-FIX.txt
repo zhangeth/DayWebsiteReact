@@ -1,0 +1,73 @@
+sorry to clog i'll delete this later
+
+REFERENCE MATERIAL
+The New Yorker:
+    - images load in all at once after the format is already in place
+        - should be doable with JS properties: document.querySelector()
+        - don't know how to format when we don't really have any html files..
+Benjamin Nespoulous personal web:
+    - creates a div that covers the screen (z-layer higher)
+    - div slides off screen (likely just height transition function)
+        - GUESSES:
+            - position on screen absolute
+            - width = 100%, height = 100%
+            - default ease out transition
+
+    - he starts some text positioned at 270deg and transitions the
+    rotation to go 90deg counterclockwise
+        - OK ITS NOT 270 JUST SLIGHTLY OFF KILTER
+        - the text seems to be hidden in like a window, its like
+        how images fill into a gallery
+        - experiment with inline-block display or other display formats
+        
+        |||||||||||||||||||||||||||||||||||||||||||||
+        <div class="text-wrapper">
+            <p class="rotated-text"> </p>
+        </div>
+        |||||||||||||||||||||||||||||||||||||||||||||
+        .text-wrapper{
+            display: inline-block
+        }
+        .text-wrapper > .rotated-text{
+            [CSS attributes]
+        }
+        |||||||||||||||||||||||||||||||||||||||||||||
+
+    - after "sliding" it should disappear
+        -visibility: invisible
+            -check itp303 notes
+        -POINT IS SHOULD BE DOABLE!!
+            - Design plan: boba color
+            - I think it would be cool for the letters to fall into place
+                -bob up and down, then come up with the sliding div
+
+TODO
+On Load:
+    - fonts go crazy, i don't know what 'font': pv3, and 'font': h6v4 are supposed to do
+        -should be NewEditorialLight on load but seems to be thicker version initially
+        -AT LEAST import all fonts to the CSS sheet
+
+    - images don't load in full size on load
+        -want to make the cards statically sized and images stretch to fill them.
+        -this should help w/adaptability for new content
+
+    - when you zoom out screen, the images don't stretch to fill the column and they aren't
+    centered so it doesn't look the best
+        -would be solved by statically sized imgBox CSS implementation
+
+Other:
+    - the fonts look blurry even after load, looks like a text-shadow but unintentional
+        -MAYBE ITS JUST FIND A BETTER FONT
+        -Try changing the way we do font scaling maybe
+
+    - there is no transition for text decoration because there are only two states, underlined
+    and not. Could try to implement fade-in underline a different way.
+        -using opacity, can make another anchor tag that fades in while the other fades out
+        -linear transition, that way the text density is always 100% but underline fades in
+    - 
+
+
+ADDRESSED
+- Mobile and Tablet viewer slightly improved, mobile first design with bootstrap col-sm attribute
+- Unsure that l and r columns were guaranteed same size, bootstrapped better so it will always be same size
+
