@@ -24,7 +24,7 @@ function Home() {
       <div class="container-fluid" style={{'max-width':'90%'}}>
         <div class="row">
 
-          <div class="col" style={{borderRight: '1px solid black'}}>
+          <div id="left-col" class="col-sm-12 col-lg-3" style={{borderRight: '1px solid black'}}>
             <div>
               {homeTemplate(queen, "Bettman Archive, Getty Images", "/colonialism", "The Crown Jewels and Colonialism", "Bridget Zhang")}
               {homeTemplate(kimSejeong, "", "/kpop", "A Re-Cap of USC's K-Pop Festa", "Joseph Caluya")}
@@ -35,7 +35,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="col-6" style={{borderRight: '1px solid black'}}>
+          <div id="middle-col" class="col-sm-12 col-lg-6" style={{borderRight: '1px solid black'}}>
             <div>
               {homeTemplate(monterey, "Photographer: Jae C. Hong/AP", "/monterey", 
               "Mass Shooting in Monterey Park on Lunar New Year's Eve", "Yi-Ann")}
@@ -48,7 +48,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="col" width="25%">
+          <div id="right-col" class="col-sm-12 col-lg-3" width="25%">
             <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News</h2>
               {homeTemplate(ophelia, "", "", "Ophelia", "Ethan Zhang")}
               {homeTemplate(girlSketch, "", "", "Sketch", "Ethan Zhang")}
