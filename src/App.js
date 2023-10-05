@@ -21,6 +21,8 @@ import Comfortfilms from "./pages/comfortfilms";
 import Apidawomen from "./pages/apidawomen";
 import Eeaao from "./pages/eeaao";
 import Aaab from "./pages/aaab";
+import Flight from "./pages/prose/flight";
+import Grace from "./pages/grace";
 
 let previousScrollPosition = 0;
 
@@ -75,6 +77,8 @@ const App = () => {
       <Route path="/apidawomen" element={<Apidawomen />} />
       <Route path="/eeaao" element={<Eeaao />} />
       <Route path="/aaab" element={<Aaab />} />
+      <Route path="/flight" element={<Flight />} />
+      <Route path="/grace" element={<Grace />} />
     </Routes>
 
     {Footer()}
