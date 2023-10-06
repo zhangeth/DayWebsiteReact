@@ -23,6 +23,8 @@ import Eeaao from "./pages/eeaao";
 import Aaab from "./pages/aaab";
 import Flight from "./pages/prose/flight";
 import Grace from "./pages/grace";
+import Lolsorry from "./pages/lolsorrydepressing";
+import Plushy from "./pages/odetoplushy"
 
 let previousScrollPosition = 0;
 
@@ -79,6 +81,8 @@ const App = () => {
       <Route path="/aaab" element={<Aaab />} />
       <Route path="/flight" element={<Flight />} />
       <Route path="/grace" element={<Grace />} />
+      <Route path="/lolsorry" element={<Lolsorry/>} />
+      <Route path="/plushy" element={<Plushy />} />
     </Routes>
 
     {Footer()}
