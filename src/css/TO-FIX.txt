@@ -1,5 +1,9 @@
 sorry to clog i'll delete this later
 
+I don't think getting page-load done by this week is feasible,
+I have plans for statically formatting the home page which will
+need a lot of reformatting.
+
 REFERENCE MATERIAL
 The New Yorker:
     - images load in all at once after the format is already in place
