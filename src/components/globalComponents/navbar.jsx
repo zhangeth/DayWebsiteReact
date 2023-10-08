@@ -7,6 +7,8 @@ function Navbar() {
             <ul class="nav">
                 <li class="nav-item"><a href="/" class="nav-link link-dark px-2">Home</a></li>
                 <li class="nav-item"><a href="/about" class="nav-link link-dark px-2">About</a></li>
+                <li class="nav-item"><a href="/inputField" class="nav-link link-dark px-2">Upload</a></li>
+                <li class="nav-item"><a href="/login" class="nav-link link-dark px-2">Login</a></li>
             </ul>
         </div>
     </nav>

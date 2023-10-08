@@ -7,8 +7,10 @@ import awsconfig from './aws-exports';
 
 import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
 
-import Home from "./pages/home"
-import About from "./pages/about"
+import Home from "./pages/home";
+import About from "./pages/about";
+import inputField from "./pages/uploadImage";
+import Login from "./components/login";
 
 Amplify.configure(awsconfig);
 
@@ -17,9 +19,12 @@ const App = () => {
     <Router>
     {Title()}
     {Navbar()} 
+    {Login()}
+    {inputField()}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={Login} />
       </Routes>
       {Footer()}
     </Router>
