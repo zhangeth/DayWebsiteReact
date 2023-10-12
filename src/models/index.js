@@ -2,11 +2,17 @@
 import { initSchema } from '@aws-amplify/datastore';
 import { schema } from './schema';
 
+const AccessLevels = {
+  "PUBLIC": "PUBLIC",
+  "PROTECTED": "PROTECTED",
+  "PRIVATE": "PRIVATE"
+};
 
-
-const { AuthorModel, ArticleModel } = initSchema(schema);
+const { Asset, Author, Article } = initSchema(schema);
 
 export {
-  AuthorModel,
-  ArticleModel
+  Asset,
+  Author,
+  Article,
+  AccessLevels
 };

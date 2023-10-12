@@ -3,6 +3,9 @@ import Footer from "./components/footer";
 import './css/globalComponents.css';
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
 import awsconfig from './aws-exports';
 
 import React, { useEffect, useState} from "react";
@@ -10,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 
 import Home from "./pages/home"
 import About from "./pages/about"
+import Upload from "./pages/upload"
  
 // article pages for now
 import Colonialism from "./pages/colonialism";
@@ -43,7 +47,10 @@ function scrollFunction() {
 
 }
 
-Amplify.configure(awsconfig);
+Amplify.configure({
+  ...awsconfig,
+  ssr: true
+});
 
 const App = () => {
   return (
@@ -55,6 +62,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/upload">Upload</a>
     </div>
 
     <div style={{'padding': '80px'}}></div>
@@ -62,6 +70,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/upload" element={<Upload />} />
       <Route path="/colonialism" element={<Colonialism />} />
       <Route path="/monterey" element={<Monterey />} />
       <Route path="/kpop" element={<Kpop />} />

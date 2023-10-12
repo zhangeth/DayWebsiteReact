@@ -1,7 +1,7 @@
 export const schema = {
     "models": {
-        "AuthorModel": {
-            "name": "AuthorModel",
+        "Asset": {
+            "name": "Asset",
             "fields": {
                 "id": {
                     "name": "id",
@@ -10,28 +10,28 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "name": {
-                    "name": "name",
+                "imgKey": {
+                    "name": "imgKey",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": false,
+                    "isRequired": true,
                     "attributes": []
                 },
-                "ArticleModels": {
-                    "name": "ArticleModels",
-                    "isArray": true,
+                "articleID": {
+                    "name": "articleID",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "accessLevel": {
+                    "name": "accessLevel",
+                    "isArray": false,
                     "type": {
-                        "model": "ArticleModel"
+                        "enum": "AccessLevels"
                     },
                     "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": [
-                            "authormodelID"
-                        ]
-                    }
+                    "attributes": []
                 },
                 "createdAt": {
                     "name": "createdAt",
@@ -51,7 +51,98 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "AuthorModels",
+            "pluralName": "Assets",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byArticle",
+                        "fields": [
+                            "articleID"
+                        ]
+                    }
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "Author": {
+            "name": "Author",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "name": {
+                    "name": "name",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "Articles": {
+                    "name": "Articles",
+                    "isArray": true,
+                    "type": {
+                        "model": "Article"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "authorId"
+                        ]
+                    }
+                },
+                "dateJoinedClub": {
+                    "name": "dateJoinedClub",
+                    "isArray": false,
+                    "type": "AWSDate",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "Authors",
             "attributes": [
                 {
                     "type": "model",
@@ -75,8 +166,8 @@ export const schema = {
                 }
             ]
         },
-        "ArticleModel": {
-            "name": "ArticleModel",
+        "Article": {
+            "name": "Article",
             "fields": {
                 "id": {
                     "name": "id",
@@ -85,8 +176,8 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "content": {
-                    "name": "content",
+                "summary": {
+                    "name": "summary",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
@@ -96,21 +187,37 @@ export const schema = {
                     "name": "name",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": false,
+                    "isRequired": true,
                     "attributes": []
+                },
+                "authorId": {
+                    "name": "authorId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "Assets": {
+                    "name": "Assets",
+                    "isArray": true,
+                    "type": {
+                        "model": "Asset"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "articleID"
+                        ]
+                    }
                 },
                 "date": {
                     "name": "date",
                     "isArray": false,
                     "type": "AWSDate",
                     "isRequired": false,
-                    "attributes": []
-                },
-                "authormodelID": {
-                    "name": "authormodelID",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
                     "attributes": []
                 },
                 "createdAt": {
@@ -131,7 +238,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "ArticleModels",
+            "pluralName": "Articles",
             "attributes": [
                 {
                     "type": "model",
@@ -140,9 +247,9 @@ export const schema = {
                 {
                     "type": "key",
                     "properties": {
-                        "name": "byAuthorModel",
+                        "name": "byAuthor",
                         "fields": [
-                            "authormodelID"
+                            "authorId"
                         ]
                     }
                 },
@@ -165,8 +272,17 @@ export const schema = {
             ]
         }
     },
-    "enums": {},
+    "enums": {
+        "AccessLevels": {
+            "name": "AccessLevels",
+            "values": [
+                "PUBLIC",
+                "PROTECTED",
+                "PRIVATE"
+            ]
+        }
+    },
     "nonModels": {},
-    "codegenVersion": "3.4.0",
-    "version": "17b6969d4d81f2766cb661f88c0fdb05"
+    "codegenVersion": "3.4.4",
+    "version": "f2668bf20c007c3969ed18d4d682089b"
 };
