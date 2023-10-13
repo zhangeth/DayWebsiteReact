@@ -8,17 +8,8 @@ function handleClick() {
 }
 
 function Upload() {
-    
     return (
         <div>
-            <Authenticator>
-                {({ signOut, user }) => (
-                <main>
-                    <h1>Hello {user.username}</h1>
-                    <button onClick={signOut}>Sign out</button>
-                </main>
-                )}
-            </Authenticator>
             <h1 style={{'text-align':'center'}}>My Gallery</h1> 
                     
             <StorageManager
@@ -27,6 +18,7 @@ function Upload() {
                 maxFileCount={1}
                 isResumable
             />
+            
             <button type="submit" class="btn btn-primary" onClick={handleClick}>Submit</button>
         </div>
 

@@ -14,6 +14,8 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 import Home from "./pages/home"
 import About from "./pages/about"
 import Upload from "./pages/upload"
+import Login from "./pages/login"
+import { RequireAuth } from './RequireAuth';
  
 // article pages for now
 import Colonialism from "./pages/colonialism";
@@ -62,6 +64,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/login">Login</a>
       <a href="/upload">Upload</a>
     </div>
 
@@ -70,7 +73,10 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/upload" element={<Upload />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/upload" element={
+          <Upload />
+      } />
       <Route path="/colonialism" element={<Colonialism />} />
       <Route path="/monterey" element={<Monterey />} />
       <Route path="/kpop" element={<Kpop />} />
