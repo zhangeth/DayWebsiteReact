@@ -1,9 +1,8 @@
 import HomeHero from "../components/homeComponents/homeHero";
-import AboutHero from "../components/aboutComponents/aboutHero";
 import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
 import AboutOurStory from "../components/aboutComponents/aboutOurStory";
 import AboutTeamRoles from "../components/aboutComponents/aboutTeamRoles";
-
+import "../css/about.css"
 // Eboard images
 import Audrey from "../assets/Eboard/Audrey.jpg"
 import Jeen from "../assets/Eboard/Jeen.jpg";
@@ -28,46 +27,46 @@ function About() {
             <div class="container">
                 <div class="row">
                     <div>
-                        <h2 class="lh-1 border-bottom">Meet the Team</h2>
+                        <h2 class="about-subtitle">MEET THE TEAM</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <figure class="image is-256x256" width="100%" height="100%">
-                            <img src={Audrey} width="100%" height="100%"/>
-                        </figure>
+                    <div class="col-4">
+                            <img class="circular-picture" src={Audrey}/>
                     </div>
-                    <div class="col">
-                        <figure width="100%" height="100%">
-                            <img src={Stephanie} width="100%" height="100%"/>
-                        </figure>
+                    <div class="col-4">
+                            <img class="circular-picture" src={Stephanie}/>
                     </div>
-                    <div class="col">
-                        <figure width="100%" height="100%">
-                            <img src={Peony} width="100%" height="100%"/>
-                        </figure>
+                    <div class="col-4">
+                            <img class="circular-picture" src={Peony}/>
                     </div>
                 </div>
  
                 <div class="row">
-                    <div class="col">
-                        <h5> President </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> President </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Audrey Xia </h6>
+                        </div>
                     </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Audrey Xia </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> Vice President </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Stephanie Tong </h6>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h5> Vice President</h5>
-                    </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Stephanie Tong </h5>
-                    </div>
-                    <div class="col">
-                        <h5> Creative Director </h5>
-                    </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Peony Duong </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> Creative Director </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Peony Duong </h6>
+                        </div>
                     </div>
                 </div>
 
@@ -75,40 +74,40 @@ function About() {
 
                 <div class="row">
                     <div class="col">
-                        <figure class="image is-256x256" width="100%" height="100%">
-                            <img src={Heidi} width="100%" height="100%"/>
-                        </figure>
+                            <img class="circular-picture" src={Heidi}/>
                     </div>
                     <div class="col">
-                        <figure width="100%" height="100%">
-                            <img src={Jeen} width="100%" height="100%"/>
-                        </figure>
+                            <img class="circular-picture" src={Jeen}/>
                     </div>
                     <div class="col">
-                        <figure width="100%" height="100%">
-                            <img src={Andrew} width="100%" height="100%"/>
-                        </figure>
+                            <img class="circular-picture" src={Andrew}/>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <h5> Programming Director </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> Programming Director </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Heidi Arromdee </h6>
+                        </div>
                     </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Heidi Arromdee </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> PR Director </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Jeen Lee </h6>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h5> PR Director </h5>
-                    </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Jeen Lee </h5>
-                    </div>
-                    <div class="col">
-                        <h5> Finance Director </h5>
-                    </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Andrew Kim </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> Finance Director </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Andrew Kim </h6>
+                        </div>
                     </div>
                </div>
                
@@ -116,40 +115,40 @@ function About() {
 
                <div class="row">
                     <div class="col">
-                        <figure class="image is-256x256" width="100%" height="100%">
-                            <img src={Riya} width="100%" height="100%"/>
-                        </figure>
+                            <img class="circular-picture" src={Riya}/>
                     </div>
                     <div class="col">
-                        <figure width="100%" height="100%">
-                            <img src={Eric} width="100%" height="100%"/>
-                        </figure>
+                            <img class="circular-picture" src={Eric}/>
                     </div>
                     <div class="col">
-                        <figure width="256px" height="256px">
-                            <img src={Joseph} width="100%" height="100%"/>
-                        </figure>
+                            <img class="circular-picture" src={Joseph}/>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <h5> Lead Editor </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> Lead Editor </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Riya Valaulikar </h6>
+                        </div>
                     </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Riya Valaulikar </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> Co-Web Lead </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Eric Chen </h6>
+                        </div>
                     </div>
-                    <div class="col">
-                        <h5> Co-Web Lead</h5>
-                    </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Eric Chen </h5>
-                    </div>
-                    <div class="col">
-                        <h5> Co-Web Lead </h5>
-                    </div>
-                    <div class="col" style={{'textAlign':'right'}}>
-                        <h5 style={{'color':'black'}}> Joseph Caluya </h5>
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="about-subtitle2"> Co-Web Lead </h5>
+                        </div>
+                        <div class="row">
+                            <h6 class="about-body"> Joseph Caluya </h6>
+                        </div>
                     </div>
                 </div>
             </div>
