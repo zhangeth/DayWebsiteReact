@@ -58,7 +58,7 @@ function Home() {
     </div>
 
     <div class="row justify-content-center mt-5">
-      <div id="Events" class="col-sm-10 col-md-6">
+      <div id="Events" class="col-sm-10 col-md-5">
         <div class="row justify-content-center">
           <h2 class="col-12 text-center">Upcoming Events</h2>
 
@@ -95,7 +95,11 @@ function Home() {
       </div>
       {/* #Events */}
 
-      <div id="GM-Recap" class="col-sm-10 col-md-6">
+      <div class="buffer col-sm-0 col-md-1">
+
+      </div>
+
+      <div id="GM-Recap" class="col-sm-10 col-md-5">
         <div class="row">
           <h2 class="col-12 text-center">GM Recap</h2>
 
