@@ -21,7 +21,7 @@ function Home() {
       <div class="container-fluid" style={{'max-width':'90%'}}>
         <div class="row">
 
-          <div class="col" style={{borderRight: '1px solid black'}}>
+          <div class="col-sm-12 col-md-12 col-lg-3" style={{borderRight: '1px solid black'}}>
           <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Creative</h2>
             <div>
               {homeTemplate(mulan, "", "/comfortfilms", "Animated APIDA Comfort Films", "Ina Ycasas")}
@@ -33,7 +33,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="col-6" style={{borderRight: '1px solid black'}}>
+          <div class="col-sm-12 col-md-12 col-lg-6" style={{borderRight: '1px solid black'}}>
           <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Featured</h2>
             <div>
               {homeTemplate(olivia, "", "/aaab", 
@@ -47,7 +47,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="col" width="25%">
+          <div class="col-sm-12 col-md-12 col-lg-3">
             <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News</h2>
               {homeTemplate(liliuokalani, "", "/apidawomen", "Notable APIDA Women to Spotlight During Women's History Month", "Jeen Lee")}
               {homeTemplate(grace, "", "/grace", "Grace Young: From 'Stir-fry Guru' to 'Woman of the Year'", "Celine Chen")}
