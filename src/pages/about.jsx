@@ -2,6 +2,7 @@ import HomeHero from "../components/homeComponents/homeHero";
 import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
 import AboutOurStory from "../components/aboutComponents/aboutOurStory";
 import AboutTeamRoles from "../components/aboutComponents/aboutTeamRoles";
+import eboardTemplate from "../components/aboutComponents/eboardTemplate";
 import "../css/about.css"
 // Eboard images
 import Audrey from "../assets/Eboard/Audrey.jpg"
@@ -30,127 +31,9 @@ function About() {
                         <h2 class="about-subtitle">MEET THE TEAM</h2>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-4">
-                            <img class="circular-picture" src={Audrey}/>
-                    </div>
-                    <div class="col-4">
-                            <img class="circular-picture" src={Stephanie}/>
-                    </div>
-                    <div class="col-4">
-                            <img class="circular-picture" src={Peony}/>
-                    </div>
-                </div>
- 
-                <div class="row">
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> President </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Audrey Xia </h6>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> Vice President </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Stephanie Tong </h6>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> Creative Director </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Peony Duong </h6>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="py-2"></div>
-
-                <div class="row">
-                    <div class="col">
-                            <img class="circular-picture" src={Heidi}/>
-                    </div>
-                    <div class="col">
-                            <img class="circular-picture" src={Jeen}/>
-                    </div>
-                    <div class="col">
-                            <img class="circular-picture" src={Andrew}/>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> Programming Director </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Heidi Arromdee </h6>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> PR Director </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Jeen Lee </h6>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> Finance Director </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Andrew Kim </h6>
-                        </div>
-                    </div>
-               </div>
-               
-               <div class="py-2"></div>
-
-               <div class="row">
-                    <div class="col">
-                            <img class="circular-picture" src={Riya}/>
-                    </div>
-                    <div class="col">
-                            <img class="circular-picture" src={Eric}/>
-                    </div>
-                    <div class="col">
-                            <img class="circular-picture" src={Joseph}/>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> Lead Editor </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Riya Valaulikar </h6>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> Co-Web Lead </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Eric Chen </h6>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <h5 class="about-subtitle2"> Co-Web Lead </h5>
-                        </div>
-                        <div class="row">
-                            <h6 class="about-body"> Joseph Caluya </h6>
-                        </div>
-                    </div>
-                </div>
+                {eboardTemplate(Audrey, Stephanie, Peony, "President", "Vice President", "Creative Director", "Audrey Xia", "Stephanie Tong", "Peony Duong")}
+                {eboardTemplate(Heidi, Jeen, Andrew, "Programming Director", "PR Director", "Finance Director", "Heidi Arromdee", "Jeen Lee", "Andrew Kim")}
+                {eboardTemplate(Riya, Eric, Joseph, "Lead Editor", "Co-Web Lead", "Co-Web Lead", "Riya Valaulikar", "Eric Chen", "Joseph Caluya")}
             </div>
 
             <div class="py-4"></div>

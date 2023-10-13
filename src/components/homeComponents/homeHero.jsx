@@ -7,7 +7,8 @@ function HomeHero() {
                 <div class="col p-3 p-lg-5 pt-lg-3">
                     <h1 class="about-title">ABOUT DAY</h1>
                     <p class="about-body">We are a group of Asian youths striving to uplift marginalized communities through education, activism, and celebration. 
-                        Reach out if you want to share your unique experiences.</p>
+                        Reach out if you want to share your unique experiences.
+                    </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
                     </div>
                 </div>
