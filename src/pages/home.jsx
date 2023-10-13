@@ -14,6 +14,7 @@ const TITLE = 'DAY USC';
 
 function Home() {
   return (
+    <>
     <div>
     <title>{ TITLE }</title>
     <div class="py-3">
@@ -55,6 +56,81 @@ function Home() {
       </div>
       </div>
     </div>
+
+    <div class="row justify-content-center mt-5">
+      <div id="Events" class="col-sm-10 col-md-6">
+        <div class="row justify-content-center">
+          <h2 class="col-12 text-center">Upcoming Events</h2>
+
+          <div class="event-box col-sm-12 col-md-6 col-lg 4">
+            <div class="event-thumbnail col-12">
+              <img src="" alt="sample-event-thumbnail"></img>
+              <a href="https://dayusc.org">Event 1</a>
+              <p class="event-desc">description 1</p>
+              {/* all href links should go to a jsx function formatted for event */}
+            </div>
+          </div>
+          {/* .event-box*/}
+
+          <div class="event-box col-sm-12 col-md-6 col-lg 4">
+            <div class="event-thumbnail col-12">
+              <img src="" alt="sample-event-thumbnail"></img>
+              <a href="https://dayusc.org">Event 1</a>
+              <p class="event-desc">description 1</p>
+              {/* all href links should go to a jsx function formatted for event */}
+            </div>
+          </div>
+          {/* .event-box*/}
+
+          <div class="event-box col-sm-12 col-md-6 col-lg 4">
+            <div class="event-thumbnail col-12">
+              <img src="" alt="sample-event-thumbnail"></img>
+              <a href="https://dayusc.org">Event 1</a>
+              <p class="event-desc">description 1</p>
+              {/* all href links should go to a jsx function formatted for event */}
+            </div>
+          </div>
+          {/* .event-box*/}
+        </div>
+      </div>
+      {/* #Events */}
+
+      <div id="GM-Recap" class="col-sm-10 col-md-6">
+        <div class="row">
+          <h2 class="col-12 text-center">GM Recap</h2>
+
+          <div class="gm-box col-sm-12 col-md-6 col-lg 4">
+            <div class="gm-thumbnail col-12">
+              <img src="" alt="sample-gm-thumbnail"></img>
+              <a href="https://dayusc.org">GM Recap 1</a>
+              <p class="gm-desc"> description 1</p>
+            </div>
+          </div>
+          {/* .gm-box */}
+
+          <div class="gm-box col-sm-12 col-md-6 col-lg 4">
+            <div class="gm-thumbnail col-12">
+              <img src="" alt="sample-gm-thumbnail"></img>
+              <a href="https://dayusc.org">GM Recap 1</a>
+              <p class="gm-desc"> description 1</p>
+            </div>
+          </div>
+          {/* .gm-box */}
+
+          <div class="gm-box col-sm-12 col-md-6 col-lg 4">
+            <div class="gm-thumbnail col-12">
+              <img src="" alt="sample-gm-thumbnail"></img>
+              <a href="https://dayusc.org">GM Recap 1</a>
+              <p class="gm-desc"> description 1</p>
+            </div>
+          </div>
+          {/* .gm-box */}
+        </div>
+      </div>
+      {/* #GM-Recap */}
+    </div>
+    </>
+
   );
 }
 
