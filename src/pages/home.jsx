@@ -6,9 +6,12 @@ import eeaaooscar from "../assets/ArticlePics/eeaao.png"
 import olivia from "../assets/ArticlePics/olivia.png"
 import flight from "../assets/ProsePics/Flight.jpg"
 import grace from "../assets/ArticlePics/grace.jpg"
+
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
+import eventsBox from "../components/homeComponents/eventsBox"
 import "../css/globalComponents.css"
+import "../css/homeStructure.css"
 
 const TITLE = 'DAY USC';
 
@@ -18,10 +21,10 @@ function Home() {
     <div>
     <title>{ TITLE }</title>
     <div class="py-3">
-      <div class="container-fluid" style={{'max-width':'90%'}}>
+      <div id="headline-div" class="container-fluid">
         <div class="row">
 
-          <div class="col-sm-12 col-md-12 col-lg-3" style={{borderRight: '1px solid black'}}>
+          <div id="left-headline" class="col-sm-12 col-md-12 col-lg-3">
           <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Creative</h2>
             <div>
               {homeTemplate(mulan, "", "/comfortfilms", "Animated APIDA Comfort Films", "Ina Ycasas")}
@@ -33,7 +36,7 @@ function Home() {
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-12 col-lg-6" style={{borderRight: '1px solid black'}}>
+          <div id="center-headline" class="col-sm-12 col-md-12 col-lg-6">
           <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Featured</h2>
             <div>
               {homeTemplate(olivia, "", "/aaab", 
@@ -65,9 +68,8 @@ function Home() {
           <div class="event-box col-sm-12 col-md-6 col-lg 4">
             <div class="event-thumbnail col-12">
               <img src="" alt="sample-event-thumbnail"></img>
-              <a href="https://dayusc.org">Event 1</a>
-              <p class="event-desc">description 1</p>
-              {/* all href links should go to a jsx function formatted for event */}
+              <a href="https://dayusc.org"></a>
+              <p class="event-desc"></p>
             </div>
           </div>
           {/* .event-box*/}
@@ -75,9 +77,8 @@ function Home() {
           <div class="event-box col-sm-12 col-md-6 col-lg 4">
             <div class="event-thumbnail col-12">
               <img src="" alt="sample-event-thumbnail"></img>
-              <a href="https://dayusc.org">Event 1</a>
-              <p class="event-desc">description 1</p>
-              {/* all href links should go to a jsx function formatted for event */}
+              <a href="https://dayusc.org"></a>
+              <p class="event-desc"></p>
             </div>
           </div>
           {/* .event-box*/}
@@ -85,9 +86,8 @@ function Home() {
           <div class="event-box col-sm-12 col-md-6 col-lg 4">
             <div class="event-thumbnail col-12">
               <img src="" alt="sample-event-thumbnail"></img>
-              <a href="https://dayusc.org">Event 1</a>
-              <p class="event-desc">description 1</p>
-              {/* all href links should go to a jsx function formatted for event */}
+              <a href="https://dayusc.org"></a>
+              <p class="event-desc"></p>
             </div>
           </div>
           {/* .event-box*/}
@@ -106,8 +106,8 @@ function Home() {
           <div class="gm-box col-sm-12 col-md-6 col-lg 4">
             <div class="gm-thumbnail col-12">
               <img src="" alt="sample-gm-thumbnail"></img>
-              <a href="https://dayusc.org">GM Recap 1</a>
-              <p class="gm-desc"> description 1</p>
+              <a href="https://dayusc.org"></a>
+              <p class="gm-desc"></p>
             </div>
           </div>
           {/* .gm-box */}
@@ -115,8 +115,8 @@ function Home() {
           <div class="gm-box col-sm-12 col-md-6 col-lg 4">
             <div class="gm-thumbnail col-12">
               <img src="" alt="sample-gm-thumbnail"></img>
-              <a href="https://dayusc.org">GM Recap 1</a>
-              <p class="gm-desc"> description 1</p>
+              <a href="https://dayusc.org"></a>
+              <p class="gm-desc"></p>
             </div>
           </div>
           {/* .gm-box */}
@@ -124,8 +124,8 @@ function Home() {
           <div class="gm-box col-sm-12 col-md-6 col-lg 4">
             <div class="gm-thumbnail col-12">
               <img src="" alt="sample-gm-thumbnail"></img>
-              <a href="https://dayusc.org">GM Recap 1</a>
-              <p class="gm-desc"> description 1</p>
+              <a href="https://dayusc.org"></a>
+              <p class="gm-desc"></p>
             </div>
           </div>
           {/* .gm-box */}
@@ -133,9 +133,13 @@ function Home() {
       </div>
       {/* #GM-Recap */}
     </div>
+
+    <script src="../components/homeComponents/eventsBox.js"></script>
     </>
 
   );
 }
+
+
 
 export default Home;

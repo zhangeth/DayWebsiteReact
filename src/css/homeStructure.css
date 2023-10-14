@@ -1,0 +1,25 @@
+#headline-div{
+    max-width: 90%;
+}
+
+#left-headline{
+    border-right: 1px solid black;
+}
+
+#center-headline{
+    border-right: 1px solid black;
+}
+
+.event-box .event-thumbnail img{
+    width: 90%;
+}
+
+.event-box .event-thumbnail a{
+    text-decoration: none;
+}
+
+.event-box .event-thumbnail .event-desc{
+    text-decoration: none;
+    font-family: "Fragment Text Regular";
+    font-size: 0.75em;
+}
