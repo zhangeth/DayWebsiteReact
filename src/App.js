@@ -12,11 +12,18 @@ import Home from "./pages/home"
 import About from "./pages/about"
  
 // article pages for now
-import Colonialism from "./pages/colonialism";
-import Monterey from "./pages/monterey";
-import Kpop from "./pages/kpop";
-import Fashion from "./pages/fashion";
 import Halmoni from "./pages/prose/halmoni";
+import Comfortfilms from "./pages/comfortfilms";
+import Apidawomen from "./pages/apidawomen";
+import Eeaao from "./pages/eeaao";
+import Aaab from "./pages/aaab";
+import Flight from "./pages/prose/flight";
+import Grace from "./pages/grace";
+import Lolsorry from "./pages/lolsorrydepressing";
+import Plushy from "./pages/poetry/odetoplushy"
+import Expectations from "./pages/prose/familyexpectations";
+import Utahboys from "./pages/poetry/utahboys";
+import Reflections from "./pages/reflections";
 
 let previousScrollPosition = 0;
 
@@ -62,11 +69,19 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/colonialism" element={<Colonialism />} />
-      <Route path="/monterey" element={<Monterey />} />
-      <Route path="/kpop" element={<Kpop />} />
-      <Route path="/fashion" element={<Fashion />} />
+      <Route path="/comfortfilms" element={<Comfortfilms />} />
       <Route path="/halmoni" element={<Halmoni />} />
+      <Route path="/apidawomen" element={<Apidawomen />} />
+      <Route path="/eeaao" element={<Eeaao />} />
+      <Route path="/aaab" element={<Aaab />} />
+      <Route path="/flight" element={<Flight />} />
+      <Route path="/grace" element={<Grace />} />
+      <Route path="/lolsorry" element={<Lolsorry/>} />
+      <Route path="/plushy" element={<Plushy />} />
+      <Route path="/expectations" element={<Expectations/>} />
+      <Route path="/utahboys" element={<Utahboys/>} />
+      <Route path="/reflections" element={<Reflections/>} />
+
     </Routes>
 
     {Footer()}

@@ -1,7 +1,7 @@
 import DAYhistory from "../../assets/DAYhistory.jpg";
 function DAYHistoryHero() {
 	return (
-    <div class="container my-5 align-items-center rounded-3 border shadow-lg">
+    <div class="container my-5 align-items-center rounded-3 border shadow-lg" style={{backgroundColor:'white'}}>
         <div class="row p-5 pt-5 ">
             <div class="col d-justify-content-center">
                 <img src={DAYhistory} alt="Old DAY banner" width="auto" height="auto"/>  
