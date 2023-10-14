@@ -68,7 +68,6 @@
     margin-bottom:0px;
     padding-top: 2px;
     padding-bottom: 2px;
-    text-align: center;
 }
 .article-image {
     padding-top: 2rem;
@@ -93,4 +92,26 @@
     margin-top:0px;
     margin-bottom:0px;
     text-align: center;
+}
+.sparkly{
+    height: 50px;
+}
+.sparkly p{
+    font-size: 2em;
+    color: black;
+    line-height: 50px;
+}
+.sparkly p:hover{
+    transition: all 0.5s ease-in 0s;
+    color:#edcd00;
+    font-size: 2.25em;
+}
+.big-italic{
+    height:50px;
+    line-height: 50px;
+    font-size: 2em;
+}
+.DAY-red{
+    color: #B83826;
+    font-size: 2em;
 }
