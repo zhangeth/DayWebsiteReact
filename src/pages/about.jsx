@@ -15,6 +15,10 @@ import Stephanie from "../assets/Eboard/Stephanie.jpg";
 import Eric from "../assets/Eboard/Eric.jpg";
 import Andrew from "../assets/Eboard/Andrew.jpg";
 
+const pics = [Audrey, Stephanie, Peony, Heidi, Jeen, Andrew, Riya, Eric, Joseph];
+const positions = ["President", "Vice President", "Creative Director", "Programming Director", "PR Director", "Finance Director", "Lead Editor", "Co-Web Lead", "Co-Web Lead"];
+const names = ["Audrey Xia", "Stephanie Tong", "Peony Duong", "Heidi Arromdee", "Jeen Lee", "Andrew Kim", "Riya Valaulikar", "Eric Chen", "Joseph Caluya"];
+
 function About() {
 	return (
 		<div class="py-3 mb-4 border-bottom">
@@ -31,9 +35,7 @@ function About() {
                         <h2 class="about-subtitle">MEET THE TEAM</h2>
                     </div>
                 </div>
-                {eboardTemplate(Audrey, Stephanie, Peony, "President", "Vice President", "Creative Director", "Audrey Xia", "Stephanie Tong", "Peony Duong")}
-                {eboardTemplate(Heidi, Jeen, Andrew, "Programming Director", "PR Director", "Finance Director", "Heidi Arromdee", "Jeen Lee", "Andrew Kim")}
-                {eboardTemplate(Riya, Eric, Joseph, "Lead Editor", "Co-Web Lead", "Co-Web Lead", "Riya Valaulikar", "Eric Chen", "Joseph Caluya")}
+                {eboardTemplate(pics, positions, names)}
             </div>
 
             <div class="py-4"></div>
