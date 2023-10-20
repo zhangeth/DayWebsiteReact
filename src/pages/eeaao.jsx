@@ -9,7 +9,7 @@ import linksTemplate from "../components/articleComponents/linksTemplate"
 const category = "ENTERTAINMENT";
 const title = "Why Everything Everywhere All At Once Winning 7 Oscars is Significant"
 const author = "BY: JEEN LEE";
-const date = "March 14, 2023";
+const date = "March 13, 2023";
 const headlines = ["MICHELLE YEOH IS THE FIRST ASIAN 'BEST ACTRESS' WINNER", "KE HUY QUAN IS THE FIRST ACTOR BORN IN VIETNAM TO WIN AN OSCAR", "DANIEL KWAN IS THE FIRST WRITER OF CHINESE DESCENT TO WIN 'BEST ORIGINAL SCREENPLAY'", "EEAAO BECAME THE THIRD FILM-AND THE FIRST IN NEARLY 50 YEARS-TO WIN 3 ACTING OSCARS"];
 const images = [yeoh, quan, kwan, eeaao2];
 const paragraphs = [];

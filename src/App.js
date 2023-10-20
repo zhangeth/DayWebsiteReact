@@ -19,6 +19,11 @@ import Eeaao from "./pages/eeaao";
 import Aaab from "./pages/aaab";
 import Flight from "./pages/prose/flight";
 import Grace from "./pages/grace";
+import Lolsorry from "./pages/lolsorrydepressing";
+import Plushy from "./pages/poetry/odetoplushy"
+import Expectations from "./pages/prose/familyexpectations";
+import Utahboys from "./pages/poetry/utahboys";
+import Reflections from "./pages/reflections";
 
 let previousScrollPosition = 0;
 
@@ -71,6 +76,12 @@ const App = () => {
       <Route path="/aaab" element={<Aaab />} />
       <Route path="/flight" element={<Flight />} />
       <Route path="/grace" element={<Grace />} />
+      <Route path="/lolsorry" element={<Lolsorry/>} />
+      <Route path="/plushy" element={<Plushy />} />
+      <Route path="/expectations" element={<Expectations/>} />
+      <Route path="/utahboys" element={<Utahboys/>} />
+      <Route path="/reflections" element={<Reflections/>} />
+
     </Routes>
 
     {Footer()}
