@@ -4,6 +4,7 @@ import './css/globalComponents.css';
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
 import awsconfig from './aws-exports';
+import { listArticles, syncArticles } from "./graphql/queries";
 
 import React, { useEffect, useState} from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
@@ -53,6 +54,14 @@ function scrollFunction() {
 Amplify.configure(awsconfig);
 
 const App = () => {
+  try {
+    // await API.graphql(graphqlOperation(syncArticles));
+    // const articles = await API.graphql(graphqlOperation(listArticles));
+    // console.log(`articles: ${articles}`);
+  } catch (error) {
+    console.log(error);
+  }
+  
   return (
     <Router>
     <a href="/">
