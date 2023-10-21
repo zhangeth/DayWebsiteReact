@@ -10,6 +10,14 @@
     border-right: 1px solid black;
 }
 
+#Events{
+    border-top: 1px solid black;
+}
+
+#GM-Recap{
+    border-top: 1px solid black;
+}
+
 .event-box .event-thumbnail img{
     width: 90%;
 }
@@ -23,3 +31,4 @@
     font-family: "Fragment Text Regular";
     font-size: 0.75em;
 }
+

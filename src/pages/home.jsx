@@ -9,7 +9,7 @@ import grace from "../assets/ArticlePics/grace.jpg"
 
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
-import eventsBox from "../components/homeComponents/eventsBox"
+import {eventsBox} from "../components/homeComponents/eventsBox"
 import "../css/globalComponents.css"
 import "../css/homeStructure.css"
 
@@ -62,7 +62,7 @@ function Home() {
 
     <div class="row justify-content-center mt-5">
       <div id="Events" class="col-sm-10 col-md-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pt-5">
           <h2 class="col-12 text-center">Upcoming Events</h2>
 
           <div class="event-box col-sm-12 col-md-6 col-lg 4">
@@ -100,14 +100,13 @@ function Home() {
       </div>
 
       <div id="GM-Recap" class="col-sm-10 col-md-5">
-        <div class="row">
+        <div class="row pt-5">
           <h2 class="col-12 text-center">GM Recap</h2>
 
           <div class="gm-box col-sm-12 col-md-6 col-lg 4">
             <div class="gm-thumbnail col-12">
               <img src="" alt="sample-gm-thumbnail"></img>
               <a href="https://dayusc.org"></a>
-              <p class="gm-desc"></p>
             </div>
           </div>
           {/* .gm-box */}
@@ -116,7 +115,6 @@ function Home() {
             <div class="gm-thumbnail col-12">
               <img src="" alt="sample-gm-thumbnail"></img>
               <a href="https://dayusc.org"></a>
-              <p class="gm-desc"></p>
             </div>
           </div>
           {/* .gm-box */}
@@ -125,7 +123,6 @@ function Home() {
             <div class="gm-thumbnail col-12">
               <img src="" alt="sample-gm-thumbnail"></img>
               <a href="https://dayusc.org"></a>
-              <p class="gm-desc"></p>
             </div>
           </div>
           {/* .gm-box */}
@@ -134,7 +131,7 @@ function Home() {
       {/* #GM-Recap */}
     </div>
 
-    <script src="../components/homeComponents/eventsBox.js"></script>
+    {/* <script src="../components/homeComponents/eventsBox.js"></script> */}
     </>
 
   );

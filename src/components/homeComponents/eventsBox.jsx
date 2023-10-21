@@ -2,7 +2,6 @@ import CultureWars from "../../assets/Events/CultureWarsGraphic.jpg"
 
 const eventTitles = [];
 const thumbnails = [];
-const eventDescs = [];
 
 eventTitles[0] = "CULTURE WARS: THE EXHIBITION";
 eventTitles[1] = "";
@@ -12,9 +11,8 @@ thumbnails[0] = CultureWars;
 thumbnails[1] = null;
 thumbnails[2] = null;
 
-eventDescs[0] = "DAY UCLAxUSC event at UCLA Kerckhoff Gallery | Saturday, October 21, 2023 | Formal Attire";
-eventDescs[1] = "";
-eventDescs[2] = "";
+const crack = []
+
 
 const eventsBox = () => {
     //  FORMAT TO MATCH:
@@ -23,7 +21,6 @@ const eventsBox = () => {
     //     <div class="event-thumbnail col-12">
     //       <img src="" alt="sample-event-thumbnail"></img>
     //       <a href="https://dayusc.org"></a>
-    //       <p class="event-desc"></p>
     //     </div>
     //   </div>
 
@@ -31,13 +28,16 @@ const eventsBox = () => {
 
     for(let i = 0; i < eventsArray.length; i++){
         console.log(eventsArray[i])
-        eventsArray[i].querySelector("img").src = thumbnails[i]
-        eventsArray[i].querySelector("a").innerHTML = eventTitles[i]
-        eventsArray[i].querySelector(".event-desc").innerHTML = eventDescs[i]
+        const image = eventsArray[i].querySelector("img")
+        const title = eventsArray[i].querySelector("a")
+
+        image.src = thumbnails[i]
+        title.innerHTML = eventTitles[i]
 
     }
 
     return false
 }
 
-export default eventsBox();
+
+export default eventsBox;
