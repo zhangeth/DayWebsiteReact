@@ -3,6 +3,7 @@ import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
 import AboutOurStory from "../components/aboutComponents/aboutOurStory";
 import AboutTeamRoles from "../components/aboutComponents/aboutTeamRoles";
 import eboardTemplate from "../components/aboutComponents/eboardTemplate";
+import daybanner from "../assets/DAYBanner.png";
 import "../css/about.css"
 // Eboard images
 import Audrey from "../assets/Eboard/Audrey.jpg"
@@ -14,11 +15,16 @@ import Riya from "../assets/Eboard/Riya.jpg";
 import Stephanie from "../assets/Eboard/Stephanie.jpg";
 import Eric from "../assets/Eboard/Eric.jpg";
 import Andrew from "../assets/Eboard/Andrew.jpg";
+const title = "ABOUT DAY";
+const message = "We are a group of Asian youths striving to uplift marginalized communities through education, activism, and celebration. Reach out if you want to share your unique experiences.";
 
 function About() {
 	return (
 		<div class="py-3 mb-4 border-bottom">
-            {HomeHero()}
+            {HomeHero(title, message)}
+            <div>
+                <img class="about-image" src={daybanner}  alt="" width="720"/>
+            </div>
             {DAYHistoryHero()}
 
             <a 
