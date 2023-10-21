@@ -8,6 +8,7 @@ import flight from "../assets/ProsePics/Flight.jpg"
 import grace from "../assets/ArticlePics/grace.jpg"
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
+import newsColumn from "../components/homeComponents/newsColumn.jsx"
 import "../css/globalComponents.css"
 
 const TITLE = 'DAY USC';
@@ -47,9 +48,7 @@ function Home() {
           </div>
 
           <div class="col" width="25%">
-            <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News</h2>
-              {homeTemplate(liliuokalani, "", "/apidawomen", "Notable APIDA Women to Spotlight During Women's History Month", "Jeen Lee")}
-              {homeTemplate(grace, "", "/grace", "Grace Young: From 'Stir-fry Guru' to 'Woman of the Year'", "Celine Chen")}
+            {newsColumn()}
           </div>
         </div>
       </div>
