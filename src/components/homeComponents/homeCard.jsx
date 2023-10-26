@@ -23,7 +23,7 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
 
       <div class='card-author'>
           By {author}
-      </div>
+      </div> 
     </div>
   );
 

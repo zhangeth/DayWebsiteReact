@@ -3,6 +3,8 @@
     display: inline-block; /* shrink wrap to image */
     overflow: hidden; /* hide the excess */
     padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .imgBox img{
     width: 100%;

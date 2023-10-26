@@ -9,9 +9,19 @@ import grace from "../assets/ArticlePics/grace.jpg"
 
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
-import {eventsBox} from "../components/homeComponents/eventsBox"
+import eventsBox from "../components/homeComponents/eventsBox"
 import "../css/globalComponents.css"
 import "../css/homeStructure.css"
+
+//events
+import CultureWars from "../assets/Events/CultureWars.jpg"
+import NightMarket from "../assets/Events/APASANightMarket.jpg"
+import OpenMic from "../assets/Events/DESCENTxDAYOpenMic.jpg"
+
+import GM7 from "../assets/Events/GM7.jpg"
+import GM4 from "../assets/Events/GM4.jpg"
+import GM3 from "../assets/Events/GM3.jpg"
+
 
 const TITLE = 'DAY USC';
 
@@ -52,8 +62,8 @@ function Home() {
 
           <div class="col-sm-12 col-md-12 col-lg-3">
             <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News</h2>
-              {homeTemplate(liliuokalani, "", "/apidawomen", "Notable APIDA Women to Spotlight During Women's History Month", "Jeen Lee")}
-              {homeTemplate(grace, "", "/grace", "Grace Young: From 'Stir-fry Guru' to 'Woman of the Year'", "Celine Chen")}
+            {homeTemplate(liliuokalani, "", "/apidawomen", "Notable APIDA Women to Spotlight During Women's History Month", "Jeen Lee")}
+            {homeTemplate(grace, "", "/grace", "Grace Young: From 'Stir-fry Guru' to 'Woman of the Year'", "Celine Chen")}
           </div>
         </div>
       </div>
@@ -63,33 +73,15 @@ function Home() {
     <div class="row justify-content-center mt-5">
       <div id="Events" class="col-sm-10 col-md-5">
         <div class="row justify-content-center pt-5">
-          <h2 class="col-12 text-center">Upcoming Events</h2>
+          <h2 class="col-12 text-center pb-4">Upcoming Events</h2>
 
-          <div class="event-box col-sm-12 col-md-6 col-lg 4">
-            <div class="event-thumbnail col-12">
-              <img src="" alt="sample-event-thumbnail"></img>
-              <a href="https://dayusc.org"></a>
-              <p class="event-desc"></p>
-            </div>
-          </div>
+          {eventsBox(CultureWars, "https://dayusc.org")}
           {/* .event-box*/}
 
-          <div class="event-box col-sm-12 col-md-6 col-lg 4">
-            <div class="event-thumbnail col-12">
-              <img src="" alt="sample-event-thumbnail"></img>
-              <a href="https://dayusc.org"></a>
-              <p class="event-desc"></p>
-            </div>
-          </div>
+          {eventsBox(NightMarket, "https://dayusc.org")}
           {/* .event-box*/}
 
-          <div class="event-box col-sm-12 col-md-6 col-lg 4">
-            <div class="event-thumbnail col-12">
-              <img src="" alt="sample-event-thumbnail"></img>
-              <a href="https://dayusc.org"></a>
-              <p class="event-desc"></p>
-            </div>
-          </div>
+          {eventsBox(OpenMic, "https://dayusc.org")}
           {/* .event-box*/}
         </div>
       </div>
@@ -101,7 +93,19 @@ function Home() {
 
       <div id="GM-Recap" class="col-sm-10 col-md-5">
         <div class="row pt-5">
-          <h2 class="col-12 text-center">GM Recap</h2>
+          <h2 class="col-12 text-center pb-4">GM Recap</h2>
+
+          {eventsBox(GM7, "https://dayusc.org")}
+          {eventsBox(GM4, "https://dayusc.org")}
+          {eventsBox(GM3, "https://dayusc.org")}
+
+          {/* <div class="gm-box col-sm-12 col-md-6 col-lg 4">
+            <div class="gm-thumbnail col-12">
+              <img src="" alt="sample-gm-thumbnail"></img>
+              <a href="https://dayusc.org"></a>
+            </div>
+          </div>
+          .gm-box
 
           <div class="gm-box col-sm-12 col-md-6 col-lg 4">
             <div class="gm-thumbnail col-12">
@@ -109,7 +113,7 @@ function Home() {
               <a href="https://dayusc.org"></a>
             </div>
           </div>
-          {/* .gm-box */}
+          .gm-box
 
           <div class="gm-box col-sm-12 col-md-6 col-lg 4">
             <div class="gm-thumbnail col-12">
@@ -117,21 +121,11 @@ function Home() {
               <a href="https://dayusc.org"></a>
             </div>
           </div>
-          {/* .gm-box */}
-
-          <div class="gm-box col-sm-12 col-md-6 col-lg 4">
-            <div class="gm-thumbnail col-12">
-              <img src="" alt="sample-gm-thumbnail"></img>
-              <a href="https://dayusc.org"></a>
-            </div>
-          </div>
-          {/* .gm-box */}
+          .gm-box */}
         </div>
       </div>
       {/* #GM-Recap */}
     </div>
-
-    {/* <script src="../components/homeComponents/eventsBox.js"></script> */}
     </>
 
   );

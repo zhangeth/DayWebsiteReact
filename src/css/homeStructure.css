@@ -18,8 +18,20 @@
     border-top: 1px solid black;
 }
 
-.event-box .event-thumbnail img{
+.event-box{
+    overflow: hidden;
+}
+
+.event-box .event-thumbnail{
     width: 90%;
+    aspect-ratio: 1/1;
+}
+
+.event-box .event-thumbnail img{
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .event-box .event-thumbnail a{
