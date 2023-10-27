@@ -1,4 +1,5 @@
 import '../../css/newsColumn.css';
+import '../../css/homeCard.css';
 import grace from "../../assets/ArticlePics/grace.jpg"
 import liliuokalani from "../../assets/ArticlePics/liliuokalani.png"
 function newsColumn() {
@@ -25,12 +26,16 @@ function newsColumn() {
   
     const newsCardList = newsCards.map((newsCard) => (
       <div class="newsCard" key={newsCard.id}>
-            <p class='card-category'>{newsCard.category}</p>
-            <a href={newsCard.link} key={newsCard.id}>
-                <p class='card-title'>{newsCard.title}</p>
-            </a>
-            <p class='card-author'>{newsCard.author}</p>
-            <img src={newsCard.image}/>
+        <div class="card-content">
+          <p class='card-category'>{newsCard.category}</p>
+          <a href={newsCard.link} key={newsCard.id}>
+            <p class='card-title'>{newsCard.title}</p>
+          </a>
+          <p class='card-author'>{newsCard.author}</p>
+        </div>
+        <div class="imgBox">
+          <img src={newsCard.image} alt={newsCard.title} />
+        </div>
       </div>
     ));
   

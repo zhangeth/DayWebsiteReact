@@ -2,12 +2,25 @@
     text-align: left;
     font-style: italic;
     border: bold;
+    font-family: 'Right Sans Medium';
+    font-size: x-large;
 }
 
 .newsCard {
+    display: flex;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+.card-content {
+    flex: 1;
+    align-items: stretch;
+}
+  
+  .card-image {
+    width: 100px;
+    padding-left: 10px;
 }
 
 .newsCard .card-category {
@@ -15,6 +28,7 @@
     font-weight: bold;
     color:#B83826;
     font-family: 'Pangram Sans Compact';
+    font-size: small;
 }
 .newsCard a {
     text-decoration: none;
@@ -28,9 +42,9 @@
 .newsCard .card-title {
     text-decoration: none;
     font: pv3;
-    font-size: x-large;
+    font-size: medium;
     color: black;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     transition: text-decoration 0.5s;
     transition-timing-function: ease-out;
 }
@@ -41,6 +55,7 @@
 .newsCard .card-author {
     font-weight: bold;
     font-family: 'Radio Grotesk Black';
+    font-size: small;
 }
 
 .newsCard img {
@@ -51,8 +66,4 @@
     opacity: 1;
     transition: opacity 0.5s, transform 0.3s ease;
     transform-origin: center center;
-}
-.newsCard:hover img{
-    transform: scale(1.1); /* Increase the size by 10% on hover */
-    opacity: 0.65;
 }
