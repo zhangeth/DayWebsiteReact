@@ -1,49 +1,30 @@
 import '../../css/about.css'
 
-function eboardTemplate(pic1, pic2, pic3, pos1, pos2, pos3, name1, name2, name3){
-    return (
-        <div>
-            <div class="row">
-                <div class="col-4">
-                        <img class="circular-picture" src={pic1}/>
+function eboardTemplate(pics, positions, names) {
+    const rows = [];
+  
+    for (let i = 0; i < pics.length; i += 3) {
+      const row = (
+        <div key={i} className="row">
+          {pics.slice(i, i + 3).map((pic, index) => (
+            <div key={index} className="col-4">
+              <div className="image-row">
+                <img className="circular-picture" src={pic}/>
+                <div className="row">
+                  <h5 className="about-subtitle2">{positions[i + index]}</h5>
                 </div>
-                <div class="col-4">
-                        <img class="circular-picture" src={pic2}/>
+                <div className="row">
+                  <h6 className="about-body">{names[i + index]}</h6>
                 </div>
-                <div class="col-4">
-                        <img class="circular-picture" src={pic3}/>
-                </div>
+              </div>
             </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <div class="row">
-                        <h5 class="about-subtitle2"> {pos1} </h5>
-                    </div>
-                    <div class="row">
-                        <h6 class="about-body"> {name1} </h6>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <h5 class="about-subtitle2"> {pos2} </h5>
-                    </div>
-                    <div class="row">
-                        <h6 class="about-body"> {name2} </h6>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <h5 class="about-subtitle2"> {pos3} </h5>
-                    </div>
-                    <div class="row">
-                        <h6 class="about-body"> {name3} </h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="py-2"></div>
+          ))}
         </div>
-    );
-}
-export default eboardTemplate;
+      );
+  
+      rows.push(row);
+    }
+    return <div>{rows}</div>;
+  }
+  
+  export default eboardTemplate;
