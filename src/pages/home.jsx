@@ -62,12 +62,12 @@ function Home() {
               <div class="py-1">
               </div>
 
-              {homeTemplate(eeaaooscar, "", "/eeaao",
-              "Why Everything Everywhere All at Once Winning 7 Oscars is Significant", "Jeen Lee")}
-
               {homeTemplate(mentalHealth, "Illustrated by Laura Whelan", "/lolsorry", 
               "lol sorry i’m being depressing: destigmatizing mental illness in the asian-american community",
               "Ina Ycasas")}
+
+              {homeTemplate(eeaaooscar, "", "/eeaao",
+              "Why Everything Everywhere All at Once Winning 7 Oscars is Significant", "Jeen Lee")}
 
             </div>
           </div>
