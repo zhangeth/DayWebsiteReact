@@ -1,7 +1,7 @@
 import '../../css/images.css'
 import '../../css/homeCard.css'
 
-function homeTemplate(imgurl, imgcred, contenturl, title, author){
+function homeTemplate(imgurl, imgcred, contenturl, title, category, description, author){
     let state = imgcred === ""? false: true;
     let linkstate = contenturl === ""? false: true;
 
@@ -17,9 +17,13 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
         {state && imgcred}
       </p>
       
+      <div class='card-category'>{category}</div>
+
       <a href={linkstate && contenturl}>
         <div class="card-title">{title}</div>
       </a>
+
+      <div class='card-description'>{description}</div>
 
       <div class='card-author'>
           By {author}
