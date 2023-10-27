@@ -42,6 +42,7 @@
 .newsCard .card-title {
     text-decoration: none;
     font: pv3;
+    font-family: 'Fragment Text Regular';
     font-size: medium;
     color: black;
     padding-bottom: 2px;
