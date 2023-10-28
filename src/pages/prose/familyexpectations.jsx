@@ -18,7 +18,6 @@ const paragraphs7 = ["I think growing up, I was born into a competitive family e
 const quotes1 = ["Who’s the smartest? Who’s the best looking? Who is going to be the most successful? Who’s going to make the most money?"];
 const quotes2 = ["Yes, it is nice to be labelled as intelligent; however, it is not the only title I wasn’t."] 
 
-const links = ["https://www.elle.com/culture/music/a45042711/olivia-rodrigo-all-american-bitch-lyrics-meaning/", "https://people.com/olivia-rodrigo-wondered-if-guts-would-be-good-enough-after-sour-7968501", "https://nnedv.org/latest_update/stereotypes-asian-women/", "https://wp.nyu.edu/steinhardt-appsych_opus/the-tiger-mom-stereotypes-of-chinese-parenting-in-the-united-states/"];
 function Expectations()
 {
     return(
