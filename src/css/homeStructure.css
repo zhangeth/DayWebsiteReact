@@ -19,12 +19,20 @@
 }
 
 .event-box{
+    display: inline-block;
     overflow: hidden;
 }
 
 .event-box .event-thumbnail{
     width: 90%;
     aspect-ratio: 1/1;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
 }
 
 .event-box .event-thumbnail img{
@@ -32,15 +40,18 @@
     width: auto;
     margin-left: auto;
     margin-right: auto;
+
+    left: 50%;
+    right: 50%;
+}
+
+.event-box .event-thumbnail img:hover{
+    transition: opacity 0.5s, transform 0.3s ease;
+    transform: scale(1.1);
+    opacity: 0.65;
 }
 
 .event-box .event-thumbnail a{
     text-decoration: none;
-}
 
-.event-box .event-thumbnail .event-desc{
-    text-decoration: none;
-    font-family: "Fragment Text Regular";
-    font-size: 0.75em;
 }
-
