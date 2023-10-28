@@ -8,7 +8,7 @@ import flight from "../assets/ProsePics/Flight.jpg"
 import grace from "../assets/ArticlePics/grace.jpg"
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
-import Articles from "../components/homeComponents/articles.jsx"
+import ArticlesPreview from "../components/homeComponents/articlesPreview.jsx"
 import "../css/globalComponents.css"
 
 const TITLE = 'DAY USC';
@@ -21,9 +21,9 @@ function Home() {
   try {
     return (
       <div>
-      <div>
+      {/* <div>
         <div>{Articles()}</div>
-      </div>
+      </div> */}
 
       <title>{ TITLE }</title>
       <div class="py-3">

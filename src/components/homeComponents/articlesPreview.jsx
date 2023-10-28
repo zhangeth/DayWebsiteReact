@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { getArticles } from '../../api/articles';
 
-function Articles() {
+function ArticlesPreview() {
   
-  const [articles, setData] = useState(null);
+  const [articles, setArticles] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Articles() {
 
         console.log(articles);
 
-        setData(articles);
+        setArticles(articles);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching articles:', error);
@@ -35,4 +35,4 @@ function Articles() {
   );
 }
 
-export default Articles;
+export default ArticlesPreview;
