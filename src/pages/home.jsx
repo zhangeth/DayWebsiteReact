@@ -81,16 +81,19 @@ function Home() {
 
           <div class="col-sm-12 col-md-12 col-lg-3">
             <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News</h2>
-              {homeTemplate(mulan, "", "/comfortfilms", "Animated APIDA Comfort Films", "Ina Ycasas")}
+              <div class="row">
+                {homeTemplate(mulan, "", "/comfortfilms", "Animated APIDA Comfort Films", "Ina Ycasas")}
 
-              {homeTemplate(liliuokalani, "", "/apidawomen", 
-              "Notable APIDA Women to Spotlight During Women's History Month", "Jeen Lee")}
+                {homeTemplate(liliuokalani, "", "/apidawomen", 
+                "Notable APIDA Women to Spotlight During Women's History Month", "Jeen Lee")}
 
-              {homeTemplate(grace, "", "/grace", "Grace Young: From 'Stir-fry Guru' to 'Woman of the Year'", 
-              "Celine Chen")}
+                {homeTemplate(grace, "", "/grace", "Grace Young: From 'Stir-fry Guru' to 'Woman of the Year'", 
+                "Celine Chen")}
 
-              {homeTemplate(boba, "Photographer: Francisco Cordosa", "/reflections", "Reflections", 
-              "Patrick Fang")}
+                {homeTemplate(boba, "Photographer: Francisco Cordosa", "/reflections", "Reflections", 
+                "Patrick Fang")}                
+              </div>
+
           </div>
         </div>
       </div>
