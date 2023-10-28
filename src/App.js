@@ -54,13 +54,14 @@ function scrollFunction() {
 Amplify.configure(awsconfig);
 
 const App = () => {
-  try {
-    // await API.graphql(graphqlOperation(syncArticles));
-    // const articles = await API.graphql(graphqlOperation(listArticles));
-    // console.log(`articles: ${articles}`);
-  } catch (error) {
-    console.log(error);
-  }
+  // try {
+  //   // await API.graphql(graphqlOperation(syncArticles));
+  //   // const articles = await API.graphql(graphqlOperation(listArticles));
+  //   // console.log(`articles: ${articles}`);
+  //   //await getArticles();
+  // } catch (error) {
+  //   console.log(error);
+  // }
   
   return (
     <Router>

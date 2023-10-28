@@ -8,6 +8,7 @@ import flight from "../assets/ProsePics/Flight.jpg"
 import grace from "../assets/ArticlePics/grace.jpg"
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
+import Articles from "../components/homeComponents/articles.jsx"
 import "../css/globalComponents.css"
 
 const TITLE = 'DAY USC';
@@ -20,6 +21,10 @@ function Home() {
   try {
     return (
       <div>
+      <div>
+        <div>{Articles()}</div>
+      </div>
+
       <title>{ TITLE }</title>
       <div class="py-3">
         <div class="container-fluid" style={{'maxWidth':'90%'}}>
