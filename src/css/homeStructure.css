@@ -2,12 +2,13 @@
     max-width: 90%;
 }
 
-#left-headline{
-    border-right: 1px solid black;
-}
-
-#center-headline{
-    border-right: 1px solid black;
+@media (min-width: 992px){
+    #left-headline{
+        border-right: 1px solid black;
+    }   
+    #center-headline{
+        border-right: 1px solid black;
+    } 
 }
 
 #Events{
@@ -33,6 +34,7 @@
 
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .event-box .event-thumbnail img{

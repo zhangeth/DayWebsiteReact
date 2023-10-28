@@ -5,8 +5,6 @@
     padding-bottom: 5px;
     padding-top: 5px;
     border-bottom: 1px solid #ccc;
-    margin-block-start: auto;
-    margin-block-end: auto;
   }
 
   .homeCard .card-title {
@@ -44,14 +42,27 @@
   
   /* Style for the card link */
   .homeCard a {
+    justify-content: center;
     text-decoration: none;
     color: black;
     transition: text-decoration 0.5s;
     transition-timing-function: ease-out;
   }
   
+  .homeCard a img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* Hover effect for the card link */
   .homeCard a:hover {
     text-decoration: underline;
   }
   
+  @media(max-width: 992px){
+    .homeCard{
+      justify-content: center;
+      text-align: center;
+    }
+  }

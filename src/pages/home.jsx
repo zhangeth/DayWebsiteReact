@@ -36,7 +36,7 @@ function Home() {
 
           <div id="left-headline" class="col-sm-12 col-md-12 col-lg-3">
           <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Creative</h2>
-            <div>
+            <div class="row justify-content-center">
               {homeTemplate(mulan, "", "/comfortfilms", "Animated APIDA Comfort Films", "Ina Ycasas")}
 
               <h3 style={{textAlign:'right', color:'black', fontStyle:'italic', fontWeight:'bold'}}>Prose</h3>
@@ -92,7 +92,7 @@ function Home() {
       </div>
 
       <div id="GM-Recap" class="col-sm-12 col-md-12">
-        <div class="row pt-5">
+        <div class="row  justify-content-center pt-5">
           <h2 class="col-12 text-center pb-4">GM Recap</h2>
 
           {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
