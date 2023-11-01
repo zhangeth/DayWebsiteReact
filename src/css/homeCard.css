@@ -1,7 +1,6 @@
-/* Style for the entire card */
 .homeCard {
-    display: inline-block; /* shrink wrap to image */
-    overflow: hidden; /* hide the excess */
+    display: inline-block;
+    overflow: hidden;
     padding-bottom: 5px;
     padding-top: 5px;
     border-bottom: 1px solid #ccc;
@@ -55,7 +54,6 @@
     align-items: center;
   }
 
-  /* Hover effect for the card link */
   .homeCard a:hover {
     text-decoration: underline;
   }

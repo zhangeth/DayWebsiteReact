@@ -1,13 +1,13 @@
 // for subtitle + image + paragraph formats
 import '../../css/article.css'
 
-function subtitleTemplate(women, images, paragraphs){
+function subtitleTemplate(subtitle, images, paragraphs){
     const subtitleElements = [];
 
-    for (let i = 0; i < women.length; i++) {
+    for (let i = 0; i < subtitle.length; i++) {
         subtitleElements.push(
             <div key={i}>
-                <h6 className="article-subtitle">{women[i]}</h6>
+                <h6 className="article-subtitle">{subtitle[i]}</h6>
 
                 <div className="article-image">
                     <img src={images[i]}/>

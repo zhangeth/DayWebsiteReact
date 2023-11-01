@@ -11,49 +11,23 @@
     } 
 }
 
-#Events{
-    border-top: 1px solid black;
-}
+.Events {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    border-top: 1px solid #333;
+  }
+
+  .Events h2 {
+    justify-content: center;
+    font-size: 24px;
+    color: #333;
+  }
 
 #GM-Recap{
-    border-top: 1px solid black;
-}
-
-.event-box{
-    display: inline-block;
-    overflow: hidden;
-}
-
-.event-box .event-thumbnail{
-    width: 90%;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.event-box .event-thumbnail img{
-    height: 100%;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-
-    left: 50%;
-    right: 50%;
-}
-
-.event-box .event-thumbnail img:hover{
-    transition: opacity 0.5s, transform 0.3s ease;
-    transform: scale(1.1);
-    opacity: 0.65;
-}
-
-.event-box .event-thumbnail a{
-    text-decoration: none;
-
+    border-top: 2px solid black;
+    .row {
+        display: flex;
+        justify-content: center;
+      }
 }

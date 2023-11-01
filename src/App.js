@@ -12,10 +12,6 @@ import Home from "./pages/home"
 import About from "./pages/about"
  
 // article pages for now
-import Colonialism from "./pages/colonialism";
-import Monterey from "./pages/monterey";
-import Kpop from "./pages/kpop";
-import Fashion from "./pages/fashion";
 import Halmoni from "./pages/prose/halmoni";
 import Comfortfilms from "./pages/comfortfilms";
 import Apidawomen from "./pages/apidawomen";
@@ -73,11 +69,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/colonialism" element={<Colonialism />} />
       <Route path="/comfortfilms" element={<Comfortfilms />} />
-      <Route path="/monterey" element={<Monterey />} />
-      <Route path="/kpop" element={<Kpop />} />
-      <Route path="/fashion" element={<Fashion />} />
       <Route path="/halmoni" element={<Halmoni />} />
       <Route path="/apidawomen" element={<Apidawomen />} />
       <Route path="/eeaao" element={<Eeaao />} />

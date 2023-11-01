@@ -100,41 +100,30 @@ function Home() {
       </div>
     </div>
 
-    <div class="row justify-content-center mt-5">
-      <div id="Events" class="col-sm-12 col-md-12">
-        <div class="row justify-content-center pt-5 pb-5">
-          <h2 class="col-12 text-center pb-4">Upcoming Events</h2>
-
-          {eventsBox(CultureWars, "https://www.instagram.com/p/Cxop1fIRqwp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
-          {/* .event-box*/}
-
-          {eventsBox(NightMarket, "https://www.instagram.com/p/CyexJsqivlI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
-          {/* .event-box*/}
-
-          {eventsBox(OpenMic, "https://www.instagram.com/p/CyognzcSfdN/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
-          {/* .event-box*/}
-        </div>
+      <div class="Events">
+          <h2 class="row">Past Events</h2>
+          <div class="row">
+            <div class="col">
+              {eventsBox(CultureWars, "https://www.instagram.com/p/Cxop1fIRqwp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
+            </div>
+            <div class="col">
+              {eventsBox(NightMarket, "https://www.instagram.com/p/CyexJsqivlI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
+            </div>
+            <div class="col">
+              {eventsBox(OpenMic, "https://www.instagram.com/p/CyognzcSfdN/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
+            </div>
+          </div>
       </div>
-      {/* #Events */}
-
-      <div class="buffer col-sm-0 col-md-1">
-
-      </div>
-
+      
       <div id="GM-Recap" class="col-sm-12 col-md-12">
         <div class="row  justify-content-center pt-5">
           <h2 class="col-12 text-center pb-4">GM Recap</h2>
-
           {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
           {eventsBox(GM4, "https://www.canva.com/design/DAFyiDd7WSE/BwevBWDtKtwYCOJTdN1hMg/edit")}
           {eventsBox(GM3, "https://www.canva.com/design/DAFyiB--WdM/HL-z6Qj_J1DdkZCObEUz8g/edit")}
-          {/* .gm-box */}
         </div>
       </div>
-      {/* #GM-Recap */}
-    </div>
     </>
-
   );
 }
 
