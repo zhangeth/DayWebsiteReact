@@ -101,7 +101,7 @@ function Home() {
     </div>
 
       <div class="Events">
-          <h2 class="row">Past Events</h2>
+          <h2 class="row">Events</h2>
           <div class="row">
             <div class="col">
               {eventsBox(CultureWars, "https://www.instagram.com/p/Cxop1fIRqwp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
@@ -114,14 +114,21 @@ function Home() {
             </div>
           </div>
       </div>
-      
-      <div id="GM-Recap" class="col-sm-12 col-md-12">
-        <div class="row  justify-content-center pt-5">
-          <h2 class="col-12 text-center pb-4">GM Recap</h2>
-          {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
-          {eventsBox(GM4, "https://www.canva.com/design/DAFyiDd7WSE/BwevBWDtKtwYCOJTdN1hMg/edit")}
-          {eventsBox(GM3, "https://www.canva.com/design/DAFyiB--WdM/HL-z6Qj_J1DdkZCObEUz8g/edit")}
-        </div>
+
+      <div class="GM">
+          <h2 class="row">General Meetings</h2>
+          <p class="row"> Tuesdays, from 7 - 8 pm. Follow us on instagram @dearasianyouth.usc for more information </p>
+          <div class="row">
+            <div class="col">
+              {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
+            </div>
+            <div class="col">
+              {eventsBox(GM4, "https://www.canva.com/design/DAFyiDd7WSE/BwevBWDtKtwYCOJTdN1hMg/edit")}
+            </div>
+            <div class="col">
+              {eventsBox(GM3, "https://www.canva.com/design/DAFyiB--WdM/HL-z6Qj_J1DdkZCObEUz8g/edit")}
+            </div>
+          </div>
       </div>
     </>
   );

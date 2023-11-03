@@ -1,36 +1,35 @@
 #header {
-    background-color: white; /* Grey background */
-    padding: 0px 3px; /* Some padding */
+    background-color: white;
+    padding: 0px 3px;
     padding-bottom: 0px;
     color: #D72323;
-    text-align: center; /* Centered text */
+    text-align: center;
     font-family: 'Right Sans Medium';
-    font-size: 90px; /* Big font size */
+    font-size: 90px;
     font-weight: normal;
-    position: fixed; /* Fixed position - sit on top of the page */
+    position: fixed;
     top: 0;
-    width: 100%; /* Full width */
-    transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    width: 100%;
+    transition: 0.5s;
     transition-delay: 0.4s;
     z-index: 1000;
 }
 
 #navbar {
-  background-color: white; /* Black background color */
+  background-color: white;
   border-top: 1px solid #2222;
   border-bottom: 1px solid #DDD;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  position: fixed; /* Make it stick/fixed */
-  top: 108px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
+  position: fixed;
+  top: 108px;
+  width: 100%;
   justify-content: center;
-  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  transition: top 0.5s;
   transition-delay: 0.4s;
   z-index: 999;
 }
 
-/* Style the navbar links */
 #navbar a {
   float: left;
   display: block;
