@@ -7,18 +7,26 @@ import olivia from "../assets/ArticlePics/olivia.png"
 import flight from "../assets/ProsePics/Flight.jpg"
 import grace from "../assets/ArticlePics/grace.jpg"
 
-//divisions: 
-// plushy prose
-// expectations end article piece
 import mentalHealth from "../assets/ArticlePics/mentalHealth.jpg"
 import plushy from "../assets/ArticlePics/plushy.png"
 import parentalExpectations from "../assets/ArticlePics/parentalExpectations.jpg"
 import dating from "../assets/ArticlePics/dating.jpg"
 import boba from "../assets/ArticlePics/boba.jpg"
 
+//events
+import CultureWars from "../assets/Events/CultureWars.jpg"
+import NightMarket from "../assets/Events/APASANightMarket.jpg"
+import OpenMic from "../assets/Events/DESCENTxDAYOpenMic.jpg"
+
+import GM7 from "../assets/Events/GM7.jpg"
+import GM4 from "../assets/Events/GM4.jpg"
+import GM3 from "../assets/Events/GM3.jpg"
+
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
+import eventsBox from "../components/homeComponents/eventsBox"
 import "../css/globalComponents.css"
+import "../css/homeStructure.css"
 
 const TITLE = 'DAY USC';
 
@@ -88,7 +96,39 @@ function Home() {
         </div>
       </div>
       </div>
-    </div>
+
+          <div class="Events">
+          <h2 class="row">Events</h2>
+          <div class="row">
+            <div class="col">
+              {eventsBox(CultureWars, "https://www.instagram.com/p/Cxop1fIRqwp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
+            </div>
+            <div class="col">
+              {eventsBox(NightMarket, "https://www.instagram.com/p/CyexJsqivlI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
+            </div>
+            <div class="col">
+              {eventsBox(OpenMic, "https://www.instagram.com/p/CyognzcSfdN/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
+            </div>
+          </div>
+      </div>
+
+      <div class="GM">
+          <h2 class="row">General Meetings</h2>
+          <p class="row"> Tuesdays, from 7 - 8 pm. Follow us on instagram @dearasianyouth.usc for more information </p>
+          <div class="row">
+            <div class="col">
+              {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
+            </div>
+            <div class="col">
+              {eventsBox(GM4, "https://www.canva.com/design/DAFyiDd7WSE/BwevBWDtKtwYCOJTdN1hMg/edit")}
+            </div>
+            <div class="col">
+              {eventsBox(GM3, "https://www.canva.com/design/DAFyiB--WdM/HL-z6Qj_J1DdkZCObEUz8g/edit")}
+            </div>
+          </div>
+          </div>
+      </div>
+    
   );
 }
 
