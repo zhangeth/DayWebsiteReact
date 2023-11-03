@@ -15,7 +15,7 @@ import boba from "../assets/ArticlePics/boba.jpg"
 
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
-import {eventsBox} from "../components/homeComponents/eventsBox"
+import eventsBox from "../components/homeComponents/eventsBox"
 import "../css/globalComponents.css"
 import "../css/homeStructure.css"
 
