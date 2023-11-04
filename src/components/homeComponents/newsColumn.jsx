@@ -27,7 +27,7 @@ function newsColumn() {
         id: 3,
         category: "ENTERTAINMENT/OPINION",
         link: "/comfortfilms",
-        title: "Grace Young: From 'Stir-fry Guru' to 'Woman of the Year'",
+        title: "Animated APIDA Comfort Films",
         author: "By Ina Ycasas",
         image: mulan
       },
