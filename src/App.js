@@ -13,7 +13,7 @@ import About from "./pages/about"
 import Magazine from "./pages/magazine";
  
 // article pages for now
-import Halmoni from "./pages/prose/halmoni";
+import Halmoni from "./pages/poetry/halmoni";
 import Comfortfilms from "./pages/comfortfilms";
 import Apidawomen from "./pages/apidawomen";
 import Eeaao from "./pages/eeaao";

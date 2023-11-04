@@ -4,7 +4,7 @@ import sourcesTemplate from "../components/articleComponents/sourcesTemplate"
 import linksTemplate from "../components/articleComponents/linksTemplate"
 import bodyTemplate from "../components/articleComponents/bodyTemplate"
 import quotesTemplate from "../components/articleComponents/quotesTemplate"
-const category = "ENTERTAINMENT";
+const category = "ENTERTAINMENT/OPINION";
 const title = "All-(Asian)-American Bitch: How Olivia Rodrigo's New Song Reclaims & Challenges Boxes Surrounding the Identity of the Asian-American Woman";
 const author = "BY: YI-ANN LI";
 const date = "SEPTEMBER 27, 2023";

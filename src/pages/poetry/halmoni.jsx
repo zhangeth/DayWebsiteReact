@@ -1,6 +1,6 @@
 import stanzaTemplate from "../../components/articleComponents/stanzaTemplate"
 import titleTemplate from "../../components/articleComponents/titleTemplate"
-const category = "PROSE";
+const category = "POETRY";
 const title = "Halmoni and Me";
 const author = "BY: JESSICA TADOKORO";
 const date = "November 2020";
