@@ -21,24 +21,24 @@ const names = ["Audrey Xia", "Stephanie Tong", "Peony Duong", "Heidi Arromdee", 
 
 function About() {
 	return (
-		<div class="py-3 mb-4 border-bottom">
+		<div className="py-3 mb-4 border-bottom">
             {HomeHero()}
             {DAYHistoryHero()}
 
             <a 
-                href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                href="/" className="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
             </a>
             
-            <div class="container">
-                <div class="row">
+            <div className="container">
+                <div className="row">
                     <div>
-                        <h2 class="about-subtitle">MEET THE TEAM</h2>
+                        <h2 className="about-subtitle">MEET THE TEAM</h2>
                     </div>
                 </div>
                 {eboardTemplate(pics, positions, names)}
             </div>
 
-            <div class="py-4"></div>
+            <div className="py-4"></div>
 
             {AboutOurStory()}
 

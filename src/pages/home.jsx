@@ -42,9 +42,9 @@ function Home() {
         <title>{ TITLE }</title>
 
         <div>
-          <div class="container-fluid" style={{'max-width':'90%'}}>
-            <div class="row">
-              <div class="col" style={{borderRight: '1px solid black'}}>
+          <div className="container-fluid" style={{'maxWidth':'90%'}}>
+            <div className="row">
+              <div className="col" style={{borderRight: '1px solid black'}}>
                 <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Creative</h2>
                 <div>
                   {homeTemplate(plushy, "Rilakkuma designed by Aki Kondo", "/plushy", "Ode to Plushy", 
@@ -64,7 +64,7 @@ function Home() {
                 </div>
               </div>
 
-              <div class="col-6" style={{borderRight: '1px solid black'}}>
+              <div className="col-6" style={{borderRight: '1px solid black'}}>
                 <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> Featured</h2>
                 <div>
                   {homeTemplate(olivia, "", "/aaab", 
@@ -79,7 +79,7 @@ function Home() {
                 </div>
               </div>
 
-              <div class="col" width="25%">
+              <div className="col" width="25%">
                 <h2 style={{textAlign:'right', fontStyle:'italic', border:'bold'}}> News</h2>
                 {homeTemplate(mulan, "", "/comfortfilms", "Animated APIDA Comfort Films", "Ina Ycasas")}
 
@@ -96,32 +96,32 @@ function Home() {
           </div>
         </div>
 
-        <div class="Events">
-          <h2 class="row">Events</h2>
-          <div class="row">
-            <div class="col">
+        <div className="Events">
+          <h2 className="row">Events</h2>
+          <div className="row">
+            <div className="col">
               {eventsBox(CultureWars, "https://www.instagram.com/p/Cxop1fIRqwp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
             </div>
-            <div class="col">
+            <div className="col">
               {eventsBox(NightMarket, "https://www.instagram.com/p/CyexJsqivlI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
             </div>
-            <div class="col">
+            <div className="col">
               {eventsBox(OpenMic, "https://www.instagram.com/p/CyognzcSfdN/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
             </div>
           </div>
         </div>
 
-        <div class="GM">
-          <h2 class="row">General Meetings</h2>
-          <p class="row"> Tuesdays, from 7 - 8 pm. Follow us on instagram @dearasianyouth.usc for more information </p>
-          <div class="row">
-            <div class="col">
+        <div className="GM">
+          <h2 className="row">General Meetings</h2>
+          <p className="row"> Tuesdays, from 7 - 8 pm. Follow us on instagram @dearasianyouth.usc for more information </p>
+          <div className="row">
+            <div className="col">
               {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
             </div>
-            <div class="col">
+            <div className="col">
               {eventsBox(GM4, "https://www.canva.com/design/DAFyiDd7WSE/BwevBWDtKtwYCOJTdN1hMg/edit")}
             </div>
-            <div class="col">
+            <div className="col">
               {eventsBox(GM3, "https://www.canva.com/design/DAFyiB--WdM/HL-z6Qj_J1DdkZCObEUz8g/edit")}
             </div>
           </div>

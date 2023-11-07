@@ -12,7 +12,7 @@ function stanzaTemplate(stanza){
         );
     }
 
-    return <div class="mb-4">{stanzaElements}</div>;
+    return <div className="mb-4">{stanzaElements}</div>;
 }
 
 export default stanzaTemplate;

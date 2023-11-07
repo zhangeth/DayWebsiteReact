@@ -27,14 +27,14 @@ const links = ["https://www.commonsensemedia.org/lists/movies-with-asian-asian-a
 function Comfortfilms()
 {
     return(
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
                     </div>
 
-                    <div class="col-8">
+                    <div className="col-8">
                         {titleTemplate(category, title, author, date)}
-                        <p class="article-paragraph">
+                        <p className="article-paragraph">
                             Some of my favorite memories from my childhood were being bundled up in a blanket and watching animated films with my family. This article aims to spotlight just some of the animated films out there that feature APIDA main characters, some of them older and more nostalgic and some of them newer and more relevant to the younger generation. Regardless of what your plans are this winter break, we’re hoping that putting on just one of these films in the colder season will bring you a little bit of comfort.
                         </p>
                         {subtitleTemplate(movies, images, paragraphs)}
@@ -42,7 +42,7 @@ function Comfortfilms()
                         {linksTemplate(links)}
                     </div>
 
-                    <div class="col">
+                    <div className="col">
                     </div>
                 </div>
             </div>

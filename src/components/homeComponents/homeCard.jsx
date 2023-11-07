@@ -6,22 +6,22 @@ function homeTemplate(imgurl, imgcred, contenturl, title, author){
     let linkstate = contenturl === ""? false: true;
 
     return(
-    <div class='homeCard'>
-      <div class="imgBox">
+    <div className='homeCard'>
+      <div className="imgBox">
         <a href={linkstate && contenturl}>
           <img src={imgurl} alt="Failed to Load"/>
         </a>
       </div>
       
-      <p class='imgCred'>
+      <p className='imgCred'>
         {state && imgcred}
       </p>
       
       <a href={linkstate && contenturl}>
-        <div class="card-title">{title}</div>
+        <div className="card-title">{title}</div>
       </a>
 
-      <div class='card-author'>
+      <div className='card-author'>
           By {author}
       </div>
     </div>

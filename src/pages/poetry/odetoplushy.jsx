@@ -20,21 +20,21 @@ const quotes3 = ["", "", "", "", "", "Like yours.", "", ""]
 function Plushy()
 {
     return(
-            <div class="container">
-                <div class="row justify-content-center">
+            <div className="container">
+                <div className="row justify-content-center">
 
-                    <div class="col-10">
+                    <div className="col-10">
                         {titleTemplate(category, title, author, date)}
 
-                        <div class="article-image row justify-content-center">
-                            <img class="col-5" src={plushy}/>
-                            <p class={"imgcred, col-12"}>Rilakkuma designed by Aki Kondo</p>
+                        <div className="article-image row justify-content-center">
+                            <img className="col-5" src={plushy}/>
+                            <p className={"imgcred, col-12"}>Rilakkuma designed by Aki Kondo</p>
                         </div>
                     </div>
-                    <div class="col-8">
+                    <div className="col-8">
                         {quotesTemplate(quotes1)}
                     </div>
-                    <div class="col-6">
+                    <div className="col-6">
                         {stanzaTemplate(stanza1)}
                         {stanzaTemplate(stanza2)}
                         {stanzaTemplate(stanza3)}
