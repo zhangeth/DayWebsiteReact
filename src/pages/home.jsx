@@ -21,9 +21,9 @@ function Home() {
   try {
     return (
       <div>
-      {/* <div>
-        <div>{Articles()}</div>
-      </div> */}
+      { <div>
+        <div>{ArticlesPreview()}</div>
+      </div> }
 
       <title>{ TITLE }</title>
       <div class="py-3">
