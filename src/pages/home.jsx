@@ -1,4 +1,4 @@
-// article images
+// article assets
 import koreanGrandma from "../assets/ProsePics/koreanGrandma.png"
 import mulan from "../assets/ArticlePics/mulan.png"
 import liliuokalani from "../assets/ArticlePics/liliuokalani.png"
@@ -13,7 +13,7 @@ import parentalExpectations from "../assets/ArticlePics/parentalExpectations.jpg
 import dating from "../assets/ArticlePics/dating.jpg"
 import boba from "../assets/ArticlePics/boba.jpg"
 
-//events
+// event assets
 import CultureWars from "../assets/Events/CultureWars.jpg"
 import NightMarket from "../assets/Events/APASANightMarket.jpg"
 import OpenMic from "../assets/Events/DESCENTxDAYOpenMic.jpg"
@@ -26,14 +26,11 @@ import GM3 from "../assets/Events/GM3.jpg"
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
 import ArticlesPreview from "../components/homeComponents/articlesPreview.jsx"
 import eventsBox from "../components/homeComponents/eventsBox"
+import ErrorComponent from "../components/errorComponent"
+
+// styling
 import "../css/globalComponents.css"
 import "../css/homeStructure.css"
-
-const TITLE = 'DAY USC';
-
-const ErrorComponent = () => {
-  return <div>An error occurred while fetching data.</div>;
-};
 
 function Home() {
   try {
