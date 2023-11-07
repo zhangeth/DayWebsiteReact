@@ -1,66 +1,82 @@
 import React from "react";
-
+import graphicLogo from "../../assets/graphicLogo.png"
+import litLogo from "../../assets/litLogo.png"
+import projectsLogo from "../../assets/projectsLogo.png"
+import financeLogo from "../../assets/financeLogo.png"
+import "../../css/about.css"
 
 function AboutTeamRoles() 
 {
     return (
         <div class="container">
                 <div class="row">
-                        <h2 class="py-4" style={{textAlign:'center'}}>Team Roles</h2>
+                        <h2 class="about-subtitle">TEAM ROLES</h2>
                 </div>
 
                 <div class="row">
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <h5 class="py-2"><i>Illustrators</i></h5>
-                    </div>
-
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <h5 class="py-2"><i>Writers</i></h5>
-                    </div>
-
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <h5 class="py-2"><i>Editors</i></h5>
-                    </div>
-
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <h5 class="py-2"><i>Projects</i></h5>
+                    <div class="col">
+                            <h5 class="about-subtitle2">Graphic Design</h5>
                     </div>
 
                     <div class="col">
-                            <h5 class="py-2"><i>Finance</i></h5>
+                            <h5 class="about-subtitle2">Literature</h5>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <p class="py-2">
+                    <div class="col">
+                            <img class="logo" src={graphicLogo}/>
+                    </div>
+                    <div class="col">
+                            <img class="logo" src={litLogo}/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                            <p class="about-body">
                                 Curates infographics and graphics to share on DAY’s social media platforms. Also, illustrates images used for promotion and events.
                             </p>
                     </div>
                     
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <p class="py-2">
-                                Research current events regarding APIDA issues to include in DAY USC’s social media posts. Writes short stories, prose, poems, and general creative writing related to the APIDA experience.
-                            </p>
-                    </div>
-
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <p class="py-2">
-                                Works alongside writers, assisting them with grammar and fact-checking, the credibility of sources, and producing literature pieces as well as IG captions.
-                            </p>
-                    </div>
-
-                    <div class="col" style={{borderRight: '1px solid black'}}>
-                            <p class="py-2">
-                                Brainstorms and develops activities and events promoting DAY’s mission. Collaborates with other (campus) organizations to host events.
-                            </p>
-                    </div>
-
                     <div class="col">
-                            <p class="py-2">
-                                Works with Treasurer to plan/run fundraising activities that go toward DAY USC activities such as potlucks, merch, and fundraising for charities/local Asian businesses.
+                            <p class="about-body">
+                                Researches current events regarding APIDA issues to include in DAY USC’s social media posts. Writes short stories, prose, and poems related to the APIDA experience.
                             </p>
                     </div>
+                </div>
+
+                <div class="row">
+                        <div class="col">
+                            <h5 class="about-subtitle2">Projects</h5>
+                        </div>
+
+                        <div class="col">
+                            <h5 class="about-subtitle2">Finance</h5>
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                            <img class="logo" src={projectsLogo}/>
+                    </div>
+                    <div class="col">
+                            <img class="logo" src={financeLogo}/>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="col">
+                                <p class="about-body">
+                                Brainstorms and develops activities and events promoting DAY’s mission. Collaborates with other (campus) organizations to host events.
+                                </p>
+                        </div>
+
+                        <div class="col">
+                                <p class="about-body">
+                                Works with Treasurer to plan/run fundraising activities that go toward DAY USC activities such as potlucks, merch, and fundraising for charities/local Asian businesses.
+                                </p>
+                        </div>
                 </div>
         </div>
     );
