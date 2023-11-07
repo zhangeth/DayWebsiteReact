@@ -7,7 +7,7 @@ import awsconfig from './aws-exports';
 import { getArticles } from "./api/articles";
 
 import React, { useEffect, useState} from "react";
-import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from "./pages/home"
 import About from "./pages/about"
@@ -48,7 +48,6 @@ function scrollFunction() {
     document.getElementById("header").style.fontSize = "90px";
     document.getElementById("navbar").style.top = "108px";
   }
-
 }
 
 Amplify.configure(awsconfig);
@@ -61,7 +60,6 @@ const App = () => {
     async function fetchArticles() {
       try {
         const articles = await getArticles(10);
-
         console.log(articles);
 
         setArticles(articles);
@@ -107,7 +105,6 @@ const App = () => {
       <Route path="/expectations" element={<Expectations/>} />
       <Route path="/utahboys" element={<Utahboys/>} />
       <Route path="/reflections" element={<Reflections/>} />
-
     </Routes>
 
     {Footer()}
