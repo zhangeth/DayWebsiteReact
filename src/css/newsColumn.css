@@ -11,7 +11,7 @@
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
     padding-top: 10px;
-    height: 125px;
+    height: 150px;
     overflow: hidden;
 }
 
@@ -24,17 +24,24 @@
 }
 
 .card-image {
-  padding-left: 2px;
-  max-width: 100%;
-  max-height: 100%; 
-  overflow: hidden; 
+  margin-left: 5px;
+  overflow: hidden;
 }
 
-.card-image img {
-  max-width: 100%;
-  height: auto;
+.card-image a {
+  height: 100%;
+  overflow: hidden;
   width: auto;
   opacity: 1;
+  transform: scaleX(1.5);
+  align-items: stretch;
+  margin-top: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: auto;
+  display: flex;
+  flex: 1;
+  justify-content: right;
   transition: opacity 0.5s, transform 0.3s ease;
   transform-origin: center center;
 }

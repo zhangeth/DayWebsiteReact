@@ -4,6 +4,8 @@ import boba from "../../assets/ArticlePics/boba.jpg"
 import grace from "../../assets/ArticlePics/grace.jpg"
 import mulan from "../../assets/ArticlePics/mulan.png"
 import liliuokalani from "../../assets/ArticlePics/liliuokalani.png"
+import mentalHealth from "../../assets/ArticlePics/mentalHealth.jpg"
+import eeaaooscar from "../../assets/ArticlePics/eeaao.png"
 function newsColumn() {
     // array of creative articles 
     const newsCards = [
@@ -38,7 +40,23 @@ function newsColumn() {
         title: "Reflections",
         author: "By Patrick Fang",
         image: boba
-      }
+      },
+      {
+        id: 5,
+        category: "SOCIETAL ISSUES",
+        link: "/lolsorry",
+        title: "lol sorry i'm being depressing: destigmatizing mental illness in the asian-american community",
+        author: "By Ina Ycasas",
+        image: mentalHealth
+      },
+      {
+        id: 6,
+        category: "ENTERTAINMENT",
+        link: "/eeaao",
+        title: "Why EEAAO Winning 7 Oscars is Significant",
+        author: "By Jeen Lee",
+        image: eeaaooscar
+      },
       // Add more homeTemplate objects here as needed
     ];
   
