@@ -51,8 +51,10 @@ function newsColumn() {
           </a>
           <p class='card-author'>{newsCard.author}</p>
         </div>
-        <div class="imgBox">
-          <img src={newsCard.image} alt={newsCard.title} />
+        <div class="card-image">
+          <a href={newsCard.link} key={newsCard.id}>
+            <img src={newsCard.image} alt={newsCard.title} />
+          </a>
         </div>
       </div>
     ));

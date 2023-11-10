@@ -35,7 +35,7 @@ function Reflections()
                         {titleTemplate(category, title, author, date)}
                         <div class="article-image row justify-content-center">
                             <img class="col-10" src={boba}/>
-                            <p class={"imgcred, col-12"}>src: Francisco Cordoso</p>
+                            <p class={"imgcred, col-12"}>src: Janet Sung</p>
                         </div>
                         <div class="row text-center">
                             <a class="DAY-red" href="https://www.eater.com/2019/11/5/20942192/bubble-tea-boba-asian-american-diaspora">I’ve been very preoccupied these past few weeks by a few provocative lines from this Eater article,</a>
