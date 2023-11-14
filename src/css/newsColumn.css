@@ -88,7 +88,7 @@
 
 .newsCard img {
     justify-items: stretch;
-    maxWidth: 100px;
+    max-width: 100px;
     height: auto; 
     margin-left: 10px;
     opacity: 1;
