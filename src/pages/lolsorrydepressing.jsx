@@ -24,15 +24,15 @@ const quotes1 = ["lol sorry i’m being depressing."]
 function Lolsorry()
 {
     return(
-            <div class="container">
-                <div class="row justify-content-center">
+            <div className="container">
+                <div className="row justify-content-center">
 
-                    <div class="col-10">
+                    <div className="col-10">
                         {titleTemplate(category, title, author, date)}
 
-                        <div class="article-image">
+                        <div className="article-image">
                             <img src={mentalHealth}/>
-                            <p class={"imgcred"}>Illustrated by Laura Whelan</p>
+                            <p className={"imgcred"}>Illustrated by Laura Whelan</p>
                         </div>
 
                         {quotesTemplate(quotes1)}
@@ -43,7 +43,7 @@ function Lolsorry()
                         {bodyTemplate(paragraphs5)}
                         {bodyTemplate(paragraphs6)}
                         {bodyTemplate(paragraphs7)}
-                        <div class="row text-center">
+                        <div className="row text-center">
                             <em><strong>lol sorry i’m being depressing.</strong></em>
                         </div>
                         {bodyTemplate(paragraphs8)}

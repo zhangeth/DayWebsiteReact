@@ -32,19 +32,19 @@ const links = ["https://hello.giggles.com/asian-pacific-islander-women/", "https
 function Apidawomen()
 {
     return(
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
                     </div>
 
-                    <div class="col-8">
+                    <div className="col-8">
                         {titleTemplate(category, title, author, date)}
                         {subtitleTemplate(women, images, paragraphs)}
                         {sourcesTemplate()}
                         {linksTemplate(links)}
                     </div>
 
-                    <div class="col">
+                    <div className="col">
                     </div>
                 </div>
             </div>

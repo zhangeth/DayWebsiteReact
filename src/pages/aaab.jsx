@@ -18,36 +18,36 @@ const links = ["https://www.elle.com/culture/music/a45042711/olivia-rodrigo-all-
 function Aaab()
 {
     return(
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div className="container">
+                <div className="row">
+                    <div className="col">
                     </div>
 
-                    <div class="col-8">
+                    <div className="col-8">
                         {titleTemplate(category, title, author, date)}
 
-                        <div class="article-image">
+                        <div className="article-image">
                             <img src={olivia2}/>
                         </div>
 
                         {bodyTemplate(paragraphs1)}
                         {quotesTemplate(quotes1)}
 
-                        <p class="article-paragraph">
+                        <p className="article-paragraph">
                             As soon as the chorus hits, the strong guitars seem to shred right through your ears and into your brain as Rodrigo angrily almost yells:
                         </p>
 
                         {quotesTemplate(quotes2)}
                         
-                        <p class="article-paragraph">
+                        <p className="article-paragraph">
                             Rodrigo does this for the entire song: she juxtaposes light and airy serenades from the verses about being docile, gentle, and classy —
                         </p>
 
-                        <h6 class="article-subtitle">
+                        <h6 className="article-subtitle">
                             “I got class and integrity just like a goddamn Kennedy, I swear”
                         </h6>
 
-                        <p class="article-paragraph">
+                        <p className="article-paragraph">
                             — with grungy and barely-repressed, angry choruses that scathingly mock at the impossibility of being nineteen and a girl.
                         </p>
 
@@ -55,13 +55,13 @@ function Aaab()
         
                         {bodyTemplate(paragraphs2)}
 
-                        <h6 class="article-subtitle">
+                        <h6 className="article-subtitle">
                             “I am built like a mother and a total machine”
                         </h6>
 
                         {bodyTemplate(paragraphs3)}
 
-                        <h6 class="article-subtitle">
+                        <h6 className="article-subtitle">
                             all-(asian)-american bitches!
                         </h6>
 
@@ -69,7 +69,7 @@ function Aaab()
                         {linksTemplate(links)}
                     </div>
 
-                    <div class="col">
+                    <div className="col">
                     </div>
                 </div>
             </div>

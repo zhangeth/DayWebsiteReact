@@ -21,12 +21,12 @@ const quotes2 = ["Yes, it is nice to be labelled as intelligent; however, it is 
 function Expectations()
 {
     return(
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-10">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-10">
                         {titleTemplate(category, title, author, date)}
 
-                        <div class="article-image">
+                        <div className="article-image">
                             <img src={parentalExpectations}/>
                         </div>
 

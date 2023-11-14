@@ -57,26 +57,26 @@ stanza4[10] = "and it’s the one that will never fail my halmoni and me.";
 function Halmoni()
 {
     return(
-        <div class="container">
-            <div class="row">
-                <div class="col">
+        <div className="container">
+            <div className="row">
+                <div className="col">
                 </div>
-                <div class="col-8">
+                <div className="col-8">
                     {titleTemplate(category, title, author, date)}
-                    <div class="py-2">
+                    <div className="py-2">
                         {stanzaTemplate(stanza1)}
                     </div>
-                    <div class="py-2">
+                    <div className="py-2">
                         {stanzaTemplate(stanza2)}
                     </div>
-                    <div class="py-2">
+                    <div className="py-2">
                         {stanzaTemplate(stanza3)}
                     </div>
-                    <div class="py-2">
+                    <div className="py-2">
                         {stanzaTemplate(stanza4)}
                     </div>
                 </div>
-                <div class="col">
+                <div className="col">
                 </div>
             </div>
         </div>

@@ -28,27 +28,27 @@ paragraph2[16] = "After that interaction, the thoughts returned again.";
 function Flight()
 {
     return(
-        <div class="container">
-                <div class="row">
-                    <div class="col">
+        <div className="container">
+                <div className="row">
+                    <div className="col">
                     </div>
 
-                    <div class="col-8">
+                    <div className="col-8">
                         {titleTemplate(category, title, author, date)}
-                        <div class="article-image">
+                        <div className="article-image">
                             <img src={flight}/>
                         </div>
                         {bodyTemplate(paragraph1)}
-                        <div class="article-paragraph">
+                        <div className="article-paragraph">
                             <i>You're going to be a stranger.</i>
                         </div>
                         {bodyTemplate(paragraph2)}
-                        <div class="article-paragraph">
+                        <div className="article-paragraph">
                             <i>You're going to be a stranger.</i>
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div className="col">
                     </div>
                 </div>
         </div>

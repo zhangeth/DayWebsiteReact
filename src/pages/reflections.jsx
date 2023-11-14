@@ -27,18 +27,18 @@ const links = ["https://www.eater.com/2019/11/5/20942192/bubble-tea-boba-asian-a
 function Reflections()
 {
     return(
-            <div class="container">
-                <div class="row justify-content-center">
+            <div className="container">
+                <div className="row justify-content-center">
 
-                    <div class="col-7">
+                    <div className="col-7">
 
                         {titleTemplate(category, title, author, date)}
-                        <div class="article-image row justify-content-center">
-                            <img class="col-10" src={boba}/>
-                            <p class={"imgcred, col-12"}>src: Janet Sung</p>
+                        <div className="article-image row justify-content-center">
+                            <img className="col-10" src={boba}/>
+                            <p className={"imgcred, col-12"}>src: Janet Sung</p>
                         </div>
-                        <div class="row text-center">
-                            <a class="DAY-red" href="https://www.eater.com/2019/11/5/20942192/bubble-tea-boba-asian-american-diaspora">I’ve been very preoccupied these past few weeks by a few provocative lines from this Eater article,</a>
+                        <div className="row text-center">
+                            <a className="DAY-red" href="https://www.eater.com/2019/11/5/20942192/bubble-tea-boba-asian-american-diaspora">I’ve been very preoccupied these past few weeks by a few provocative lines from this Eater article,</a>
                         </div>
                         {bodyTemplate(paragraphs)}
                         {quotesTemplate(quotes)}

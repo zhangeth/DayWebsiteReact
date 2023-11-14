@@ -4,10 +4,10 @@ import '../../css/article.css'
 function sourcesTemplate(){
     return(
         <div>
-            <div class="py-5">
+            <div className="py-5">
             </div>
             
-            <h4 class="article-sources">
+            <h4 className="article-sources">
                 SOURCES
             </h4>
         </div>

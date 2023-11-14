@@ -3,23 +3,23 @@ function LiteratureContainer(title, author, excerpt, image, imageCredit, page)
     return(
         <>
 
-            <div class="row literature-container">
-                <div class="col-6 p-0">
+            <div className="row literature-container">
+                <div className="col-6 p-0">
                     <div>
-                        <h4 class="py-1" style={{textAlign:'center', color: 'black'}}>{title}</h4>
-                        <h4 class="pb-2" style={{textAlign:'center', color: 'black'}}>{author}</h4>
+                        <h4 className="py-1" style={{textAlign:'center', color: 'black'}}>{title}</h4>
+                        <h4 className="pb-2" style={{textAlign:'center', color: 'black'}}>{author}</h4>
                     </div>
-                    <div class="px-3 py-2">
+                    <div className="px-3 py-2">
                         <h5 style={{textAlign:'center', color:'black'}}>
                             {excerpt}
                         </h5>
                     </div>
-                    <div class="px-3 py-4" style={{textAlign:'center'}}>
-                        <a class="btn btn-outline-danger" href={page} role="button">Continue Reading</a>
+                    <div className="px-3 py-4" style={{textAlign:'center'}}>
+                        <a className="btn btn-outline-danger" href={page} role="button">Continue Reading</a>
                     </div>
                 </div>
-                <div class="col-6">
-                    <figure class="image is-256x100" width="100%" height="100%">
+                <div className="col-6">
+                    <figure className="image is-256x100" width="100%" height="100%">
                         <img src={image} width="100%" height="100%"/>
                         <p style={{fontSize:'x-small'}}>
                             {imageCredit}

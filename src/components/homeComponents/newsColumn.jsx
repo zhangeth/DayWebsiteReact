@@ -61,15 +61,15 @@ function newsColumn() {
     ];
   
     const newsCardList = newsCards.map((newsCard) => (
-      <div class="newsCard" key={newsCard.id}>
-        <div class="card-content">
-          <p class='card-category'>{newsCard.category}</p>
+      <div className="newsCard" key={newsCard.id}>
+        <div className="card-content">
+          <p className='card-category'>{newsCard.category}</p>
           <a href={newsCard.link} key={newsCard.id}>
-            <p class='card-title'>{newsCard.title}</p>
+            <p className='card-title'>{newsCard.title}</p>
           </a>
-          <p class='card-author'>{newsCard.author}</p>
+          <p className='card-author'>{newsCard.author}</p>
         </div>
-        <div class="card-image">
+        <div className="card-image">
           <a href={newsCard.link} key={newsCard.id}>
             <img src={newsCard.image} alt={newsCard.title} />
           </a>
@@ -79,7 +79,7 @@ function newsColumn() {
   
     return (  
       <div>
-        <h2 class="newsColumn" style={{textAlign: 'right'}}> News & Culture</h2>
+        <h2 className="newsColumn" style={{textAlign: 'right'}}> News & Culture</h2>
         {newsCardList}
       </div>
     )
