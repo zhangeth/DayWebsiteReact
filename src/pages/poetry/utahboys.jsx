@@ -28,47 +28,47 @@ const stanza2b = ["And therefore everything about me is new and exciting",
 
 function Utahboys(){
     return(
-            <div class="container">
-                <div class="row justify-content-center">
+            <div className="container">
+                <div className="row justify-content-center">
 
-                    <div class="col-10">
+                    <div className="col-10">
                         {titleTemplate(category, title, author, date)}
-                        <div class="article-image row justify-content-center">
+                        <div className="article-image row justify-content-center">
                             <img class = "col-7" src={dating}/>
                         </div>
                     </div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-7 text-start">
+                    <div className="row justify-content-center">
+                        <div className="col-7 text-start">
                             {stanzaTemplate(stanza1a)}
                         </div>
 
-                        <div class="sparkly col-7 justify-content-center text-center mt-3 mb-5">
+                        <div className="sparkly col-7 justify-content-center text-center mt-3 mb-5">
                             <p>sparkly new toy</p>
                         </div>
 
-                        <div class="col-7 text-start">
+                        <div className="col-7 text-start">
                             {stanzaTemplate(stanza1b)}
                         </div>
 
-                        <div class="col-7 mb-4 text-end">
+                        <div className="col-7 mb-4 text-end">
                             {stanzaTemplate(stanza1c)}
                         </div>
 
 
-                        <div class="col-7 text-start">
+                        <div className="col-7 text-start">
                             {stanzaTemplate(stanza2a)}
                         </div>
 
-                        <div class="row text-center">
-                            <em class="big-italic mb-4">not part of the church</em>
+                        <div className="row text-center">
+                            <em className="big-italic mb-4">not part of the church</em>
                         </div>
 
-                        <div class="col-7 text-end">
+                        <div className="col-7 text-end">
                             {stanzaTemplate(stanza2b)}                            
                         </div>
 
-                        <p class="col-7 text-center DAY-red mt-3 mb-5"> Existing for the sake of diversifying your experience</p>
+                        <p className="col-7 text-center DAY-red mt-3 mb-5"> Existing for the sake of diversifying your experience</p>
 
                     </div>
 

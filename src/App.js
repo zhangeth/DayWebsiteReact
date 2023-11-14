@@ -10,9 +10,10 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 
 import Home from "./pages/home"
 import About from "./pages/about"
+import Magazine from "./pages/magazine";
  
 // article pages for now
-import Halmoni from "./pages/prose/halmoni";
+import Halmoni from "./pages/poetry/halmoni";
 import Comfortfilms from "./pages/comfortfilms";
 import Apidawomen from "./pages/apidawomen";
 import Eeaao from "./pages/eeaao";
@@ -24,6 +25,7 @@ import Plushy from "./pages/poetry/odetoplushy"
 import Expectations from "./pages/prose/familyexpectations";
 import Utahboys from "./pages/poetry/utahboys";
 import Reflections from "./pages/reflections";
+
 
 let previousScrollPosition = 0;
 
@@ -62,6 +64,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/magazine">Magazine</a>
     </div>
 
     <div style={{'padding': '80px'}}></div>
@@ -76,6 +79,7 @@ const App = () => {
       <Route path="/aaab" element={<Aaab />} />
       <Route path="/flight" element={<Flight />} />
       <Route path="/grace" element={<Grace />} />
+      <Route path="/magazine" element={<Magazine />} />
       <Route path="/lolsorry" element={<Lolsorry/>} />
       <Route path="/plushy" element={<Plushy />} />
       <Route path="/expectations" element={<Expectations/>} />

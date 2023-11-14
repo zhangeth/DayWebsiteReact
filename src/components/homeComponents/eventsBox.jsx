@@ -1,6 +1,6 @@
 function eventsBox(thumbnail, eventURL){
     return(
-        <div class="imgBox">
+        <div className="imgBox">
             <a href={eventURL}>
                 <img src={thumbnail} alt="article thumbnail"/>
             </a>

@@ -3,6 +3,7 @@ import DAYHistoryHero from "../components/aboutComponents/DAYHistoryHero";
 import AboutOurStory from "../components/aboutComponents/aboutOurStory";
 import AboutTeamRoles from "../components/aboutComponents/aboutTeamRoles";
 import eboardTemplate from "../components/aboutComponents/eboardTemplate";
+import daybanner from "../assets/DAYBanner.png";
 import "../css/about.css"
 // Eboard images
 import Audrey from "../assets/Eboard/Audrey.jpg"
@@ -14,6 +15,8 @@ import Riya from "../assets/Eboard/Riya.jpg";
 import Stephanie from "../assets/Eboard/Stephanie.jpg";
 import Eric from "../assets/Eboard/Eric.jpg";
 import Andrew from "../assets/Eboard/Andrew.jpg";
+const title = "ABOUT DAY";
+const message = "We are a group of Asian youths striving to uplift marginalized communities through education, activism, and celebration. Reach out if you want to share your unique experiences.";
 
 const pics = [Audrey, Stephanie, Peony, Heidi, Jeen, Andrew, Riya, Eric, Joseph];
 const positions = ["President", "Vice President", "Creative Director", "Programming Director", "PR Director", "Finance Director", "Lead Editor", "Co-Web Lead", "Co-Web Lead"];
@@ -21,24 +24,27 @@ const names = ["Audrey Xia", "Stephanie Tong", "Peony Duong", "Heidi Arromdee", 
 
 function About() {
 	return (
-		<div class="py-3 mb-4 border-bottom">
-            {HomeHero()}
+		<div className="py-3 mb-4 border-bottom">
+            {HomeHero(title, message)}
+            <div>
+                <img className="about-image" src={daybanner}  alt="" width="720"/>
+            </div>
             {DAYHistoryHero()}
 
             <a 
-                href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                href="/" className="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
             </a>
             
-            <div class="container">
-                <div class="row">
+            <div className="container">
+                <div className="row">
                     <div>
-                        <h2 class="about-subtitle">MEET THE TEAM</h2>
+                        <h2 className="about-subtitle">MEET THE TEAM</h2>
                     </div>
                 </div>
                 {eboardTemplate(pics, positions, names)}
             </div>
 
-            <div class="py-4"></div>
+            <div className="py-4"></div>
 
             {AboutOurStory()}
 
