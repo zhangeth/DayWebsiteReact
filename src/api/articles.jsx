@@ -8,7 +8,7 @@ export async function getArticles(numArticles) {
         const deletedFilter = { _deleted: { ne: true } };
         const result = await API.graphql(graphqlOperation(listArticles, {
             deletedFilter,
-            limit: 10,
+            limit: numArticles,
         }));
     
         return result.data.listArticles.items;

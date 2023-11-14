@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from "./pages/home"
 import About from "./pages/about"
+import Articles from "./pages/articles";
  
 // article pages for now
 import Halmoni from "./pages/prose/halmoni";
@@ -86,6 +87,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/articles">Articles</a>
     </div>
 
     <div style={{'padding': '80px'}}></div>
@@ -93,6 +95,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/articles" element={Articles(articles)} />
       <Route path="/comfortfilms" element={<Comfortfilms />} />
       <Route path="/halmoni" element={<Halmoni />} />
       <Route path="/apidawomen" element={<Apidawomen />} />
