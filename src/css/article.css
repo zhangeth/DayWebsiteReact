@@ -1,0 +1,117 @@
+.article-category{
+    color:#B83826;
+    font-family: 'Pangram Sans Compact';
+    font-size:20px;
+    font-weight:normal;
+    margin-top:10px;
+    margin-bottom:0px;
+    padding-top: 1em;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.article-title{
+    font-family: 'Right Sans Medium';
+    font-size:60px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.article-author{
+    color:#B83826;
+    font-family: 'Pangram Bold';
+    font-size:20px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+.article-date{
+    color:#ffc72c;
+    font-family: 'Radio Grotesk Black';
+    font-size:20px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.article-subtitle{
+    color:#B83826;
+    font-family: 'Pangram Bold';
+    font-size:20px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.article-paragraph{
+    font-family: 'Fragment Text Regular';
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.article-stanza{
+    font-family: 'Fragment Text Regular';
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.article-image {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.article-sources{
+    color:#B83826;
+    font-family: 'Pangram Sans Compact';
+    font-size:35px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.article-link{
+    font-family: 'Fragment Text Regular';
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    text-align: center;
+}
+.sparkly{
+    height: 50px;
+}
+.sparkly p{
+    font-size: 2em;
+    color: black;
+    line-height: 50px;
+}
+.sparkly p:hover{
+    transition: all 0.5s ease-in 0s;
+    color:#edcd00;
+    font-size: 2.25em;
+}
+.big-italic{
+    height:50px;
+    line-height: 50px;
+    font-size: 2em;
+}
+.DAY-red{
+    color: #B83826;
+    font-size: 2em;
+}

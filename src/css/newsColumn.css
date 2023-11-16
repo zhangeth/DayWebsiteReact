@@ -1,0 +1,97 @@
+.newsColumn {
+    text-align: left;
+    font-style: italic;
+    border: bold;
+    font-family: 'Right Sans Medium';
+    font-size: x-large;
+}
+
+.newsCard {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.card-image {
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+.card-image a {
+  height: 100%;
+  overflow: hidden;
+  width: auto;
+  opacity: 1;
+  transform: scaleX(1.5);
+  align-items: stretch;
+  margin-top: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: auto;
+  display: flex;
+  flex: 1;
+  justify-content: right;
+  transition: opacity 0.5s, transform 0.3s ease;
+  transform-origin: center center;
+}
+.newsCard .card-image:hover img{
+  transform: scale(1.1);
+  opacity: 0.65;
+}
+
+.newsCard .card-category {
+    font-style: oblique;
+    font-weight: bold;
+    color:#B83826;
+    font-family: 'Pangram Sans Compact';
+    font-size: small;
+}
+.newsCard a {
+    text-decoration: none;
+    color: black;
+    transition: text-decoration 0.5s;
+    transition-timing-function: ease-out;
+}
+.newsCard a:hover {
+    text-decoration: underline;
+}
+.newsCard .card-title {
+    text-decoration: none;
+    font: pv3;
+    font-family: 'Fragment Text Regular';
+    font-size: medium;
+    color: black;
+    padding-bottom: 2px;
+    transition: text-decoration 0.5s;
+    transition-timing-function: ease-out;
+}
+.newsCard .card-title:hover {
+    font-weight: 700;
+  }
+
+.newsCard .card-author {
+    font-weight: bold;
+    font-family: 'Radio Grotesk Black';
+    font-size: small;
+}
+
+.newsCard img {
+    justify-items: stretch;
+    max-width: 100px;
+    height: auto; 
+    margin-left: 10px;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.3s ease;
+    transform-origin: center center;
+}

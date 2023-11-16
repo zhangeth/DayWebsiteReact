@@ -1,0 +1,33 @@
+.magazine-class{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.magazine-body{
+    font-family: 'Fragment Text Regular';
+    font-size:25px;
+    font-weight:normal;
+    margin-top:5rem;
+    margin-bottom:1rem;
+    margin-left:1rem;
+    margin-right:1rem;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.magazine-container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
