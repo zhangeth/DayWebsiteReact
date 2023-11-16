@@ -115,3 +115,19 @@
     color: #B83826;
     font-size: 2em;
 }
+.letter-heading{
+    font-family: 'Fragment Text Regular';
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.letter-closing{
+    font-family: 'Fragment Text Regular';
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+}

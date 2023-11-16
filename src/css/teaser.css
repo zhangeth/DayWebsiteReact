@@ -1,0 +1,48 @@
+.side-gallery{
+    width: 20vw;
+    height: 20vw;
+    margin-top: 10vw;
+}
+.center-gallery{
+    width: 40vw;
+    height: 40vw;
+    margin-bottom: 30px;
+}
+
+.quote{
+    font-family: 'Fragment Text Regular';
+    font-size:3em;
+    font-weight:bold;
+    margin-top:50px;
+    margin-bottom:0px;
+    padding-top: 2rem;
+    text-align: center;
+    color: #240000;
+}
+.quote-source{
+    font-family: 'Fragment Text Regular';
+    font-size:1.5em;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #240000;
+
+}
+.description-text{
+    font-family: 'Fragment Text Regular';
+    font-size:1em;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #240000;
+}
+
+.gallery-container{
+    height: 50vw;
+}
