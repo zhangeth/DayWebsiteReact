@@ -58,14 +58,18 @@ function splashIn(){
 function splashOut(){
   document.querySelector("#splash-header").style.top = "-100vh";
   document.querySelector("#splash-backdrop").style.top = "-100vh";
+  document.querySelector("#splash-backdrop").style.visibility = "hidden";
+
 }
 
 // splashIn();
+setTimeout(function() {
+  splashIn();
+}, 500);
 
 setTimeout(function() {
-  console.log('Delayed message');
   splashOut();
-}, 1000);
+}, 2000);
 
 Amplify.configure(awsconfig);
 
