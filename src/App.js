@@ -3,13 +3,15 @@ import Footer from "./components/footer";
 import './css/globalComponents.css';
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
+import { listArticles } from './graphql/queries';
 import awsconfig from './aws-exports';
 
 import React, { useEffect, useState} from "react";
-import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from "./pages/home"
 import About from "./pages/about"
+import Articles from "./pages/articles";
 import Magazine from "./pages/magazine";
  
 // article pages for now
@@ -55,6 +57,38 @@ function scrollFunction() {
 Amplify.configure(awsconfig);
 
 const App = () => {
+  let [articles, setArticles] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  // useEffect starts running while rendering
+  useEffect(() => {
+    async function fetchArticles() {
+      try {
+        const deletedFilter = { _deleted: { ne: true } };
+    
+        let articles = await API.graphql(
+          graphqlOperation(listArticles, {
+            deletedFilter,
+            limit: 10,
+          })
+        );
+        console.log(articles.data.listArticles.items);
+
+        setArticles(articles.data.listArticles.items);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching articles:', error);
+        setLoading(false);
+      }
+    }
+
+    fetchArticles();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <Router>
     <a href="/">
@@ -64,6 +98,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/articles">Articles</a>
       <a href="/magazine">Magazine</a>
     </div>
 
@@ -72,6 +107,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/articles" element = {<Articles />} />
       <Route path="/comfortfilms" element={<Comfortfilms />} />
       <Route path="/halmoni" element={<Halmoni />} />
       <Route path="/apidawomen" element={<Apidawomen />} />
@@ -85,7 +121,6 @@ const App = () => {
       <Route path="/expectations" element={<Expectations/>} />
       <Route path="/utahboys" element={<Utahboys/>} />
       <Route path="/reflections" element={<Reflections/>} />
-
     </Routes>
 
     {Footer()}

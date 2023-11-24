@@ -2,6 +2,7 @@ import HomeHero from "../components/homeComponents/homeHero";
 import dayZine from "../assets/day_zine.pdf"
 import '../css/magazine.css'
 
+
 function Magazine()
 {
     return(
