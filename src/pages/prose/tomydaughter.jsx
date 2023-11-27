@@ -1,4 +1,6 @@
 import "../../css/article.css"
+import "../../css/images.css"
+
 import titleTemplate from "../../components/articleComponents/titleTemplate"
 import bodyTemplate from "../../components/articleComponents/bodyTemplate"
 import quotesTemplate from "../../components/articleComponents/quotesTemplate";
@@ -98,6 +100,7 @@ function Tomydaughter()
                         {titleTemplate(category, title, author, date)}
                         <div className="article-image row justify-content-center">
                             <img src={yor} className="col-12"/>
+                            <p className={"imgcred"}><em>Image from Spy x Family</em></p>
                         </div>
 
                         {quotesTemplate(introQuote)}

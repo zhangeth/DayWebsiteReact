@@ -1,4 +1,6 @@
 import "../../css/article.css"
+import "../../css/images.css"
+
 import titleTemplate from "../../components/articleComponents/titleTemplate"
 import bodyTemplate from "../../components/articleComponents/bodyTemplate"
 import quotesTemplate from "../../components/articleComponents/quotesTemplate";

@@ -5,7 +5,7 @@ import Housewithoutyou from "./prose/housewithoutyou";
 import Myoldfriend from "./prose/myoldfriend";
 import Tomydaughter from "./prose/tomydaughter";
 
-import grandfather from "../assets/ArticlePics/grandfather.jpg"
+import uncle from "../assets/ArticlePics/uncle.jpg"
 import soccer from "../assets/ArticlePics/soccer.JPG"
 import yor from "../assets/ArticlePics/yor.png"
 
@@ -46,7 +46,7 @@ function Teaser()
 
             <div class="gallery-container row justify-content-center">
                 <div class="side-gallery justify-content-center text-center">
-                {homeTemplate(grandfather, "", "/housewithoutyou", "The House Without You", "PROSE", "", "Audrey Xia")}
+                {homeTemplate(uncle, "", "/housewithoutyou", "The House Without You", "PROSE", "", "Audrey Xia")}
                 </div>
                 <div class="center-gallery justify-content-center text-center">
                 {homeTemplate(soccer, "", "/myoldfriend", "My Old Friend", "PROSE", "", "Audrey Xia")}

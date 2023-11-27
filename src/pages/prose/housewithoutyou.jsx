@@ -1,9 +1,11 @@
 import "../../css/article.css"
+import "../../css/images.css"
+
 import titleTemplate from "../../components/articleComponents/titleTemplate"
 import bodyTemplate from "../../components/articleComponents/bodyTemplate"
 import quotesTemplate from "../../components/articleComponents/quotesTemplate";
 
-import grandfather from "../../assets/ArticlePics/grandfather.jpg"
+import uncle from "../../assets/ArticlePics/uncle.jpg"
 
 const category = "PROSE";
 const title = "My Old Friend";
@@ -73,8 +75,9 @@ function Housewithoutyou()
 
                     <div className="col-8">
                         {titleTemplate(category, title, author, date)}
-                        <div className="article-image row">
-                            <img src={grandfather} className="col-12"/>
+                        <div className="article-image row justify-content-center">
+                            <img src={uncle} className="col-6"/>
+                            <p className={"imgcred"}><em>Image from Itaewon Class</em></p>
                         </div>
                         {bodyTemplate(paragraph0)}
                         {quotesTemplate(quotes1)}
