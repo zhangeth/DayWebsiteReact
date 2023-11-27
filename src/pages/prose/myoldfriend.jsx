@@ -2,7 +2,7 @@ import "../../css/article.css"
 import titleTemplate from "../../components/articleComponents/titleTemplate"
 import bodyTemplate from "../../components/articleComponents/bodyTemplate"
 import quotesTemplate from "../../components/articleComponents/quotesTemplate";
-// import flight from "../../assets/ProsePics/Flight.jpg"
+import soccer from "../../assets/ArticlePics/soccer.JPG"
 
 const category = "PROSE";
 const title = "My Old Friend";
@@ -84,8 +84,8 @@ function Myoldfriend()
 
                     <div className="col-8">
                         {titleTemplate(category, title, author, date)}
-                        <div className="article-image">
-                            {/* <img src={flight}/> */}
+                        <div className="article-image row">
+                            <img src={soccer} className="col-12"/>
                         </div>
 
                         {quotesTemplate(headline)}

@@ -2,7 +2,7 @@ import "../../css/article.css"
 import titleTemplate from "../../components/articleComponents/titleTemplate"
 import bodyTemplate from "../../components/articleComponents/bodyTemplate"
 import quotesTemplate from "../../components/articleComponents/quotesTemplate";
-// import flight from "../../assets/ProsePics/Flight.jpg"
+import yor from "../../assets/ArticlePics/yor.png"
 
 const category = "PROSE";
 const title = "To My Daughter, Whom I Love";
@@ -96,8 +96,8 @@ function Tomydaughter()
 
                     <div className="col-8">
                         {titleTemplate(category, title, author, date)}
-                        <div className="article-image">
-                            {/* <img src={flight}/> */}
+                        <div className="article-image row justify-content-center">
+                            <img src={yor} className="col-12"/>
                         </div>
 
                         {quotesTemplate(introQuote)}

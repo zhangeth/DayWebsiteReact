@@ -5,7 +5,9 @@ import Housewithoutyou from "./prose/housewithoutyou";
 import Myoldfriend from "./prose/myoldfriend";
 import Tomydaughter from "./prose/tomydaughter";
 
-import plushy from "../assets/ArticlePics/plushy.png"
+import grandfather from "../assets/ArticlePics/grandfather.jpg"
+import soccer from "../assets/ArticlePics/soccer.JPG"
+import yor from "../assets/ArticlePics/yor.png"
 
 import '../css/magazine.css'
 import '../css/teaser.css'
@@ -44,13 +46,13 @@ function Teaser()
 
             <div class="gallery-container row justify-content-center">
                 <div class="side-gallery justify-content-center text-center">
-                {homeTemplate(plushy, "", "/housewithoutyou", "The House Without You", "PROSE", "", "Audrey Xia")}
+                {homeTemplate(grandfather, "", "/housewithoutyou", "The House Without You", "PROSE", "", "Audrey Xia")}
                 </div>
                 <div class="center-gallery justify-content-center text-center">
-                {homeTemplate(plushy, "", "/myoldfriend", "My Old Friend", "PROSE", "", "Audrey Xia")}
+                {homeTemplate(soccer, "", "/myoldfriend", "My Old Friend", "PROSE", "", "Audrey Xia")}
                 </div>
                 <div class="side-gallery justify-content-center text-center">
-                {homeTemplate(plushy, "", "/tomydaughter", "To My Daughter", "PROSE", "", "Audrey Xia")}
+                {homeTemplate(yor, "", "/tomydaughter", "To My Daughter", "PROSE", "", "Audrey Xia")}
                 </div>
             </div>
 
