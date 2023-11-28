@@ -52,7 +52,7 @@ function Home() {
                   "Sydney Fiorentino")}
               </div>
             </div>
-            <div className="col-5" style={{borderRight: '1px solid black'}}>
+            <div className="col-sm-12 col-md-5" style={{borderRight: '1px solid black'}}>
               <div>
                 {homeTemplate(olivia, "", "/aaab", 
                 "All (Asian)-American Bitch", "ENTERTAINMENT/OPINION", "How Olivia Rodrigo's new song reclaims & challenges boxes surrounding the identity of the Asian-American woman.", "Yi-Ann Li")}
@@ -70,13 +70,13 @@ function Home() {
     <div className="Events">
         <h2 className="row">Events</h2>
           <div className="row">
-            <div className="col">
+            <div className="col-sm-12 col-md-4">
               {eventsBox(CultureWars, "https://www.instagram.com/p/Cxop1fIRqwp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-4">
               {eventsBox(NightMarket, "https://www.instagram.com/p/CyexJsqivlI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-4">
               {eventsBox(OpenMic, "https://www.instagram.com/p/CyognzcSfdN/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
             </div>
           </div>
@@ -86,13 +86,13 @@ function Home() {
           <h2 className="row">General Meetings</h2>
           <p className="row"> Tuesdays, from 7 - 8 pm. Follow us on instagram @dearasianyouth.usc for more information </p>
           <div className="row">
-            <div className="col">
+            <div className="col-sm-12 col-md-4">
               {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-4">
               {eventsBox(GM4, "https://www.canva.com/design/DAFyiDd7WSE/BwevBWDtKtwYCOJTdN1hMg/edit")}
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-4">
               {eventsBox(GM3, "https://www.canva.com/design/DAFyiB--WdM/HL-z6Qj_J1DdkZCObEUz8g/edit")}
             </div>
           </div>

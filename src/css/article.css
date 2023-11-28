@@ -70,6 +70,10 @@
     padding-bottom: 2px;
 }
 .article-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -114,4 +118,20 @@
 .DAY-red{
     color: #B83826;
     font-size: 2em;
+}
+.letter-heading{
+    font-family: 'Fragment Text Regular';
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.letter-closing{
+    font-family: 'Fragment Text Regular';
+    font-size:18px;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
 }

@@ -25,7 +25,10 @@ import Plushy from "./pages/poetry/odetoplushy"
 import Expectations from "./pages/prose/familyexpectations";
 import Utahboys from "./pages/poetry/utahboys";
 import Reflections from "./pages/reflections";
-
+import Housewithoutyou from "./pages/prose/housewithoutyou";
+import Tomydaughter from "./pages/prose/tomydaughter";
+import Myoldfriend from "./pages/prose/myoldfriend";
+import Teaser from "./pages/fall23zineteaser";
 
 let previousScrollPosition = 0;
 
@@ -65,6 +68,7 @@ const App = () => {
       <a href="/">Home</a>
       <a href="/about">About</a>
       <a href="/magazine">Magazine</a>
+      <a href="/fall23zine">TTLG Zine Teaser</a>
     </div>
 
     <div style={{'padding': '80px'}}></div>
@@ -85,6 +89,10 @@ const App = () => {
       <Route path="/expectations" element={<Expectations/>} />
       <Route path="/utahboys" element={<Utahboys/>} />
       <Route path="/reflections" element={<Reflections/>} />
+      <Route path="/housewithoutyou" element={<Housewithoutyou/>} />
+      <Route path="/tomydaughter" element={<Tomydaughter/>} />
+      <Route path="/myoldfriend" element={<Myoldfriend/>} />
+      <Route path="/fall23zine" element={<Teaser/>} />
 
     </Routes>
 
