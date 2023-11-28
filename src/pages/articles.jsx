@@ -1,6 +1,7 @@
 import { API, graphqlOperation } from 'aws-amplify';
 import { useEffect, useState} from 'react';
 import { listArticles, assetsByArticleId } from '../graphql/queries';
+import { StorageImage } from '@aws-amplify/ui-react-storage';
 
 const Articles = () => {
     // assets will be keyed via the articleId
@@ -30,6 +31,7 @@ const Articles = () => {
                             limit: 10,
                         }
                     ));
+                    setAssets(assets.data.assetsByArticleId.items[0].imgKey);
                     console.log(assets);
                 //}
             }
@@ -50,7 +52,7 @@ const Articles = () => {
     }
     else
     {
-        return <div><p>yayyy</p></div>
+        return <StorageImage alt="cat" imgKey={assets} accessLevel="guest" />;
     }
     
 }
