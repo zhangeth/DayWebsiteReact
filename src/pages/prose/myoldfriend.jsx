@@ -3,8 +3,8 @@ import "../../css/images.css"
 
 import titleTemplate from "../../components/articleComponents/titleTemplate"
 import bodyTemplate from "../../components/articleComponents/bodyTemplate"
-import quotesTemplate from "../../components/articleComponents/quotesTemplate";
-import soccer from "../../assets/ArticlePics/soccer.JPG"
+import quotesTemplate from "../../components/articleComponents/quotesTemplate"
+import soccer from "../../assets/ArticlePics/soccer.jpg"
 
 const category = "PROSE";
 const title = "My Old Friend";

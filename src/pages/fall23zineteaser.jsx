@@ -6,7 +6,7 @@ import Myoldfriend from "./prose/myoldfriend";
 import Tomydaughter from "./prose/tomydaughter";
 
 import uncle from "../assets/ArticlePics/uncle.jpg"
-import soccer from "../assets/ArticlePics/soccer.JPG"
+import soccer from "../assets/ArticlePics/soccer.jpg"
 import yor from "../assets/ArticlePics/yor.png"
 
 import '../css/magazine.css'
