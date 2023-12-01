@@ -19,5 +19,12 @@
         "s3daywebsitereactstorage4bc14e89": {}
       }
     }
+  },
+  "dev": {
+    "categories": {
+      "auth": {
+        "DayWebsiteReact": {}
+      }
+    }
   }
 }
