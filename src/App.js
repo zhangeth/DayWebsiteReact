@@ -54,12 +54,39 @@ function scrollFunction() {
   }
 
 }
+function splashIn(){
+  document.querySelector("#splash-header").style.top = "0vh";
+}
+
+function splashOut(){
+  document.querySelector("#splash-header").style.top = "-100vh";
+  document.querySelector("#splash-backdrop").style.top = "-100vh";
+  document.querySelector("#splash-backdrop").style.visibility = "hidden";
+
+}
+
+// splashIn();
+setTimeout(function() {
+  splashIn();
+}, 500);
+
+setTimeout(function() {
+  splashOut();
+}, 2000);
 
 Amplify.configure(awsconfig);
 
 const App = () => {
   return (
     <Router>
+
+    <div id="splash-backdrop">
+    </div>
+
+    <div id="splash-header">
+      <div id="splash-text"><b>Dear Asian Youth</b></div>
+    </div>
+
     <a href="/">
       <h1 id="header"> DAY USC </h1>
     </a>
@@ -100,5 +127,7 @@ const App = () => {
     </Router>
   );
 }
+
+
 
 export default App;
