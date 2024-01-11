@@ -67,8 +67,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
-      <a href="/magazine">Magazine</a>
-      <a href="/fall23zine">TTLG Zine Teaser</a>
+      <a href="/magazine">Magazine</a>      
     </div>
 
     <div style={{'padding': '80px'}}></div>
