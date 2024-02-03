@@ -3,9 +3,14 @@ import Footer from "./components/footer";
 import './css/globalComponents.css';
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
+import { list, getProperties } from 'aws-amplify/storage';
+import { StorageImage } from '@aws-amplify/ui-react-storage';
+import '@aws-amplify/ui-react/styles.css';
+
 import awsconfig from './aws-exports';
 
-import React, { useEffect, useState} from "react";
+
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
 
 import Home from "./pages/home"
@@ -29,6 +34,9 @@ import Housewithoutyou from "./pages/prose/housewithoutyou";
 import Tomydaughter from "./pages/prose/tomydaughter";
 import Myoldfriend from "./pages/prose/myoldfriend";
 import Teaser from "./pages/fall23zineteaser";
+
+
+Amplify.configure(awsconfig);
 
 let previousScrollPosition = 0;
 
@@ -55,7 +63,53 @@ function scrollFunction() {
 
 }
 
-Amplify.configure(awsconfig);
+function ImagesComponent()
+{
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const listImages = async () => {
+      try 
+      {
+        const response = await list({
+          prefix:''
+        });
+        console.log(response.items);
+
+        setData(response.items);
+        if (Array.isArray(data))
+        {
+          console.log('eat my balls');
+        }
+        else {
+          console.log('eat nutz');
+        }
+      }
+      catch (error)
+      {
+        console.log(`Error: ${error}`);
+      }
+    };
+
+    listImages();
+  }, []);
+
+  return (
+    <div>
+      {data ? (
+        // Render the data once it's available
+        <div>
+          {data.map((item) => (
+            <StorageImage alt='balls' imgKey={item.key} accessLevel="guest"/>
+          ))}
+        </div>
+      ) : (
+        // Render a loading indicator while data is being fetched
+        <div>Loading...</div>
+      )}
+    </div>
+  );
+}
 
 const App = () => {
   return (
@@ -95,6 +149,9 @@ const App = () => {
       <Route path="/fall23zine" element={<Teaser/>} />
 
     </Routes>
+    <div>
+      {ImagesComponent()}
+    </div>
 
     {Footer()}
     </Router>
