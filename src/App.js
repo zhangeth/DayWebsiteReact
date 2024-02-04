@@ -45,12 +45,10 @@ function scrollFunction() {
   previousScrollPosition = scrollPosition;
 
   if (goingDown) {
-    document.getElementById("header").style.fontSize = "30px";
     document.getElementById("navbar").style.top = "-50px";
 
   } else {
-    document.getElementById("header").style.fontSize = "90px";
-    document.getElementById("navbar").style.top = "108px";
+    document.getElementById("navbar").style.top = "96px";
   }
 
 }
