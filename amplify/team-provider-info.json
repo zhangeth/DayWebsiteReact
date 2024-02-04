@@ -19,5 +19,29 @@
         "s3daywebsitereactstorage4bc14e89": {}
       }
     }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-daywebsitereact-prod-122358-authRole",
+      "UnauthRoleArn": "arn:aws:iam::619727853897:role/amplify-daywebsitereact-prod-122358-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::619727853897:role/amplify-daywebsitereact-prod-122358-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-daywebsitereact-prod-122358-deployment",
+      "UnauthRoleName": "amplify-daywebsitereact-prod-122358-unauthRole",
+      "StackName": "amplify-daywebsitereact-prod-122358",
+      "StackId": "arn:aws:cloudformation:us-east-1:619727853897:stack/amplify-daywebsitereact-prod-122358/93c61700-c38a-11ee-91e2-0aef93e999fd",
+      "AmplifyAppId": "d14f8l6uqp3esx"
+    },
+    "categories": {
+      "auth": {
+        "DayWebsiteReact": {}
+      },
+      "api": {
+        "DayWebsiteReact": {}
+      },
+      "storage": {
+        "s3daywebsitereactstorage4bc14e89": {}
+      }
+    }
   }
 }
