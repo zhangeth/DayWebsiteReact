@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-route
 
 import Home from "./pages/home"
 import About from "./pages/about"
+import Articles from "./pages/articles"
 import Magazine from "./pages/magazine";
  
 // article pages for now
@@ -74,16 +75,8 @@ function ImagesComponent()
         const response = await list({
           prefix:''
         });
-        console.log(response.items);
 
         setData(response.items);
-        if (Array.isArray(data))
-        {
-          console.log('eat my balls');
-        }
-        else {
-          console.log('eat nutz');
-        }
       }
       catch (error)
       {
@@ -121,6 +114,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/articles">Articles</a>
       <a href="/magazine">Magazine</a>
       <a href="/fall23zine">TTLG Zine Teaser</a>
     </div>
@@ -130,6 +124,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/articles" element={<Articles />} />
       <Route path="/comfortfilms" element={<Comfortfilms />} />
       <Route path="/halmoni" element={<Halmoni />} />
       <Route path="/apidawomen" element={<Apidawomen />} />
@@ -147,11 +142,7 @@ const App = () => {
       <Route path="/tomydaughter" element={<Tomydaughter/>} />
       <Route path="/myoldfriend" element={<Myoldfriend/>} />
       <Route path="/fall23zine" element={<Teaser/>} />
-
     </Routes>
-    <div>
-      {ImagesComponent()}
-    </div>
 
     {Footer()}
     </Router>
