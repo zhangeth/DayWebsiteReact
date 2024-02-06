@@ -2,10 +2,13 @@ import { Amplify, graphqlOperation } from 'aws-amplify';
 import { generateClient } from 'aws-amplify/api';
 import * as queries from '../graphql/queries';
 import React, { useEffect, useState } from "react";
+import { StorageImage } from '@aws-amplify/ui-react-storage';
 
 const client = generateClient();
 
 let articleIds = {};
+let assets = {};
+
 function ListArticles()
 {
     const [articles, setArticles] = useState(null);
@@ -17,7 +20,21 @@ function ListArticles()
                 const listArticlesRes = await client.graphql({query: queries.listArticles});
                 console.log(listArticlesRes);
                 articleIds = listArticlesRes.data.listArticles.items;
+
+                const listAssetsRes = await client.graphql({
+                    query: queries.listAssets,
+                    variables: {
+                        filter: {
+                            articleId: { eq: listArticlesRes.data.listArticles.items[0].id }
+                        }
+                    }
+                });
+
+                assets = listAssetsRes.data.listAssets.items;
+
                 setArticles(listArticlesRes.data.listArticles.items);
+
+                console.log('After setting articles, ', listAssetsRes.data.listAssets.items);
             }
             catch (error)
             {
@@ -36,6 +53,8 @@ function ListArticles()
             // Render the data once it's available
             <div>
                 {articles[0].name}
+                {assets[0].imgKey}
+                <StorageImage alt='balls' imgKey={`${assets[3].imgKey}.jpg`} accessLevel="guest"/>
             </div>
             ) : (
                 // Render a loading indicator while data is being fetched
