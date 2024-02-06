@@ -54,6 +54,9 @@ function ListArticles()
             <div>
                 {articles[0].name}
                 {assets[0].imgKey}
+                {assets.map((asset) => (
+                    <StorageImage alt='balls' imgKey={`${asset.imgKey}.jpg`} accessLevel="guest"/>
+                ))}
                 <StorageImage alt='balls' imgKey={`${assets[3].imgKey}.jpg`} accessLevel="guest"/>
             </div>
             ) : (
