@@ -25,9 +25,9 @@
     padding-bottom: 15px;
     font-family: 'Right Sans Medium';
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     justify-content: center;
-    color: #D72323;
+    color: #DD4544;
   }
 
 .GM {
@@ -41,14 +41,16 @@
     padding-top: 15px;
     font-family: 'Right Sans Medium';
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     justify-content: center;
-    color: #D72323;
+    color: #B83E26;
   }
   .GM p {
     padding-bottom: 15px;
     font-style: italic;
     font-weight: normal;
     justify-content: center;
-    color: #D72323;
+    color: #DD4544;
   }
+
+  
