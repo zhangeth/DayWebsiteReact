@@ -25,5 +25,7 @@ type Article @model @auth(rules: [{allow: public}]) {
   authorId: ID! @index(name: "byAuthor")
   Assets: [Asset] @hasMany(indexName: "byArticle", fields: ["id"])
   date: AWSDate
+  numImages: Int
+  imageExtension: String
 }
  

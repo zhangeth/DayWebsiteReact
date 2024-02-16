@@ -19,16 +19,13 @@ function ListArticles() {
                 setArticles(fetchedArticles);
 
                 if (fetchedArticles.length > 0) {
-                    const listAssetsRes = await client.graphql({
-                        query: queries.listAssets,
-                        variables: {
-                            filter: {
-                                articleId: { eq: fetchedArticles[0].id }
-                            }
-                        }
-                    });
-                    console.log('Assets:', listAssetsRes.data.listAssets.items);
-                    setAssets(listAssetsRes.data.listAssets.items);
+                    let assetArray = {};
+                    for (let i = 1; i <= fetchedArticles[0].numImages; i++)
+                    {
+                        assetArray[i] = i.toString() + '_' + fetchedArticles[0].id + fetchedArticles[0].imageExtension
+                    }
+                    console.log('assetArr', assetArray);
+                    setAssets(assetArray);
                 }
             } catch (error) {
                 console.log("Error fetching articles: ", error);
@@ -46,7 +43,7 @@ function ListArticles() {
                     {articles.map((article) => (
                         <div key={article.id}>
                             <h2>{article.name}</h2>
-                            <ImageSlider images={assets.map(asset => asset.imgKey)} />
+                            <ImageSlider images={assets} />
                         </div>
                     ))}
                 </div>

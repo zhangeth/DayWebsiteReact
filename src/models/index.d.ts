@@ -85,6 +85,8 @@ type EagerArticle = {
   readonly authorId: string;
   readonly Assets?: (Asset | null)[] | null;
   readonly date?: string | null;
+  readonly numImages?: number | null;
+  readonly imageExtension?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -100,6 +102,8 @@ type LazyArticle = {
   readonly authorId: string;
   readonly Assets: AsyncCollection<Asset>;
   readonly date?: string | null;
+  readonly numImages?: number | null;
+  readonly imageExtension?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

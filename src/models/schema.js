@@ -220,6 +220,20 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
+                "numImages": {
+                    "name": "numImages",
+                    "isArray": false,
+                    "type": "Int",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "imageExtension": {
+                    "name": "imageExtension",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -284,5 +298,5 @@ export const schema = {
     },
     "nonModels": {},
     "codegenVersion": "3.4.4",
-    "version": "e8afa96e3f106313d28e30f30546f0a3"
+    "version": "70bb175789b59ba9be381d883e18fbc3"
 };

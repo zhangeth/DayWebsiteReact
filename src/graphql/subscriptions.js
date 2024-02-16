@@ -122,6 +122,8 @@ export const onCreateArticle = /* GraphQL */ `
         __typename
       }
       date
+      numImages
+      imageExtension
       createdAt
       updatedAt
       _version
@@ -144,6 +146,8 @@ export const onUpdateArticle = /* GraphQL */ `
         __typename
       }
       date
+      numImages
+      imageExtension
       createdAt
       updatedAt
       _version
@@ -166,6 +170,8 @@ export const onDeleteArticle = /* GraphQL */ `
         __typename
       }
       date
+      numImages
+      imageExtension
       createdAt
       updatedAt
       _version

@@ -193,6 +193,8 @@ export const getArticle = /* GraphQL */ `
         __typename
       }
       date
+      numImages
+      imageExtension
       createdAt
       updatedAt
       _version
@@ -215,6 +217,8 @@ export const listArticles = /* GraphQL */ `
         name
         authorId
         date
+        numImages
+        imageExtension
         createdAt
         updatedAt
         _version
@@ -247,6 +251,8 @@ export const syncArticles = /* GraphQL */ `
         name
         authorId
         date
+        numImages
+        imageExtension
         createdAt
         updatedAt
         _version
@@ -281,6 +287,8 @@ export const articlesByAuthorId = /* GraphQL */ `
         name
         authorId
         date
+        numImages
+        imageExtension
         createdAt
         updatedAt
         _version
