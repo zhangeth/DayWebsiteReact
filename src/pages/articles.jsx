@@ -14,18 +14,24 @@ function ListArticles() {
         const fetchArticles = async () => {
             try {
                 const listArticlesRes = await client.graphql({ query: queries.listArticles });
-                console.log(listArticlesRes);
-                const fetchedArticles = listArticlesRes.data.listArticles.items;
-                setArticles(fetchedArticles);
+                const articleItems = listArticlesRes.data.listArticles.items;
+                setArticles(articleItems);
 
-                if (fetchedArticles.length > 0) {
-                    let assetArray = {};
-                    for (let i = 1; i <= fetchedArticles[0].numImages; i++)
+                // it's an array of an arr, as in a 2d array derrrr.
+                if (articleItems.length > 0) {
+                    let articleArr = {};
+                    for (let articleIdx = 0; articleIdx < articleItems.length; articleIdx++)
                     {
-                        assetArray[i] = i.toString() + '_' + fetchedArticles[0].id + fetchedArticles[0].imageExtension
+                        let suffix = '_' + articleItems[articleIdx].id + articleItems[articleIdx].imageExtension;
+                        let articleImageArr = {};
+                        for (let i = 1; i <= articleItems[articleIdx].numImages; i++)
+                        {
+                            articleImageArr[i] = i.toString() + suffix;
+                        }
+                        articleArr[articleItems[articleIdx].id] = articleImageArr;
                     }
-                    console.log('assetArr', assetArray);
-                    setAssets(assetArray);
+                    console.log('articleArr', articleArr);
+                    setAssets(articleArr);
                 }
             } catch (error) {
                 console.log("Error fetching articles: ", error);
@@ -40,10 +46,12 @@ function ListArticles() {
             <h1>Articles</h1>
             {articles ? (
                 <div>
+                    {console.log('Articles in jsx:', articles)}
+                    {console.log('Assets after loading in jsx:', assets)}
                     {articles.map((article) => (
                         <div key={article.id}>
                             <h2>{article.name}</h2>
-                            <ImageSlider images={assets} />
+                            <ImageSlider images={assets[article.id]} />
                         </div>
                     ))}
                 </div>
