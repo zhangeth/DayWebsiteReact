@@ -10,13 +10,15 @@ const ImageSlider = ({ images }) => {
       prevIndex === 0 ? images.length - 3 : prevIndex - 3
     );
     console.log('currIndex', currentIndex);
+    console.log('is array: ', Array.isArray(images));
+    console.log('imgs', images.length);
   };
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 3 ? 0 : prevIndex + 3 
     );
-    console.log('imgs', images);
+    console.log('currIndex', currentIndex);
   };
 
   return (
