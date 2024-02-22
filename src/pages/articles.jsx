@@ -3,6 +3,7 @@ import { generateClient } from 'aws-amplify/api';
 import { StorageImage } from '@aws-amplify/ui-react-storage';
 import ImageSlider from '../components/ImageSlider'; // Assuming ImageSlider component is in the same directory
 import * as queries from '../graphql/queries';
+import HomeHero from "../components/homeComponents/homeHero";
 
 const client = generateClient();
 
@@ -29,11 +30,9 @@ function ListArticles() {
                         {
                             articleImageArr[i - 1] = i.toString() + suffix;
                         }
-                        
-                        console.log('size of article arr: ', articleItems[articleIdx].name, ' ', articleImageArr.length);
+
                         articleObj[articleItems[articleIdx].id] = articleImageArr;
                     }
-                    console.log('articleObj', articleObj);
                     setAssets(articleObj);
                 }
             } catch (error) {
@@ -46,14 +45,11 @@ function ListArticles() {
 
     return (
         <div>
-            <h1>Articles</h1>
             {articles ? (
                 <div>
-                    {console.log('Articles in jsx:', articles)}
-                    {console.log('Assets after loading in jsx:', assets)}
                     {articles.map((article) => (
                         <div key={article.id}>
-                            <h2>{article.name}</h2>
+                            <h2 className="articleHeading">{article.name}</h2>
                             <ImageSlider images={assets[article.id]} />
                         </div>
                     ))}

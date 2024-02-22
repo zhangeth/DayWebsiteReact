@@ -1,0 +1,18 @@
+  /* Button styles (you can adjust these as needed) */
+  .btn-custom {
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+  }
+  
+  .btn-custom:hover {
+    background-color:blanchedalmond;
+  }
+
+  .articleHeading {
+    font-weight: 700;
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+  

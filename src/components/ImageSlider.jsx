@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StorageImage } from '@aws-amplify/ui-react-storage';
-import '../css/imageSlider.css'
+import '../css/articles.css'
 
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,8 +10,6 @@ const ImageSlider = ({ images }) => {
       prevIndex === 0 ? images.length - 3 : prevIndex - 3
     );
     console.log('currIndex', currentIndex);
-    console.log('is array: ', Array.isArray(images));
-    console.log('imgs', images.length);
   };
 
   const nextSlide = () => {
@@ -22,22 +20,26 @@ const ImageSlider = ({ images }) => {
   };
 
   return (
-    <div className="slider-container">
-        <div className="row">
-            <div className="col" style={{borderRight: '1px solid black'}}>
-                <StorageImage imgKey={images[currentIndex]} ></StorageImage>
-            </div>
-            <div className="col" style={{borderRight: '1px solid black'}}>
-                <StorageImage imgKey={images[currentIndex + 1]} ></StorageImage>
-            </div>
-            <div className="col" style={{borderRight: '1px solid black'}}>
-                <StorageImage imgKey={images[currentIndex + 2]} ></StorageImage>
-            </div>
+    <div className="row align-items-center">
+        <div className="col-auto">
+            <button onClick={prevSlide} className="btn btn-custom">&lt;</button>
         </div>
-      <div className="slider-controls">
-        <button onClick={prevSlide}>Previous</button>
-        <button onClick={nextSlide}>Next</button>
-      </div>
+        <div className="col">
+            <StorageImage imgKey={images[currentIndex]} />
+        </div>
+        <div className="col">
+            {images[currentIndex + 1] && (
+                <StorageImage imgKey={images[currentIndex + 1]} />
+            )}
+        </div>
+        <div className="col">
+            {images[currentIndex + 2] && (
+                <StorageImage imgKey={images[currentIndex + 2]} />
+            )}
+        </div>
+        <div className="col-auto">
+            <button onClick={nextSlide} className="btn btn-custom">&gt;</button>
+        </div>
     </div>
   );
 };
