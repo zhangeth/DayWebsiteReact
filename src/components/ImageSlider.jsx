@@ -25,16 +25,16 @@ const ImageSlider = ({ images }) => {
             <button onClick={prevSlide} className="btn btn-custom">&lt;</button>
         </div>
         <div className="col">
-            <StorageImage imgKey={images[currentIndex]} />
+            <StorageImage imgKey={images[currentIndex]} className='storageImg'/>
         </div>
         <div className="col">
             {images[currentIndex + 1] && (
-                <StorageImage imgKey={images[currentIndex + 1]} />
+                <StorageImage imgKey={images[currentIndex + 1]} className='storageImg'/>
             )}
         </div>
         <div className="col">
             {images[currentIndex + 2] && (
-                <StorageImage imgKey={images[currentIndex + 2]} />
+                <StorageImage imgKey={images[currentIndex + 2]} className='storageImg'/>
             )}
         </div>
         <div className="col-auto">
