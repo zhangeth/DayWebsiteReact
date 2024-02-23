@@ -5,7 +5,6 @@ import './css/globalComponents.css';
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
 import { list, getProperties } from 'aws-amplify/storage';
 import { StorageImage } from '@aws-amplify/ui-react-storage';
-import '@aws-amplify/ui-react/styles.css';
 
 import awsconfig from './aws-exports';
 
