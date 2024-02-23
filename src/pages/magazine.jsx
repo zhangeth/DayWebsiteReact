@@ -68,7 +68,6 @@ function Magazine()
     });
     return(
         <div>
-            <StorageImage alt="your mom" imgKey='rodrigo_1.jpg' accessLevel="guest" />
             <div>
                 {HomeHero("DAY MAGAZINE", "")}
             </div>
