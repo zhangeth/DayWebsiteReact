@@ -3,6 +3,7 @@
 
 const awsmobile = {
     "aws_project_region": "us-east-1",
+<<<<<<< HEAD
     "aws_appsync_graphqlEndpoint": "https://slgcswq2prb4zih5feejfrplna.appsync-api.us-east-1.amazonaws.com/graphql",
     "aws_appsync_region": "us-east-1",
     "aws_appsync_authenticationType": "API_KEY",
@@ -11,14 +12,24 @@ const awsmobile = {
     "aws_cognito_region": "us-east-1",
     "aws_user_pools_id": "us-east-1_WVsC3dpLC",
     "aws_user_pools_web_client_id": "7ojd3anfvks6bbmrf5kcl9sk5n",
+=======
+    "aws_appsync_graphqlEndpoint": "https://bjizstexznaude5r6jmmbgedfy.appsync-api.us-east-1.amazonaws.com/graphql",
+    "aws_appsync_region": "us-east-1",
+    "aws_appsync_authenticationType": "API_KEY",
+    "aws_appsync_apiKey": "da2-am4ysuv7njcsvfiu6xn3asf4ny",
+    "aws_cognito_identity_pool_id": "us-east-1:ecb662a4-67c0-4912-a41e-3af81377bab0",
+    "aws_cognito_region": "us-east-1",
+    "aws_user_pools_id": "us-east-1_YpxvBtDQY",
+    "aws_user_pools_web_client_id": "19loqs89tp5sds45aefuecd44t",
+>>>>>>> swagBranch
     "oauth": {},
     "aws_cognito_username_attributes": [
         "EMAIL"
     ],
     "aws_cognito_social_providers": [],
     "aws_cognito_signup_attributes": [
-        "GIVEN_NAME",
-        "EMAIL"
+        "EMAIL",
+        "GIVEN_NAME"
     ],
     "aws_cognito_mfa_configuration": "OFF",
     "aws_cognito_mfa_types": [
@@ -36,7 +47,11 @@ const awsmobile = {
     "aws_cognito_verification_mechanisms": [
         "EMAIL"
     ],
+<<<<<<< HEAD
     "aws_user_files_s3_bucket": "daywebsitereact-storage-4bc14e89122358-prod",
+=======
+    "aws_user_files_s3_bucket": "daywebsitereact-storage-4bc14e8991458-dev",
+>>>>>>> swagBranch
     "aws_user_files_s3_bucket_region": "us-east-1"
 };
 

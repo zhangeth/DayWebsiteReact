@@ -3,13 +3,19 @@ import Footer from "./components/footer";
 import './css/globalComponents.css';
 
 import { Amplify, API, graphqlOperation } from 'aws-amplify';
+import { list, getProperties } from 'aws-amplify/storage';
+import { StorageImage } from '@aws-amplify/ui-react-storage';
+import '@aws-amplify/ui-react/styles.css';
+
 import awsconfig from './aws-exports';
 
-import React, { useEffect, useState} from "react";
+
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
 
 import Home from "./pages/home"
 import About from "./pages/about"
+import Articles from "./pages/articles"
 import Magazine from "./pages/magazine";
  
 // article pages for now
@@ -29,6 +35,9 @@ import Housewithoutyou from "./pages/prose/housewithoutyou";
 import Tomydaughter from "./pages/prose/tomydaughter";
 import Myoldfriend from "./pages/prose/myoldfriend";
 import Teaser from "./pages/fall23zineteaser";
+
+
+Amplify.configure(awsconfig);
 
 let previousScrollPosition = 0;
 
@@ -53,7 +62,45 @@ function scrollFunction() {
 
 }
 
-Amplify.configure(awsconfig);
+function ImagesComponent()
+{
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const listImages = async () => {
+      try 
+      {
+        const response = await list({
+          prefix:''
+        });
+
+        setData(response.items);
+      }
+      catch (error)
+      {
+        console.log(`Error: ${error}`);
+      }
+    };
+
+    listImages();
+  }, []);
+
+  return (
+    <div>
+      {data ? (
+        // Render the data once it's available
+        <div>
+          {data.map((item) => (
+            <StorageImage alt='balls' imgKey={item.key} accessLevel="guest"/>
+          ))}
+        </div>
+      ) : (
+        // Render a loading indicator while data is being fetched
+        <div>Loading...</div>
+      )}
+    </div>
+  );
+}
 
 const App = () => {
   return (
@@ -65,6 +112,7 @@ const App = () => {
     <div id="navbar">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/articles">Articles</a>
       <a href="/magazine">Magazine</a>
       <a href="/fall23zine">TTLG Zine Teaser</a>
     </div>
@@ -74,6 +122,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/articles" element={<Articles />} />
       <Route path="/comfortfilms" element={<Comfortfilms />} />
       <Route path="/halmoni" element={<Halmoni />} />
       <Route path="/apidawomen" element={<Apidawomen />} />
@@ -91,7 +140,6 @@ const App = () => {
       <Route path="/tomydaughter" element={<Tomydaughter/>} />
       <Route path="/myoldfriend" element={<Myoldfriend/>} />
       <Route path="/fall23zine" element={<Teaser/>} />
-
     </Routes>
 
     {Footer()}

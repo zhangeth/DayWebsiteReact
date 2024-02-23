@@ -3,7 +3,11 @@
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": true,
+<<<<<<< HEAD
     "resourceNameTruncated": "dayweb9071c0f7",
+=======
+    "resourceNameTruncated": "daywebb324a240",
+>>>>>>> swagBranch
     "userPoolName": "DayWebsiteReact",
     "autoVerifiedAttributes": [
       "email"
@@ -25,17 +29,17 @@
       "Requires Uppercase"
     ],
     "requiredAttributes": [
-      "given_name",
-      "email"
+      "email",
+      "given_name"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "DayWeb9071c0f7_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "DayWebb324a240_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "9071c0f7",
+    "sharedId": "b324a240",
     "resourceName": "DayWebsiteReact",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",

@@ -1,13 +1,31 @@
-type AuthorModel @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  name: String
-  ArticleModels: [ArticleModel] @hasMany(indexName: "byAuthorModel", fields: ["id"])
+enum AccessLevels {
+  PUBLIC
+  PROTECTED
+  PRIVATE
 }
 
-type ArticleModel @model @auth(rules: [{allow: public}]) {
+type Asset @model @auth(rules: [{allow: public}]) {
   id: ID!
-  content: String
-  name: String
+  imgKey: String!
+  articleId: ID! @index(name: "byArticle")
+  accessLevel: AccessLevels
+}
+
+type Author @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  Articles: [Article] @hasMany(indexName: "byAuthor", fields: ["id"])
+  dateJoinedClub: AWSDate
+}
+
+type Article @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  summary: String
+  name: String!
+  authorId: ID! @index(name: "byAuthor")
+  Assets: [Asset] @hasMany(indexName: "byArticle", fields: ["id"])
   date: AWSDate
-  authormodelID: ID! @index(name: "byAuthorModel")
-} 
+  numImages: Int
+  imageExtension: String
+}
+ 
