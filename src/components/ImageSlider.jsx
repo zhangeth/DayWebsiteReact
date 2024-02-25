@@ -9,14 +9,12 @@ const ImageSlider = ({ images }) => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 3 : prevIndex - 3
     );
-    console.log('currIndex', currentIndex);
   };
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 3 ? 0 : prevIndex + 3 
     );
-    console.log('currIndex', currentIndex);
   };
 
   return (

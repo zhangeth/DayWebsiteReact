@@ -11,9 +11,11 @@
   }
 
   .articleHeading {
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 40px;
     margin-left: 65px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 .storageImg {
