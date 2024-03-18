@@ -20,7 +20,7 @@
     font-family: 'Fragment Text Regular';
     font: pv3;
     font-size: medium;
-    color: black;
+    color: #323232;
     padding-bottom: 5px;
   }
 
@@ -30,7 +30,7 @@
     font: pv3;
     font-size: large;
     font-weight: bold;
-    color: black;
+    color: #323232;
     padding-bottom: 5px;
     transition: text-decoration 0.5s;
     transition-timing-function: ease-out;
@@ -44,7 +44,7 @@
     font: pv3;
     font-size: xx-large;
     font-weight:650;
-    color: black;
+    color: #323232;
     padding-bottom: 5px;
     transition: text-decoration 0.5s;
     transition-timing-function: ease-out;
@@ -60,7 +60,7 @@
   /* Style for the card link */
   .homeCard a {
     text-decoration: none;
-    color: black;
+    color: #323232;
     transition: text-decoration 0.5s;
     transition-timing-function: ease-out;
   }

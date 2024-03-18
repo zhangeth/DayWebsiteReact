@@ -13,22 +13,32 @@ import dating from "../assets/ArticlePics/dating.jpg"
 import boba from "../assets/ArticlePics/boba.jpg"
 
 //events
-import CultureWars from "../assets/Events/CultureWars.jpg"
-import NightMarket from "../assets/Events/APASANightMarket.jpg"
-import OpenMic from "../assets/Events/DESCENTxDAYOpenMic.jpg"
+import LNY from "../assets/Events/Collabs/LNYTAOAATP.jpeg"
+import OpenMic from "../assets/Events/Collabs/OpenMicDescent.jpeg"
+import Valentines from "../assets/Events/Collabs/ValentinesSPOON.jpeg"
 
-import GM7 from "../assets/Events/GM7.jpg"
-import GM4 from "../assets/Events/GM4.jpg"
-import GM3 from "../assets/Events/GM3.jpg"
+import GM5 from "../assets/Events/GMs/gm5.jpeg"
+import GM4 from "../assets/Events/GMs/gm4.jpeg"
+import GM3 from "../assets/Events/GMs/gm3.jpeg"
 
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
-import eventsBox from "../components/homeComponents/eventsBox"
+import events from "../components/homeComponents/events"
+import gms from "../components/homeComponents/gms"
 import newsColumn from "../components/homeComponents/newsColumn.jsx"
 import "../css/globalComponents.css"
 import "../css/homeStructure.css"
 
 const TITLE = 'DAY USC';
+
+const eventsHighlights = [LNY, OpenMic, Valentines];
+const eventsNames = ["DAY x TAO x AATP Lunar New Year Celebraiton", "DAY x Descent Open Mic", "DAY x SpoonSC Valentines Snack Exchange"];
+const eventsLinks = ["https://www.instagram.com/p/C3X4xqOLrsM/", "https://www.instagram.com/p/C4JVrD7ykTC/", "https://www.instagram.com/p/C3aiJDZR9dz/"];
+
+const gmHighlights = [GM5, GM4, GM3];
+const gmNames = ["GM5: Collage Boards", "GM4: Rainy Day Games", "GM3: Speed Friending"];
+const gmLinks = ["https://www.instagram.com/p/C4IgxmuruOK/", "https://www.instagram.com/p/C3j6yEXuAxu/", "https://www.instagram.com/p/C3TBj6kRIrO/"];
+
 
 // Rotate in at some point
 /*
@@ -39,12 +49,12 @@ const TITLE = 'DAY USC';
 
 function Home() {
   return (
-    <div>
+    <>
     <title>{ TITLE }</title>
     <div className="py-3">
       <div className="container-fluid" style={{'maxWidth':'90%'}}>
         <div className="row">
-            <div className="col" style={{borderRight: '1px solid black'}}>
+            <div className="col homeCol">
               <div>
                   <h2 className="newsColumn"> Creative</h2>
                   {homeTemplate(flight, "", "/flight", "The Flight", "PROSE", "Story highlighting a familiar feeling Asian-Americans share: the disconnect between one and their mother country's language.", "Andrew Kim")}
@@ -52,7 +62,7 @@ function Home() {
                   "Sydney Fiorentino")}
               </div>
             </div>
-            <div className="col-sm-12 col-md-5" style={{borderRight: '1px solid black'}}>
+            <div className= "homeCol col-sm-12 col-md-5">
               <div>
                 {homeTemplate(olivia, "", "/aaab", 
                 "All (Asian)-American Bitch", "ENTERTAINMENT/OPINION", "How Olivia Rodrigo's new song reclaims & challenges boxes surrounding the identity of the Asian-American woman.", "Yi-Ann Li")}
@@ -67,37 +77,12 @@ function Home() {
       </div>
     </div>
 
-    <div className="Events">
-        <h2 className="row">Events</h2>
-          <div className="row">
-            <div className="col-sm-12 col-md-4">
-              {eventsBox(CultureWars, "https://www.instagram.com/p/Cxop1fIRqwp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
-            </div>
-            <div className="col-sm-12 col-md-4">
-              {eventsBox(NightMarket, "https://www.instagram.com/p/CyexJsqivlI/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
-            </div>
-            <div className="col-sm-12 col-md-4">
-              {eventsBox(OpenMic, "https://www.instagram.com/p/CyognzcSfdN/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==")}
-            </div>
-          </div>
+    <div className="py-3 bottom">
+      {events("Events", eventsHighlights, eventsNames, eventsLinks)}
+      {gms("GM", gmHighlights, gmNames, gmLinks)}      
     </div>
 
-      <div className="GM">
-          <h2 className="row">General Meetings</h2>
-          <p className="row"> Tuesdays, from 7 - 8 pm. Follow us on instagram @dearasianyouth.usc for more information </p>
-          <div className="row">
-            <div className="col-sm-12 col-md-4">
-              {eventsBox(GM7, "https://www.canva.com/design/DAFyiM-Bch0/O2n0LL7qNWIVpOO-WJMwkg/edit")}
-            </div>
-            <div className="col-sm-12 col-md-4">
-              {eventsBox(GM4, "https://www.canva.com/design/DAFyiDd7WSE/BwevBWDtKtwYCOJTdN1hMg/edit")}
-            </div>
-            <div className="col-sm-12 col-md-4">
-              {eventsBox(GM3, "https://www.canva.com/design/DAFyiB--WdM/HL-z6Qj_J1DdkZCObEUz8g/edit")}
-            </div>
-          </div>
-          </div>
-      </div>
+    </>
     
   );
 }

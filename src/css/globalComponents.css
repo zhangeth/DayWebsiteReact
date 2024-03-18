@@ -1,8 +1,20 @@
+/* #B83E26
+#DD4544
+#E8BB65
+#CBCA88
+#97C7C7
+#F5F0E6
+#323232 */
+
+body{
+  background-color: #F5F0E6;
+}
+
 #header {
-    background-color: white; /* Grey background */
+    background-color: #B83E26; /* Grey background */
     padding: 0px 3px; /* Some padding */
     padding-bottom: 0px;
-    color: #D72323;
+    color: #F5F0E6;
     text-align: center; /* Centered text */
     font-family: 'Right Sans Medium';
     font-size: 80px; /* Big font size */
@@ -15,9 +27,9 @@
 }
 
 #navbar {
-  background-color: white; /* Black background color */
-  border-top: 1px solid #2222;
-  border-bottom: 1px solid #DDD;
+  background-color: #B83E26; /* Black background color */
+  border-top: 1px solid #F5F0E6;
+  border-bottom: 1px solid #F5F0E6;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   position: fixed; /* Make it stick/fixed */
@@ -36,7 +48,7 @@
   font-weight: bold;
   font-family: 'NewEditorial';
   font-size: 15px;
-  color: #222222;
+  color: #F5F0E6;
   text-align: right;
   padding: 10px;
   text-decoration: none;
@@ -45,7 +57,13 @@
 }
 
 #navbar a:hover {
-  color: black;
+  color: #E8BB65;
   text-decoration: underline;
 }
-  
+
+#footing.row {
+  background-color: #323232;
+  color: #E8BB65;
+  border-top: solid 3px #E8BB65;
+
+}

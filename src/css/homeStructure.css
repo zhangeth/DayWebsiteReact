@@ -4,15 +4,14 @@
 
 @media (min-width: 992px){
     #left-headline{
-        border-right: 1px solid black;
+        border-right: 1px solid #ccc;
     }   
     #center-headline{
-        border-right: 1px solid black;
+        border-right: 1px solid #ccc;
     } 
 }
 
 .Events {
-    border-top: 1px solid #ccc;
     width: 90%;
     margin: 0 auto; /* Center horizontally */
     justify-content: center;
@@ -25,30 +24,41 @@
     padding-bottom: 15px;
     font-family: 'Right Sans Medium';
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     justify-content: center;
-    color: #D72323;
+    color: #F5F0E6;
   }
 
 .GM {
-    border-top: 1px solid #ccc;
-    width: 100%;
+    border-top: 1px solid #F5F0E6;
+    width: 90%;
+    margin: 0 auto;
     justify-content: center;
     padding-bottom: 25px;
   }
 
   .GM h2 {
     padding-top: 15px;
+    padding-bottom: 15px;
     font-family: 'Right Sans Medium';
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     justify-content: center;
-    color: #D72323;
+    color: #F5F0E6;
   }
   .GM p {
     padding-bottom: 15px;
     font-style: italic;
     font-weight: normal;
     justify-content: center;
-    color: #D72323;
+    color: #F5F0E6;
+  }
+
+  .homeCol{
+    border-right: 1px solid #ccc;
+  }
+
+  .bottom{
+    background-color: #323232;
+
   }
