@@ -3,10 +3,10 @@ import '../../css/about.css'
 function eboardTemplate(pics, positions, names) {
     const rows = [];
   
-    for (let i = 0; i < pics.length; i += 3) {
+    for (let i = 0; i < pics.length; i += 3) { 
       const row = (
-        <div key={i} className="row">
-          {pics.slice(i, i + 3).map((pic, index) => (
+        <div key={i} className="row justify-content-center">
+          {pics.slice(i, i+3).map((pic, index) => (
             <div key={index} className="col-4">
               <div className="image-row">
                 <img className="circular-picture" src={pic}/>
@@ -19,6 +19,7 @@ function eboardTemplate(pics, positions, names) {
               </div>
             </div>
           ))}
+
         </div>
       );
   
