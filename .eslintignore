@@ -1,1 +1,7 @@
 src\models
+src/models
+<<<<<<< HEAD
+
+amplify-codegen-temp/models
+=======
+>>>>>>> swagBranch

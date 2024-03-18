@@ -7,13 +7,12 @@
 /* eslint-disable */
 import * as React from "react";
 import { Button, Flex, Grid, TextField } from "@aws-amplify/ui-react";
-import { AuthorModel } from "../models";
+import { Author } from "../models";
 import { fetchByPath, getOverrideProps, validateField } from "./utils";
 import { DataStore } from "aws-amplify/datastore";
-export default function AuthorModelUpdateForm(props) {
+export default function AuthorCreateForm(props) {
   const {
-    id: idProp,
-    authorModel: authorModelModelProp,
+    clearOnSuccess = true,
     onSuccess,
     onError,
     onSubmit,
@@ -24,30 +23,21 @@ export default function AuthorModelUpdateForm(props) {
   } = props;
   const initialValues = {
     name: "",
+    dateJoinedClub: "",
   };
   const [name, setName] = React.useState(initialValues.name);
+  const [dateJoinedClub, setDateJoinedClub] = React.useState(
+    initialValues.dateJoinedClub
+  );
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
-    const cleanValues = authorModelRecord
-      ? { ...initialValues, ...authorModelRecord }
-      : initialValues;
-    setName(cleanValues.name);
+    setName(initialValues.name);
+    setDateJoinedClub(initialValues.dateJoinedClub);
     setErrors({});
   };
-  const [authorModelRecord, setAuthorModelRecord] =
-    React.useState(authorModelModelProp);
-  React.useEffect(() => {
-    const queryData = async () => {
-      const record = idProp
-        ? await DataStore.query(AuthorModel, idProp)
-        : authorModelModelProp;
-      setAuthorModelRecord(record);
-    };
-    queryData();
-  }, [idProp, authorModelModelProp]);
-  React.useEffect(resetStateValues, [authorModelRecord]);
   const validations = {
-    name: [],
+    name: [{ type: "Required" }],
+    dateJoinedClub: [],
   };
   const runValidationTasks = async (
     fieldName,
@@ -76,6 +66,7 @@ export default function AuthorModelUpdateForm(props) {
         event.preventDefault();
         let modelFields = {
           name,
+          dateJoinedClub,
         };
         const validationResponses = await Promise.all(
           Object.keys(validations).reduce((promises, fieldName) => {
@@ -105,13 +96,12 @@ export default function AuthorModelUpdateForm(props) {
               modelFields[key] = null;
             }
           });
-          await DataStore.save(
-            AuthorModel.copyOf(authorModelRecord, (updated) => {
-              Object.assign(updated, modelFields);
-            })
-          );
+          await DataStore.save(new Author(modelFields));
           if (onSuccess) {
             onSuccess(modelFields);
+          }
+          if (clearOnSuccess) {
+            resetStateValues();
           }
         } catch (err) {
           if (onError) {
@@ -119,12 +109,12 @@ export default function AuthorModelUpdateForm(props) {
           }
         }
       }}
-      {...getOverrideProps(overrides, "AuthorModelUpdateForm")}
+      {...getOverrideProps(overrides, "AuthorCreateForm")}
       {...rest}
     >
       <TextField
         label="Name"
-        isRequired={false}
+        isRequired={true}
         isReadOnly={false}
         value={name}
         onChange={(e) => {
@@ -132,6 +122,7 @@ export default function AuthorModelUpdateForm(props) {
           if (onChange) {
             const modelFields = {
               name: value,
+              dateJoinedClub,
             };
             const result = onChange(modelFields);
             value = result?.name ?? value;
@@ -146,19 +137,44 @@ export default function AuthorModelUpdateForm(props) {
         hasError={errors.name?.hasError}
         {...getOverrideProps(overrides, "name")}
       ></TextField>
+      <TextField
+        label="Date joined club"
+        isRequired={false}
+        isReadOnly={false}
+        type="date"
+        value={dateJoinedClub}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              name,
+              dateJoinedClub: value,
+            };
+            const result = onChange(modelFields);
+            value = result?.dateJoinedClub ?? value;
+          }
+          if (errors.dateJoinedClub?.hasError) {
+            runValidationTasks("dateJoinedClub", value);
+          }
+          setDateJoinedClub(value);
+        }}
+        onBlur={() => runValidationTasks("dateJoinedClub", dateJoinedClub)}
+        errorMessage={errors.dateJoinedClub?.errorMessage}
+        hasError={errors.dateJoinedClub?.hasError}
+        {...getOverrideProps(overrides, "dateJoinedClub")}
+      ></TextField>
       <Flex
         justifyContent="space-between"
         {...getOverrideProps(overrides, "CTAFlex")}
       >
         <Button
-          children="Reset"
+          children="Clear"
           type="reset"
           onClick={(event) => {
             event.preventDefault();
             resetStateValues();
           }}
-          isDisabled={!(idProp || authorModelModelProp)}
-          {...getOverrideProps(overrides, "ResetButton")}
+          {...getOverrideProps(overrides, "ClearButton")}
         ></Button>
         <Flex
           gap="15px"
@@ -168,10 +184,7 @@ export default function AuthorModelUpdateForm(props) {
             children="Submit"
             type="submit"
             variation="primary"
-            isDisabled={
-              !(idProp || authorModelModelProp) ||
-              Object.values(errors).some((e) => e?.hasError)
-            }
+            isDisabled={Object.values(errors).some((e) => e?.hasError)}
             {...getOverrideProps(overrides, "SubmitButton")}
           ></Button>
         </Flex>

@@ -17,12 +17,11 @@ body{
     color: #F5F0E6;
     text-align: center; /* Centered text */
     font-family: 'Right Sans Medium';
-    font-size: 90px; /* Big font size */
+    font-size: 80px; /* Big font size */
     font-weight: normal;
-    position: fixed; /* Fixed position - sit on top of the page */
-    top: 0;
+    position: fixed;
     width: 100%; /* Full width */
-    transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    transition: 0.5s;
     transition-delay: 0.4s;
     z-index: 1000;
 }
@@ -34,10 +33,10 @@ body{
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   position: fixed; /* Make it stick/fixed */
-  top: 108px; /* Hide the navbar 50 px outside of the top view */
+  top: 96px; /* Hide the navbar 50 px outside of the top view */
   width: 100%; /* Full width */
   justify-content: center;
-  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  transition: top 0.5s;
   transition-delay: 0.4s;
   z-index: 999;
 }

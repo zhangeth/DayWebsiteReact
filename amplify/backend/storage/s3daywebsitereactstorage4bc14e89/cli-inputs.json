@@ -2,11 +2,13 @@
   "resourceName": "s3daywebsitereactstorage4bc14e89",
   "bucketName": "daywebsitereact-storage-4bc14e89",
   "policyUUID": "f7915782",
-  "storageAccess": "auth",
-  "guestAccess": [],
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
   "authAccess": [
-    "CREATE_AND_UPDATE",
     "READ",
+    "CREATE_AND_UPDATE",
     "DELETE"
   ]
 }

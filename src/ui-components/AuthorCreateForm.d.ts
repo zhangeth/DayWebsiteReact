@@ -21,25 +21,28 @@ export declare type ValidationResponse = {
     errorMessage?: string;
 };
 export declare type ValidationFunction<T> = (value: T, validationResponse: ValidationResponse) => ValidationResponse | Promise<ValidationResponse>;
-export declare type AuthorModelCreateFormInputValues = {
+export declare type AuthorCreateFormInputValues = {
     name?: string;
+    dateJoinedClub?: string;
 };
-export declare type AuthorModelCreateFormValidationValues = {
+export declare type AuthorCreateFormValidationValues = {
     name?: ValidationFunction<string>;
+    dateJoinedClub?: ValidationFunction<string>;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type AuthorModelCreateFormOverridesProps = {
-    AuthorModelCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
+export declare type AuthorCreateFormOverridesProps = {
+    AuthorCreateFormGrid?: PrimitiveOverrideProps<GridProps>;
     name?: PrimitiveOverrideProps<TextFieldProps>;
+    dateJoinedClub?: PrimitiveOverrideProps<TextFieldProps>;
 } & EscapeHatchProps;
-export declare type AuthorModelCreateFormProps = React.PropsWithChildren<{
-    overrides?: AuthorModelCreateFormOverridesProps | undefined | null;
+export declare type AuthorCreateFormProps = React.PropsWithChildren<{
+    overrides?: AuthorCreateFormOverridesProps | undefined | null;
 } & {
     clearOnSuccess?: boolean;
-    onSubmit?: (fields: AuthorModelCreateFormInputValues) => AuthorModelCreateFormInputValues;
-    onSuccess?: (fields: AuthorModelCreateFormInputValues) => void;
-    onError?: (fields: AuthorModelCreateFormInputValues, errorMessage: string) => void;
-    onChange?: (fields: AuthorModelCreateFormInputValues) => AuthorModelCreateFormInputValues;
-    onValidate?: AuthorModelCreateFormValidationValues;
+    onSubmit?: (fields: AuthorCreateFormInputValues) => AuthorCreateFormInputValues;
+    onSuccess?: (fields: AuthorCreateFormInputValues) => void;
+    onError?: (fields: AuthorCreateFormInputValues, errorMessage: string) => void;
+    onChange?: (fields: AuthorCreateFormInputValues) => AuthorCreateFormInputValues;
+    onValidate?: AuthorCreateFormValidationValues;
 } & React.CSSProperties>;
-export default function AuthorModelCreateForm(props: AuthorModelCreateFormProps): React.ReactElement;
+export default function AuthorCreateForm(props: AuthorCreateFormProps): React.ReactElement;
