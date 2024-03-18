@@ -61,4 +61,10 @@ body{
   color: #E8BB65;
   text-decoration: underline;
 }
-  
+
+#footing.row {
+  background-color: #323232;
+  color: #E8BB65;
+  border-top: solid 3px #E8BB65;
+
+}

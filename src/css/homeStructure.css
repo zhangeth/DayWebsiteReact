@@ -12,7 +12,6 @@
 }
 
 .Events {
-    border-top: 1px solid #ccc;
     width: 90%;
     margin: 0 auto; /* Center horizontally */
     justify-content: center;
@@ -27,11 +26,11 @@
     font-size: 40px;
     font-weight: bold;
     justify-content: center;
-    color: #DD4544;
+    color: #F5F0E6;
   }
 
 .GM {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #F5F0E6;
     width: 90%;
     margin: 0 auto;
     justify-content: center;
@@ -45,16 +44,21 @@
     font-size: 40px;
     font-weight: bold;
     justify-content: center;
-    color: #DD4544;
+    color: #F5F0E6;
   }
   .GM p {
     padding-bottom: 15px;
     font-style: italic;
     font-weight: normal;
     justify-content: center;
-    color: #B83E26;
+    color: #F5F0E6;
   }
 
   .homeCol{
     border-right: 1px solid #ccc;
+  }
+
+  .bottom{
+    background-color: #323232;
+
   }

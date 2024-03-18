@@ -43,7 +43,7 @@ function AboutOurStory()
             </div>
 
             <h5 className="about-subtitle2" style={{textAlign:'right'}}> 
-                    -Yi-Ann (Chapter President) 
+                    -Yi-Ann (Former Chapter President) 
             </h5>
 
             <div className="bar"></div>

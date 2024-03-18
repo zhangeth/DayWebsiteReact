@@ -49,7 +49,7 @@ const gmLinks = ["https://www.instagram.com/p/C4IgxmuruOK/", "https://www.instag
 
 function Home() {
   return (
-    <div>
+    <>
     <title>{ TITLE }</title>
     <div className="py-3">
       <div className="container-fluid" style={{'maxWidth':'90%'}}>
@@ -77,9 +77,12 @@ function Home() {
       </div>
     </div>
 
+    <div className="py-3 bottom">
       {events("Events", eventsHighlights, eventsNames, eventsLinks)}
-      {gms("GM", gmHighlights, gmNames, gmLinks)}
+      {gms("GM", gmHighlights, gmNames, gmLinks)}      
     </div>
+
+    </>
     
   );
 }

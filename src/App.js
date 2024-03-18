@@ -95,7 +95,7 @@ const App = () => {
 
     </Routes>
 
-    {Footer()}
+    <div id="footing" className="row">{Footer()}</div>
     </Router>
   );
 }
