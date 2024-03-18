@@ -6,17 +6,17 @@ import eboardTemplate from "../components/aboutComponents/eboardTemplate";
 import daybanner from "../assets/DAYBanner.png";
 import "../css/about.css"
 // Eboard images
-import Heidi from "../assets/Eboard/heidi_eboard.jpeg";
-import Peony from "../assets/Eboard/peony_eboard.jpeg";
-import Celine from "../assets/Eboard/celine_eboard.jpeg";
-import Andrew from "../assets/Eboard/andrew_eboard.jpeg";
-import Jeen from "../assets/Eboard/jeen_eboard.jpeg";
-import Riya from "../assets/Eboard/riya_eboard.jpeg";
-import Joseph from "../assets/Eboard/joseph_eboard.jpeg";
+import Heidi from "../assets/Eboard/heidi_eboard.jpg";
+import Peony from "../assets/Eboard/peony_eboard.jpg";
+import Celine from "../assets/Eboard/celine_eboard.jpg";
+import Andrew from "../assets/Eboard/andrew_eboard.jpg";
+import Jeen from "../assets/Eboard/jeen_eboard.jpg";
+import Riya from "../assets/Eboard/riya_eboard.jpg";
+import Joseph from "../assets/Eboard/joseph_eboard.jpg";
 import Eric from "../assets/Eboard/eric_eboard.jpg";
-import Emma from "../assets/Eboard/emma_eboard.jpeg";
-import Sean from "../assets/Eboard/sean_eboard.jpeg";
-import Lindsey from "../assets/Eboard/lindsey_eboard.jpeg";
+import Emma from "../assets/Eboard/emma_eboard.jpg";
+import Sean from "../assets/Eboard/sean_eboard.jpg";
+import Lindsey from "../assets/Eboard/lindsey_eboard.jpg";
 
 // import Audrey from "../assets/Eboard/Audrey.jpg"
 // import Jeen from "../assets/Eboard/Jeen.jpg";

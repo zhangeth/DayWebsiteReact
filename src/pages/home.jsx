@@ -13,13 +13,13 @@ import dating from "../assets/ArticlePics/dating.jpg"
 import boba from "../assets/ArticlePics/boba.jpg"
 
 //events
-import LNY from "../assets/Events/Collabs/LNYTAOAATP.jpeg"
-import OpenMic from "../assets/Events/Collabs/OpenMicDescent.jpeg"
-import Valentines from "../assets/Events/Collabs/ValentinesSPOON.jpeg"
+import LNY from "../assets/Events/Collabs/LNYTAOAATP.jpg"
+import OpenMic from "../assets/Events/Collabs/OpenMicDescent.jpg"
+import Valentines from "../assets/Events/Collabs/ValentinesSPOON.jpg"
 
-import GM5 from "../assets/Events/GMs/gm5.jpeg"
-import GM4 from "../assets/Events/GMs/gm4.jpeg"
-import GM3 from "../assets/Events/GMs/gm3.jpeg"
+import GM5 from "../assets/Events/GMs/gm5.jpg"
+import GM4 from "../assets/Events/GMs/gm4.jpg"
+import GM3 from "../assets/Events/GMs/gm3.jpg"
 
 // components
 import homeTemplate from "../components/homeComponents/homeCard.jsx"
