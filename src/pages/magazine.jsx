@@ -1,5 +1,6 @@
 import HomeHero from "../components/homeComponents/homeHero";
-import dayZine from "../assets/day_zine.pdf"
+import zineSP23 from "../assets/day_zine.pdf"
+import zineSP24 from "../assets/zine24.pdf"
 import { StorageImage } from '@aws-amplify/ui-react-storage';
 
 import { Amplify } from 'aws-amplify';
@@ -79,12 +80,16 @@ function Magazine()
                 of the APIDA community has shaped their lives.
             </div>
             <div className="magazine-class">
-                <object className="magazine-container" data={dayZine} type="application/pdf"></object>
+                <object className="magazine-container" data={zineSP24} type="application/pdf"></object>
             </div>
             <div>
             <ImageComponent imgKey="rodrigo_2.jpg" />
             {/* Add more instances with different image keys if needed */}
-            <ImageComponent imgKey="another_image.jpg" />
+
+            <div className="magazine-class">
+                <object className="magazine-container" data={zineSP23} type="application/pdf"></object>
+            </div>
+            <ImageComponent imgKey="rodrigo_2.jpg" />
             </div>
             
         </div>
