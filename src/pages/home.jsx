@@ -9,7 +9,6 @@ import grace from "../assets/ArticlePics/grace.jpg"
 import mentalHealth from "../assets/ArticlePics/mentalHealth.jpg"
 import plushy from "../assets/ArticlePics/plushy.png"
 import parentalExpectations from "../assets/ArticlePics/parentalExpectations.jpg"
-import plushy from "../assets/ArticlePics/plushy.png"
 import boba from "../assets/ArticlePics/boba.jpg"
 
 //events
