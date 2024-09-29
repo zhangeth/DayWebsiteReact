@@ -9,7 +9,7 @@ import grace from "../assets/ArticlePics/grace.jpg"
 import mentalHealth from "../assets/ArticlePics/mentalHealth.jpg"
 import plushy from "../assets/ArticlePics/plushy.png"
 import parentalExpectations from "../assets/ArticlePics/parentalExpectations.jpg"
-import dating from "../assets/ArticlePics/dating.jpg"
+import plushy from "../assets/ArticlePics/plushy.png"
 import boba from "../assets/ArticlePics/boba.jpg"
 
 //events
@@ -66,8 +66,8 @@ function Home() {
               <div>
                 {homeTemplate(olivia, "", "/aaab", 
                 "All (Asian)-American Bitch", "ENTERTAINMENT/OPINION", "How Olivia Rodrigo's new song reclaims & challenges boxes surrounding the identity of the Asian-American woman.", "Yi-Ann Li")}
-                {homeTemplate(dating, "", "/utahboys", "Reasons Why I Won't Date White Boys from Utah Anymore", "POETRY", "Poem that defies negative stereotypes about people with mixed ethnicities.", 
-                "Katie Sanyal")}     
+                {homeTemplate(plushy, "", "/odetoplushy", "Ode to Plushy", "POETRY", "Poem that reflects finding comfort in familiarity when the world feels overwhelming.", 
+                "Joseph Caluya")}     
             </div>
           </div>
           <div className="col">
