@@ -131,7 +131,6 @@ const App = () => {
       <Route path="/lolsorry" element={<Lolsorry/>} />
       <Route path="/plushy" element={<Plushy />} />
       <Route path="/expectations" element={<Expectations/>} />
-      <Route path="/utahboys" element={<Utahboys/>} />
       <Route path="/reflections" element={<Reflections/>} />
       <Route path="/housewithoutyou" element={<Housewithoutyou/>} />
       <Route path="/tomydaughter" element={<Tomydaughter/>} />

@@ -74,10 +74,9 @@ function Magazine()
             </div>
             <div className="magazine-body">
                 Each semester, DAY composes a literary and art magazine featuring pieces
-                made by USC students who are a part of the APIDA community. The most recent
-                magazine was released in April 2023, with the theme titled "Roots." As the
-                title suggests, students reflected on their upbringings and how being a part
-                of the APIDA community has shaped their lives.
+                made by USC students who are a part of the APIDA community. Our most recent
+                magazine was released in May 2024, with theme "Lost and Found." The zine focuses
+                on stories of reclaiming identity and finding belonging as Asians in America.
             </div>
             <div className="magazine-class">
                 <object className="magazine-container" data={zineSP24} type="application/pdf"></object>
@@ -85,7 +84,12 @@ function Magazine()
             <div>
             <ImageComponent imgKey="rodrigo_2.jpg" />
             {/* Add more instances with different image keys if needed */}
-
+            
+            <div className="magazine-body">
+            Our first magazine, "Roots," from April 2023 magazine reflects on our artists' 
+            upbringings and how being a part of the APIDA community has shaped their lives, making
+            them the people they are today.
+            </div>
             <div className="magazine-class">
                 <object className="magazine-container" data={zineSP23} type="application/pdf"></object>
             </div>
