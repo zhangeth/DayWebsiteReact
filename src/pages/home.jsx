@@ -65,7 +65,7 @@ function Home() {
               <div>
                 {homeTemplate(olivia, "", "/aaab", 
                 "All (Asian)-American Bitch", "ENTERTAINMENT/OPINION", "How Olivia Rodrigo's new song reclaims & challenges boxes surrounding the identity of the Asian-American woman.", "Yi-Ann Li")}
-                {homeTemplate(plushy, "", "/odetoplushy", "Ode to Plushy", "POETRY", "Poem that reflects finding comfort in familiarity when the world feels overwhelming.", 
+                {homeTemplate(plushy, "", "/plushy", "Ode to Plushy", "POETRY", "Poem that reflects finding comfort in familiarity when the world feels overwhelming.", 
                 "Joseph Caluya")}     
             </div>
           </div>
