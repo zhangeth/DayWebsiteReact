@@ -34,7 +34,7 @@ import Housewithoutyou from "./pages/prose/housewithoutyou";
 import Tomydaughter from "./pages/prose/tomydaughter";
 import Myoldfriend from "./pages/prose/myoldfriend";
 import Teaser from "./pages/fall23zineteaser";
-
+import ErrorBoundary from "./pages/errorboundary"
 
 Amplify.configure(awsconfig);
 
@@ -132,10 +132,12 @@ const App = () => {
       <Route path="/plushy" element={<Plushy />} />
       <Route path="/expectations" element={<Expectations/>} />
       <Route path="/reflections" element={<Reflections/>} />
+      <Route path="/utahboys" element={<Utahboys />} />
       <Route path="/housewithoutyou" element={<Housewithoutyou/>} />
       <Route path="/tomydaughter" element={<Tomydaughter/>} />
       <Route path="/myoldfriend" element={<Myoldfriend/>} />
       <Route path="/fall23zine" element={<Teaser/>} />
+      <Route path="*" element={<ErrorBoundary />} />
     </Routes>
 
     <div id="footing" className="row">{Footer()}</div>
