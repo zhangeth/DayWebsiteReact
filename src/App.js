@@ -8,7 +8,6 @@ import { StorageImage } from '@aws-amplify/ui-react-storage';
 
 import awsconfig from './aws-exports';
 
-
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, Outlet} from 'react-router-dom';
 
@@ -117,7 +116,7 @@ const App = () => {
     <div style={{'padding': '80px'}}></div>
     
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} errorElement={<ErrorBoundary />}/>
       <Route path="/about" element={<About />} />
       <Route path="/articles" element={<Articles />} />
       <Route path="/comfortfilms" element={<Comfortfilms />} />
@@ -137,7 +136,7 @@ const App = () => {
       <Route path="/tomydaughter" element={<Tomydaughter/>} />
       <Route path="/myoldfriend" element={<Myoldfriend/>} />
       <Route path="/fall23zine" element={<Teaser/>} />
-      <Route path="*" element={<ErrorBoundary />} />
+      <Route path="*" element={<ErrorBoundary />} errorElement={<ErrorBoundary />}/>
     </Routes>
 
     <div id="footing" className="row">{Footer()}</div>
