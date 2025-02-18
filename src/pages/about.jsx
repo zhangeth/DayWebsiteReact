@@ -15,7 +15,6 @@ import Riya from "../assets/Eboard/riya_eboard.jpg";
 import Joseph from "../assets/Eboard/joseph_eboard.jpg";
 import Eric from "../assets/Eboard/eric_eboard.jpg";
 import Emma from "../assets/Eboard/emma_eboard.jpg";
-import Sean from "../assets/Eboard/sean_eboard.jpg";
 import Lindsey from "../assets/Eboard/lindsey_eboard.jpg";
 
 // import Audrey from "../assets/Eboard/Audrey.jpg"
@@ -30,9 +29,9 @@ import Lindsey from "../assets/Eboard/lindsey_eboard.jpg";
 const title = "ABOUT DAY";
 const message = "We are a group of Asian youths striving to uplift marginalized communities through education, activism, and celebration. Reach out if you want to share your unique experiences.";
 
-const pics = [Heidi, Peony, Celine, Andrew, Jeen, Riya, Joseph, Eric, Emma, Sean, Lindsey];
-const positions = ["Co-President", "Co-President", "Programming Director", "Finance Director", "PR Director", "Lead Editor", "Lead Editor", "Web Lead", "Media Director", "Finance Intern", "Creative Director"];
-const names = ["Heidi Arromdee", "Peony Duong", "Celine Chen", "Andrew Kim", "Jeen Lee", "Riya Valaulikar", "Joseph Caluya", "Eric Chen", "Emma Smith", "Sean Li", "Lindsey Piano"];
+const pics = [Heidi, Peony, Celine, Andrew, Jeen, Joseph, Eric, Emma, Lindsey, Riya];
+const positions = ["Co-President", "Co-President", "Programming Director", "Finance Director", "PR Director", "Lead Editor", "Web Lead", "Media Director", "Creative Director", "Alumni"];
+const names = ["Heidi Arromdee", "Peony Duong", "Celine Chen", "Andrew Kim", "Jeen Lee", "Joseph Caluya", "Eric Chen", "Emma Smith", "Lindsey Piano", "Riya Valaulikar"];
 
 function About() { 
 	return (

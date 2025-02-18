@@ -113,7 +113,7 @@ const App = () => {
       <a href="/magazine">Magazine</a>      
     </div>
 
-    <div style={{'padding': '80px'}}></div>
+    <div style={{'padding': '40px'}}></div>
     
     <Routes>
       <Route path="/" element={<Home />} errorElement={<ErrorBoundary />}/>
@@ -131,7 +131,7 @@ const App = () => {
       <Route path="/plushy" element={<Plushy />} />
       <Route path="/expectations" element={<Expectations/>} />
       <Route path="/reflections" element={<Reflections/>} />
-      <Route path="/utahboys" element={<Utahboys />} />
+      <Route path="/utahboys" element={<Utahboys />} errorElement={<ErrorBoundary />}/>
       <Route path="/housewithoutyou" element={<Housewithoutyou/>} />
       <Route path="/tomydaughter" element={<Tomydaughter/>} />
       <Route path="/myoldfriend" element={<Myoldfriend/>} />

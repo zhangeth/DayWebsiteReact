@@ -1,6 +1,8 @@
 import HomeHero from "../components/homeComponents/homeHero";
-import zineSP23 from "../assets/day_zine.pdf"
-import zineSP24 from "../assets/zine24.pdf"
+import zineSP23 from "../assets/Magazines/s23zine.pdf"
+import zineFA23 from "../assets/Magazines/f23zine.pdf"
+import zineSP24 from "../assets/Magazines/s24zine.pdf"
+import zineFA24 from "../assets/Magazines/f24zine.pdf"
 import { StorageImage } from '@aws-amplify/ui-react-storage';
 
 import { Amplify } from 'aws-amplify';
@@ -11,91 +13,128 @@ import { list } from 'aws-amplify/storage';
 
 import '../css/magazine.css'
 
-const bucketName = 'daywebsitereact-storage-4bc14e8991458-dev';
-const objectKey = 'rodrigo_1.jpg';
-const s3Url = `https://${bucketName}.s3.amazonaws.com/public/${objectKey}`;
-let imageUrl = 'blah';
+const title = "DAY MAGAZINE";
+const message = "Every semester, DAY composes a multimedia magazine featuring pieces primarily made by students here in USC's APIDA community. Every magazine encompasses a theme voted on by the club in connection to Asian American identity and the experience of being cultural in-betweeners. If you are interested, our club is always open to contributions from anyone sharing these stories."
+const zines = [zineSP23, zineFA23, zineSP24, zineFA24];
+const zineTitles = [
+  "[Roots] - SP 2023 Magazine",
+  "[TTLG] - FA 2023 Magazine",
+  "[Lost and Found] - SP 2024 Magazine",
+  "[Mono no Aware] - FA 2024 Magazine",
+];
 
-const ImageComponent = () => {
-    Amplify.configure(awsconfig);
-    const [imageUrl, setImageUrl] = useState('');
+// const bucketName = 'daywebsitereact-storage-4bc14e8991458-dev';
+// const objectKey = 'rodrigo_1.jpg';
+// const s3Url = `https://${bucketName}.s3.amazonaws.com/public/${objectKey}`;
+// let imageUrl = 'blah';
+
+// const ImageComponent = () => {
+//     Amplify.configure(awsconfig);
+//     const [imageUrl, setImageUrl] = useState('');
   
-    useEffect(() => {
-      const getImageUrl = async () => {
-        try {
-            const result = await list({
-                prefix: 'public/'
-            });
-            console.log(result);
-            } catch (error) {
-            console.log(error);
-            }
-        try {
-          const url = await Storage.get('rodrigo_2.jpg', { level: 'guest' });
-          setImageUrl(url);
-        } catch (error) {
-          console.error('Error getting image URL:', error);
-        }
-      };
+//     useEffect(() => {
+//       const getImageUrl = async () => {
+//         try {
+//             const result = await list({
+//                 prefix: 'public/'
+//             });
+//             console.log(result);
+//             } catch (error) {
+//             console.log(error);
+//             }
+//         try {
+//           const url = await Storage.get('rodrigo_1.jpg', { level: 'guest' });
+//           setImageUrl(url);
+//         } catch (error) {
+//           console.error('Error getting image URL:', error);
+//         }
+//       };
   
-      getImageUrl();
-    }, []);
+//       getImageUrl();
+//     }, []);
   
-    return (
-      <div>
-        {imageUrl && (
-          <img src={imageUrl} alt="cat" />
-        )}
-      </div>
-    );
-  };
+//     return (
+//       <div>
+//         {imageUrl && (
+//           <img src={imageUrl} alt="cat" />
+//         )}
+//       </div>
+//     );
+//   };
 
 function Magazine()
 {
-    fetch(s3Url)
-    .then(response => {
-        if (!response.ok) {
-        throw new Error(`Failed to fetch S3 object: ${response.statusText}`);
+    // fetch(s3Url)
+    // .then(response => {
+    //     if (!response.ok) {
+    //     throw new Error(`Failed to fetch S3 object: ${response.statusText}`);
+    //     }
+    //     return response.blob();
+    // })
+    // .then(blob => {
+    //     // Handle the blob, e.g., display the image
+    //     imageUrl = URL.createObjectURL(blob);
+    //     console.log('Image URL:', imageUrl);
+    // })
+    // .catch(error => {
+    //     console.error('Error fetching S3 object:', error);
+    // });
+
+    const [curr, setCurr] = useState(0);
+    const [pdfCache, setPdfCache] = useState({}); // Store cached PDFs
+    const [pdfUrl, setPdfUrl] = useState(null);
+  
+    useEffect(() => {
+      const loadPdf = async () => {
+        if (pdfCache[curr]) {
+          // If cached, use the existing URL
+          setPdfUrl(pdfCache[curr]);
+        } else {
+          try {
+            // Fetch the PDF and create a blob URL
+            const response = await fetch(zines[curr]);
+            const blob = await response.blob();
+            const url = URL.createObjectURL(blob);
+  
+            // Store in cache
+            setPdfCache(prevCache => ({ ...prevCache, [curr]: url }));
+            setPdfUrl(url);
+          } catch (error) {
+            console.error("Error loading PDF:", error);
+          }
         }
-        return response.blob();
-    })
-    .then(blob => {
-        // Handle the blob, e.g., display the image
-        imageUrl = URL.createObjectURL(blob);
-        console.log('Image URL:', imageUrl);
-    })
-    .catch(error => {
-        console.error('Error fetching S3 object:', error);
-    });
+      };
+  
+      loadPdf();
+    }, [curr, zines, pdfCache]);
+
     return(
         <div>
-            <div>
-                {HomeHero("DAY MAGAZINE", "")}
+            {HomeHero(title, message)}
+
+            <div className = "row justify-content-center"> 
+            <div className="col-5 magazine-tab">
+              {zineTitles.map((magazine, i) => (
+                <div
+                  key={i}
+                  className={`magazine-body ${curr === i ? "selected" : "unselected"}`}
+                  onClick={() => setCurr(i)}
+                >
+                  {magazine}
+                </div>
+              ))}
+            </div>{/* sidebar */}
+
+              <div className="col-7 text-center">
+                  <div className="magazine-class">
+                  {
+                      pdfUrl ? 
+                      <object className="magazine-container" data={pdfUrl} type="application/pdf"></object> :
+                      <p>Loading...</p>
+                  }                  
+                  </div>
+              </div> {/* zine content */}
             </div>
-            <div className="magazine-body">
-                Each semester, DAY composes a literary and art magazine featuring pieces
-                made by USC students who are a part of the APIDA community. Our most recent
-                magazine was released in May 2024, with theme "Lost and Found." The zine focuses
-                on stories of reclaiming identity and finding belonging as Asians in America.
-            </div>
-            <div className="magazine-class">
-                <object className="magazine-container" data={zineSP24} type="application/pdf"></object>
-            </div>
-            <div>
-            <ImageComponent imgKey="rodrigo_2.jpg" />
-            {/* Add more instances with different image keys if needed */}
-            
-            <div className="magazine-body">
-            Our first magazine, "Roots," from April 2023 magazine reflects on our artists' 
-            upbringings and how being a part of the APIDA community has shaped their lives, making
-            them the people they are today.
-            </div>
-            <div className="magazine-class">
-                <object className="magazine-container" data={zineSP23} type="application/pdf"></object>
-            </div>
-            <ImageComponent imgKey="rodrigo_2.jpg" />
-            </div>
-            
         </div>
     );
 }

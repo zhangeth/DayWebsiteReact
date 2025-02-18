@@ -1,8 +1,8 @@
 import "../../css/about.css"
 function HomeHero(title, message) {
 	return (
-        <div>
-            <div className="about-row p-4 pb-0 pe-lg-0 border shadow-lg">
+        <>
+            <div className="about-row p-4 pb-0 pe-lg-0 border shadow-lg mt-0">
                 <div className="col p-3 p-lg-5 pt-lg-3">
                     <h1 className="about-title">{title}</h1>
                     <p className="about-body">{message}
@@ -11,7 +11,7 @@ function HomeHero(title, message) {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

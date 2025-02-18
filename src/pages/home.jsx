@@ -49,6 +49,7 @@ const gmLinks = ["https://www.instagram.com/p/DA2PePiPP5m", "https://www.instagr
 function Home() {
   return (
     <>
+    <div style={{'padding': '40px'}}></div>
     <title>{ TITLE }</title>
     <div className="py-3">
       <div className="container-fluid" style={{'maxWidth':'90%'}}>

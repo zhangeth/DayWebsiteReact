@@ -83,6 +83,11 @@
     margin-right: auto;
 }
 
+.circular-picture:hover{
+    rotate: 100%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .day-logo {
     display: block;
     margin-left: auto;
