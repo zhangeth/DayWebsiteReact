@@ -15,7 +15,7 @@ import { list } from 'aws-amplify/storage';
 import '../css/magazine.css'
 
 const title = "DAY MAGAZINE";
-const message = "Every semester, DAY composes a multimedia magazine featuring pieces primarily made by students here in USC's APIDA community. Every magazine encompasses a theme voted on by the club in connection to Asian American identity and the experience of being cultural in-betweeners. Our club is always open to contributions so please reach out if you have a story to share!"
+const message = "Every semester, DAY composes a multimedia magazine featuring pieces primarily made by students here in USC's APIDA community. Every magazine encompasses a theme voted on by the club in connection to Asian American identity and the experience of being cultural in-betweeners. Our club is always open to contributions, so please reach out if you have a story to share!"
 const zines = [zineSP23, zineFA23, cookbookFA23, zineSP24, zineFA24];
 const zineTitles = [
   "[Roots] - SP 2023 Magazine",
