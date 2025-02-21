@@ -15,9 +15,11 @@ function events(type, eventArray, eventName, eventLink){
 
     return(
         <div className={type}>
-        <h2 className="row text-center">{type}</h2>
-        <div className="row justify-content-center">{allEvents}</div>
-    </div>        
+            <h2 className="row text-center">{type}</h2>
+            <div className="row justify-content-center">
+                {allEvents}
+            </div>
+        </div>        
     )
 }
 

@@ -16,8 +16,8 @@ import LNY from "../assets/Events/Collabs/LNYTAOAATP.jpg"
 import OpenMic from "../assets/Events/Collabs/OpenMicDescent.jpg"
 import Valentines from "../assets/Events/Collabs/ValentinesSPOON.jpg"
 
-import GM5 from "../assets/Events/GMs/gm5.jpg"
-import GM4 from "../assets/Events/GMs/gm4.jpg"
+import GM1 from "../assets/Events/GMs/gm1.jpg"
+import GM2 from "../assets/Events/GMs/gm2.jpg"
 import GM3 from "../assets/Events/GMs/gm3.jpg"
 
 // components
@@ -34,9 +34,9 @@ const eventsHighlights = [LNY, OpenMic, Valentines];
 const eventsNames = ["DAY x TAO x AATP Lunar New Year Celebraiton", "DAY x Descent Open Mic", "DAY x SpoonSC Valentines Snack Exchange"];
 const eventsLinks = ["https://www.instagram.com/p/C3X4xqOLrsM/", "https://www.instagram.com/p/C4JVrD7ykTC/", "https://www.instagram.com/p/C3aiJDZR9dz/"];
 
-const gmHighlights = [GM5, GM4, GM3];
-const gmNames = ["GM5: Collage Boards", "GM4: Rainy Day Games", "GM3: Speed Friending"];
-const gmLinks = ["https://www.instagram.com/p/C4IgxmuruOK/", "https://www.instagram.com/p/C3j6yEXuAxu/", "https://www.instagram.com/p/C3TBj6kRIrO/"];
+const gmHighlights = [GM3, GM2, GM1];
+const gmNames = ["GM3: Onboarding + Trivia", "GM2: Team Breakouts", "GM1: Pictionary Kickoff"];
+const gmLinks = ["https://www.instagram.com/p/DA2PePiPP5m", "https://www.instagram.com/p/DAjVJPhSgrv/", "https://www.instagram.com/p/DASDDyOvcg-/"];
 
 
 // Rotate in at some point
@@ -49,6 +49,7 @@ const gmLinks = ["https://www.instagram.com/p/C4IgxmuruOK/", "https://www.instag
 function Home() {
   return (
     <>
+    <div style={{'padding': '40px'}}></div>
     <title>{ TITLE }</title>
     <div className="py-3">
       <div className="container-fluid" style={{'maxWidth':'90%'}}>

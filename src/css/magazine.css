@@ -1,3 +1,9 @@
+.magazine-tab{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .magazine-class{
     display: block;
     margin-left: auto;
@@ -10,22 +16,38 @@
 }
 
 .magazine-body{
-    font-family: 'Fragment Text Regular';
-    font-size:25px;
-    font-weight:normal;
-    margin-top:5rem;
-    margin-bottom:1rem;
-    margin-left:1rem;
-    margin-right:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    
+    color: #F5F0E6;
+    font-family: 'Right Sans Medium';
+    font-weight:normal;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.magazine-body.selected{
+    flex: 1.12;
+    font-size: 40px;
+    background-color: #75150c;
+    
+}
+
+.magazine-body.unselected{
+    flex: 0.97;
+    font-size: 35px;
+    background-color: #b13d22;
 }
 
 .magazine-container{
     padding-top: 2rem;
     padding-bottom: 2rem;
-    width: 75%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
