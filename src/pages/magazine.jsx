@@ -1,6 +1,7 @@
 import HomeHero from "../components/homeComponents/homeHero";
 import zineSP23 from "../assets/Magazines/s23zine.pdf"
 import zineFA23 from "../assets/Magazines/f23zine.pdf"
+import cookbookFA23 from "../assets/Magazines/f23cookbook.pdf"
 import zineSP24 from "../assets/Magazines/s24zine.pdf"
 import zineFA24 from "../assets/Magazines/f24zine.pdf"
 import { StorageImage } from '@aws-amplify/ui-react-storage';
@@ -14,11 +15,12 @@ import { list } from 'aws-amplify/storage';
 import '../css/magazine.css'
 
 const title = "DAY MAGAZINE";
-const message = "Every semester, DAY composes a multimedia magazine featuring pieces primarily made by students here in USC's APIDA community. Every magazine encompasses a theme voted on by the club in connection to Asian American identity and the experience of being cultural in-betweeners. If you are interested, our club is always open to contributions from anyone sharing these stories."
-const zines = [zineSP23, zineFA23, zineSP24, zineFA24];
+const message = "Every semester, DAY composes a multimedia magazine featuring pieces primarily made by students here in USC's APIDA community. Every magazine encompasses a theme voted on by the club in connection to Asian American identity and the experience of being cultural in-betweeners. Our club is always open to contributions so please reach out if you have a story to share!"
+const zines = [zineSP23, zineFA23, cookbookFA23, zineSP24, zineFA24];
 const zineTitles = [
   "[Roots] - SP 2023 Magazine",
   "[TTLG] - FA 2023 Magazine",
+  "[Wok and Roll] - FA 2023 Cookbook",
   "[Lost and Found] - SP 2024 Magazine",
   "[Mono no Aware] - FA 2024 Magazine",
 ];
